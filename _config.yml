@@ -33,6 +33,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-target-blank
+  - jekyll-latex
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -54,6 +55,6 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-header_pages:
-  - about.md
-  - portfolio.md
+# header_pages:
+#   - about.md
+#   - portfolio.md
