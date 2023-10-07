@@ -2,9 +2,17 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
   {%- include head.html -%}
-
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <!-- <style>
+      body {
+        background-image: url('{{ site.baseurl }}/assets/bkgrnd.jpeg');
+        background-size: contain;/* Add any additional background properties you want here, e.g., background-size, background-repeat, etc. */
+      }
+    </style> -->
+  </head>
   <body>
-
     {%- include header.html -%}
 
     <main class="page-content" aria-label="Content">
@@ -12,9 +20,8 @@
         {{ content }}
       </div>
     </main>
-
+    
     {%- include footer.html -%}
 
   </body>
-
 </html>

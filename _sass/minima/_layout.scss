@@ -339,3 +339,14 @@
     width: calc(50% - (#{$spacing-unit} / 2));
   }
 }
+
+
+.researchpage-header {
+  background-image: url('/assets/bg.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

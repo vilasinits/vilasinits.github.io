@@ -18,13 +18,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Welcome!
+title: Vilasini Tinnaneri Sreekanth
 email: vilasini.tinnanerisreekanth@cea.fr
 description: >- # this means to ignore newlines until "baseurl:"
-  Welcome to my space.
-baseurl: /vilasinits.github.io/ #"" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-#twitter_username: jekyllrb
+  
+baseurl: /vilasinits.github.io #"" # the subpath of your site, e.g. /blog
+url: https://vilasinits.github.io/ # the base hostname & protocol for your site, e.g. http://example.com
+# twitter_username: jekyllrb
 github_username:  vilasinits
 
 # Build settings
@@ -56,5 +56,5 @@ plugins:
 #   - vendor/ruby/
 
 # header_pages:
-#   - about.md
+#   - about.markdown
 #   - portfolio.md
