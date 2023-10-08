@@ -4,4 +4,4 @@ title: "Resources"
 categories: misc
 ---
 
-Lets see what goes on in here!
+I intend to add the resources that I think could also be useful for others.
