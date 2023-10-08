@@ -139,7 +139,7 @@ permalink: /travel.html/
 <div class="portfolio-grid">
   <figure class="portfolio-item">
     <a href="/photos/southfrance/pic18.jpg" class="image-link">
-      <img src="/photos/southfrance/pic18.jpg" alt="Place 1">
+      <img src="/photos/southfrance/pic18.jpg" alt="SF">
     </a>
     <figcaption>
     </figcaption>

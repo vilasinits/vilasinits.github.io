@@ -340,17 +340,6 @@
   }
 }
 
-
-.researchpage-header {
-  background-image: url('/assets/bg.jpg'); /* Replace with your image path */
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
@@ -362,7 +351,7 @@
 }
 
 .portfolio-item img {
-  max-width: 100%;
+  max-width: 120%;
   height: auto;
 }
 
