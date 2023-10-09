@@ -138,48 +138,48 @@ permalink: /travel.html/
 <h3>South France
 <div class="portfolio-grid">
   <figure class="portfolio-item">
-    <a href="/photos/southfrance/pic18.jpg" class="image-link">
-      <img src="/photos/southfrance/pic18.jpg" alt="SF">
+    <a href="/photos/southfrance/pic18.JPG" class="image-link">
+      <img src="/photos/southfrance/pic18.JPG" alt="SF">
     </a>
     <figcaption>
     </figcaption>
   </figure>
 
   <figure class="portfolio-item">
-    <a href="/photos/southfrance/pic2.jpg" class="image-link">
-      <img src="/photos/southfrance/pic2.jpg" alt="Place 1">
+    <a href="/photos/southfrance/pic2.JPG" class="image-link">
+      <img src="/photos/southfrance/pic2.JPG" alt="Place 1">
     </a>
     <figcaption>
     </figcaption>
   </figure>
 
   <figure class="portfolio-item">
-    <a href="/photos/southfrance/pic21.jpg" class="image-link">
-      <img src="/photos/southfrance/pic21.jpg" alt="Place 1">
+    <a href="/photos/southfrance/pic21.JPG" class="image-link">
+      <img src="/photos/southfrance/pic21.JPG" alt="Place 1">
     </a>
     <figcaption>
     </figcaption>
   </figure>
 
   <figure class="portfolio-item">
-    <a href="/photos/southfrance/pic12.jpg" class="image-link">
-      <img src="/photos/southfrance/pic12.jpg" alt="Place 1">
+    <a href="/photos/southfrance/pic12.JPG" class="image-link">
+      <img src="/photos/southfrance/pic12.JPG" alt="Place 1">
     </a>
     <figcaption>
     </figcaption>
   </figure>
 
   <figure class="portfolio-item">
-    <a href="/photos/southfrance/pic19.jpg" class="image-link">
-      <img src="/photos/southfrance/pic19.jpg" alt="Place 1">
+    <a href="/photos/southfrance/pic19.JPG" class="image-link">
+      <img src="/photos/southfrance/pic19.JPG" alt="Place 1">
     </a>
     <figcaption>
     </figcaption>
   </figure>
 
   <figure class="portfolio-item">
-    <a href="/photos/southfrance/pic6.jpg" class="image-link">
-      <img src="/photos/southfrance/pic6.jpg" alt="Place 1">
+    <a href="/photos/southfrance/pic6.JPG" class="image-link">
+      <img src="/photos/southfrance/pic6.JPG" alt="Place 1">
     </a>
     <figcaption>
     </figcaption>
@@ -189,32 +189,32 @@ permalink: /travel.html/
 <h3>Uncategorised
 <div class="portfolio-grid">
   <figure class="portfolio-item">
-    <a href="/photos/uncategorised/pic1.jpg" class="image-link">
-      <img src="/photos/uncategorised/pic1.jpg" alt="Place 1">
+    <a href="/photos/uncategorised/pic1.JPG" class="image-link">
+      <img src="/photos/uncategorised/pic1.JPG" alt="Place 1">
     </a>
     <figcaption>
     </figcaption>
   </figure>
 
   <figure class="portfolio-item">
-    <a href="/photos/uncategorised/pic3.jpg" class="image-link">
-      <img src="/photos/uncategorised/pic3.jpg" alt="Place 1">
+    <a href="/photos/uncategorised/pic3.JPG" class="image-link">
+      <img src="/photos/uncategorised/pic3.JPG" alt="Place 1">
     </a>
     <figcaption>
     </figcaption>
   </figure>
 
   <figure class="portfolio-item">
-    <a href="/photos/uncategorised/pic5.jpeg" class="image-link">
-      <img src="/photos/uncategorised/pic5.jpeg" alt="Place 1">
+    <a href="/photos/uncategorised/pic5.JPEG" class="image-link">
+      <img src="/photos/uncategorised/pic5.JPEG" alt="Place 1">
     </a>
     <figcaption>
     </figcaption>
   </figure>
 
   <figure class="portfolio-item">
-    <a href="/photos/uncategorised/pic2.jpg" class="image-link">
-      <img src="/photos/uncategorised/pic2.jpg" alt="Place 1">
+    <a href="/photos/uncategorised/pic2.JPG" class="image-link">
+      <img src="/photos/uncategorised/pic2.JPG" alt="Place 1">
     </a>
     <figcaption>
     </figcaption>
