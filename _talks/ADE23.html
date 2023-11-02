@@ -1,0 +1,877 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Action Dark-Energy Talk</title>
+		<meta name="description" content="Talk for the Action DE 2023 conference">
+		<meta name="author" content="Vilasini">
+
+		<link rel="stylesheet" href="reveal.js/dist/reset.css">
+		<link rel="stylesheet" href="reveal.js/dist/reveal.css">
+		<link rel="stylesheet" href="reveal.js/dist/theme/darkenergy.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+<!-- ######################################################################################################################################################################### -->
+				<section data-background-image="assets/background.png">
+					<div class="container">
+						<div class="title" style=" position: relative;
+		  bottom: -250px; left:70px; border-radius: 20px; background-color:rgba(0, 0, 0, 0.2);">
+							<h2> Theoretical higher order predictions for wavelet l1-norm </h2>
+						</div>
+					</div>
+
+					<div style="border-radius: 20px; position: relative;
+  bottom: -320px; background-color:rgba(0, 0, 0, 0);">
+						<div class="container">
+							<div class="col">
+								<h4 style="font-size:32px">Vilasini Tinnaneri Sreekanth, Sandrine Codis, Alexander Barthlemey, Jean-Luc Starck</h4>
+								<br>
+							</div>
+						</div>
+  					</div>
+					<div style="border-radius: 20px; position: relative;
+  bottom: -320px; background-color:rgba(0, 0, 0, 0);">
+					<div class="container">
+
+						<div class="col">
+							<div align="left" style="margin-left: 20px;">
+								<br>
+
+								<br>
+								<br>
+								<img src="assets/CosmoStatDarkBK.png" class="plain" height="140" style="position: relative;
+			  bottom: -20px; right:-10px"></img>
+								<br>
+							</div>
+						</div>
+
+						<div class="col">
+							<br>
+
+							<br>
+							<br>
+							<img src="assets/aim.png" class="plain" height="140" style="position: relative;
+			  bottom: -20px; right:-10px" ></img>
+						</div>
+
+						<div class="col">
+							<br>
+
+							<br>
+							<br>
+							<img src="assets/universite_paris_saclay.jpg" class="plain" height="140" style="position: relative;
+			  bottom: -20px; right:-10px" ></img>
+						</div>
+
+					</div>
+
+					<!-- <div> slides at <a href="https://vilasinits.github.io/Talks/ActionDE23/">github.com/vilasinits/Talks/ActionDE23</a> </div>
+					</div> -->
+
+				</section>
+<!-- ######################################################################################################################################################################### -->
+<!-- ######################################################################################################################################################################### -->
+				<!-- <section>
+					<div class="left-content">
+					<h2  class='slide-title'>Outline</h2>
+					<div class="container">
+						<div class="col">
+						<div class="block fragment"  data-fragment-index="0" >
+								<div class="block-title">	
+								</div>
+								<div class="block-content">
+									<ul>
+										<li>Introduction</li>
+										<li>Motivation</li>
+										<li>Methodology</li>
+										<li>Results</li>	
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					</div>
+				</section> -->
+<!-- ######################################################################################################################################################################### -->
+<!-- ######################################################################################################################################################################### -->
+				<!-- <section>
+					<h2>Introduction</h2>
+				</section> -->
+<!-- ######################################################################################################################################################################### -->
+<!-- ######################################################################################################################################################################### -->
+				<!-- <section>
+					<section data-background-video="assets/wl_animation.mp4" data-background-size= "10px"  data-background-video-muted>
+					</section>
+				</section> -->
+<!-- ######################################################################################################################################################################### -->
+<!-- ######################################################################################################################################################################### -->
+				<section>
+					<!-- <h3>The phenomenon of the light rays bending due to the presence of massive objects is called gravitational lensing.</h3> -->
+					<br>
+					<h3  class='slide-title'>Weak Lensing is one of the crucial probe in modern cosmology. </h3>
+					<br>
+						<div class="r-hstack">
+							<img src="assets/WL.png" class="plain" height="360" style="position: relative; bottom: 20px; right:30px"  /img>
+							
+							<div class="block-content" style="position: relative; bottom: 20px; right:10px; font-size:32px;" >
+								<ul>
+									<li>Direct observations of the mass distribution</li>
+									<li>Can help us in better understanding the universe</li>
+									
+								</ul>
+							</div>
+
+						</div>
+						
+						<img src="assets/WL_mass_map.png" class="plain" height="340" width="1200" style="position: relative; bottom: 5px; right:90px"  /img>
+						
+				</section>
+<!-- ######################################################################################################################################################################### -->
+<!-- ######################################################################################################################################################################### -->
+				<section>
+					<h3> The usual method of analysing the WL map is by using the 2 point statistics.</h3>
+
+					<div class="r-hstack">
+						<div class="r-vstack">
+							<div class="flow-container" style="position: relative; bottom: 0px; right:0px">
+								<div class="square"> Data </div>
+								<div class="arrow"></div>
+								<div class="square" style="background-color: rgb(255, 85, 0);">2 point statistics</div>
+							</div>
+	
+							<div class="flow-container" style="position: relative; bottom: -60px; right:0px">
+								<div class="square">Theory</div>
+								<div class="arrow"></div>
+								<div class="square" style="background-color: rgb(255, 85, 0);">2 point statistics</div>
+							</div>
+						</div>
+						<svg width="200" height="400">
+							<path d="M0,350 Q200,50 50,50 100,10" stroke="#2980b9" stroke-width="2" fill="transparent" marker-end="url(#arrow)" />
+							<marker id="arrow" markerWidth="18" markerHeight="12" refX="6" refY="6" orient="auto" markerUnits="strokeWidth">
+								<path d="M2,2 L6,6 L2,10 L10,6 Z" fill="#2980b9" />
+							</marker>
+						</svg>
+
+						<p style="position: relative; bottom: 0px; right:90px"> Likelihood/MCMC</p>
+					</div>
+					<br>
+					<br>
+					<br>
+					<br>
+					<h3 class="block-title" style="font-size:34px"> 2 point statistics is not sufficient. Why? </h3>
+					<p style="font-size:32px">$\Longrightarrow$ The power spectrum shows power as the mean squared amplitude at each frequency line but includes no phase information.</p>
+				</section>
+<!-- ######################################################################################################################################################################### -->
+<!-- ######################################################################################################################################################################### -->
+				<section>
+					<img src="assets/FT_demo1.png" class="plain" height="840" style="position: relative; bottom: -20px; right:-10px;" />
+				</section>
+<!-- ######################################################################################################################################################################### -->
+<!-- ######################################################################################################################################################################### -->
+				<section>
+					<img src="assets/FT_demo2.png" class="plain" height="840" style="position: relative; bottom: -20px; right:-10px;" />				
+				</section>
+<!-- ######################################################################################################################################################################### -->
+<!-- ######################################################################################################################################################################### -->
+				<section>
+					
+					<h3 class="slide-title">Higher-order statistics</h3>
+					<img src="assets/HOS_table.png" /img>
+				</section>
+<!-- ######################################################################################################################################################################### -->
+<!-- ######################################################################################################################################################################### -->
+
+				<section>
+
+					<section>
+
+						<div class="flow-container" style="position: relative; bottom: -50px; right:-300px;">
+							<div class="square"> Data </div>
+							<div class="arrow"></div>
+							<div class="square" style="background-color: rgb(255, 85, 0);">Higher order statistics</div>
+						</div>
+
+						<div class="flow-container" style="position: relative; bottom: -100px; right:-300px;">
+							<div class="square">Simulation</div>
+							<div class="arrow"></div>
+							<div class="square" style="background-color: rgb(255, 85, 0);">Higher order statistics</div>
+						</div>
+
+						<svg width="200" height="400" style="position: relative; bottom: 350px; right:-310px;">
+							<path d="M20,350 Q200,50 50,50 100,10" stroke="#2980b9" stroke-width="2" fill="transparent" marker-end="url(#arrow)" />
+							<marker id="arrow" markerWidth="12" markerHeight="12" refX="6" refY="6" orient="auto" markerUnits="strokeWidth">
+								<path d="M2,2 L6,6 L2,10 L10,6 Z" fill="#2980b9" />
+							</marker>
+						</svg>
+
+						<p style="position: relative; bottom: 480px; right:-380px"> Likelihood/MCMC</p>
+					</section>
+
+					<section>
+						<br>
+						<br>
+						<br>
+						<br>
+						<div class="flow-container" style="position: relative; bottom: 0px; right:-300px;">
+							<div class="square"> Data </div>
+							<div class="arrow"></div>
+							<div class="square" style="background-color: rgb(255, 85, 0);">Higher order statistics</div>
+						</div>
+
+						<div class="flow-container" style="position: relative; bottom: -100px; right:-180px;">
+							<div class="square">Simulation</div>
+							<div class="arrow" style="width: 30px; height: 2px; position: relative; bottom: -0px; right:0px;"></div>
+							<p style="position: relative; bottom: 0px; right:-20px;">Multiple realisations</p>
+							<div class="arrow" style="width: 30px; height: 2px; position: relative; bottom: 0px; right:-30px;"></div>
+							<div class="square" style="background-color: rgb(255, 85, 0); position: relative; bottom: 0px; right:-30px;">Higher order statistics</div>
+						</div>
+
+						<svg width="200" height="400" style="position: relative; bottom: 300px; right:-310px;">
+							<path d="M110,350 Q300,50 50,50 100,10" stroke="#2980b9" stroke-width="2" fill="transparent" marker-end="url(#arrow)" />
+							<marker id="arrow" markerWidth="16" markerHeight="12" refX="6" refY="6" orient="auto" markerUnits="strokeWidth">
+								<path d="M2,2 L6,6 L2,10 L10,6 Z" fill="#2980b9" />
+							</marker>
+						</svg>
+
+						<p style="position: relative; bottom: 480px; right:-480px"> Likelihood/MCMC</p>
+
+						<div class="block-content" style="position: relative; bottom: 300px;">
+							<ul>
+								<li> Need huge amount of storage </li>
+								<li> Huge amount of computational resourses</li>
+							</ul>
+							
+						</div>
+					</section>
+
+					<section>
+						<h3 class="block-title">This work</h3>
+						<br>
+						<br>
+						<br>
+						<br>
+						<div class="flow-container" style="position: relative; bottom: 0px; right:-300px;">
+							<div class="square"> Data </div>
+							<div class="arrow"></div>
+							<div class="square" style="background-color: rgb(255, 85, 0);">Higher order statistics</div>
+						</div>
+
+						<div class="flow-container" style="position: relative; bottom: -100px; right:-180px;">
+							<div class="square">Simulation</div>
+							<div class="arrow" style="width: 30px; height: 2px; position: relative; bottom: -0px; right:0px;"></div>
+							<p style="position: relative; bottom: 0px; right:-20px;">Multiple realisations</p>
+							<div class="arrow" style="width: 30px; height: 2px; position: relative; bottom: 0px; right:-30px;"></div>
+							<div class="square" style="background-color: rgb(255, 85, 0); position: relative; bottom: 0px; right:-30px;">
+								<div class="r-fit-text">
+									Higher order summary statistics
+								</div>
+							</div>
+						</div>
+
+						<svg width="200" height="400" style="position: relative; bottom: 300px; right:-310px;">
+							<path d="M110,350 Q300,50 50,50 100,10" stroke="#2980b9" stroke-width="2" fill="transparent" marker-end="url(#arrow)" />
+							<marker id="arrow" markerWidth="16" markerHeight="12" refX="6" refY="6" orient="auto" markerUnits="strokeWidth">
+								<path d="M2,2 L6,6 L2,10 L10,6 Z" fill="#2980b9" />
+							</marker>
+						</svg>
+
+						<p style="position: relative; bottom: 480px; right:-480px"> Likelihood/MCMC</p>
+						<div style="position: relative; bottom: 550px; right: 340px; font-size: 120px;">
+							&#10060;
+						</div>
+
+						<div class="flow-container" style="position: relative; bottom: 420px; right:-120px;">
+							<div class="square" style="background-color: rgb(54, 133, 99);">Theory for HOS</div>
+						</div>
+
+						<svg xmlns="http://www.w3.org/2000/svg" width="50" height="100" viewBox="0 0 50 100" style="position: relative; bottom: 735px; right:350px;">
+							<polygon points="25,0 50,50 40,50 40,100 10,100 10,50 0,50" fill="grey" />
+						</svg>
+
+						<div class="flow-container" style="position: relative; bottom: 1450px; left:1000px;">
+							<div class="square" style="background-color: rgb(54, 133, 99);">wavelet $\ell_1$-norm PDF</div>
+						</div>
+
+						<svg xmlns="http://www.w3.org/2000/svg" width="100" height="50" viewBox="0 0 100 50" style="position: relative; bottom: 1550px; left:300px;">
+							<polygon points="0,25 50,0 50,10 100,10 100,40 50,40 50,50 0,25" fill="grey" />
+						  </svg>
+
+					</section>
+
+				</section>
+<!-- ######################################################################################################################################################################### -->
+<!-- ######################################################################################################################################################################### -->
+				<!-- <section>
+					
+				</section> -->
+<!-- ######################################################################################################################################################################### -->
+<!-- ######################################################################################################################################################################### -->
+
+
+<!-- ######################################################################################################################################################################### -->
+<!-- ######################################################################################################################################################################### -->
+
+<!-- ######################################################################################################################################################################### -->
+<!-- ######################################################################################################################################################################### -->
+				<section>
+					<section>
+					<h3 class="slide-title">One-point Probability Distribution Functions</h3>
+					<div class="container">
+						<div class="col">
+						<div class="block fragment" >
+								<div class="block-title"></div>
+								<div class="block-content" style="font-size:32px;">
+									<ul>
+										<li> Contain a significant amount of cosmological information</li>
+										<br>
+										<li>  potential to break cosmological parameter degeneracies </li>
+										<br>
+										<li>Has the advantage of being straightforward to measure.</li>
+								</div>
+						</div>
+						</div>
+					</div>
+					</section>
+
+					<section>
+					<h2> wavelet $\ell_1$-norm</h2>
+					<div class="container">
+						<div class="col">
+						<div class="block fragment" >
+								<div class="block-title"></div>
+								<div class="block-content" style="font-size:32px;">
+									<ul>
+										<li>$\ell_1 = \sum_k|x_k|$</li>
+										<li>the $\ell_1$-norm carries the information encoded in all pixels of the map. </li>
+										<li>It is shown in Ajani et al. (2021) that it remarkably outperforms commonly used summary statistics, such as the power spectrum or the combination of peak and void counts.</li>
+										<img src="assets/starlet_l1_ajani-1.png" class="plain" height="640" style="position: relative; bottom: -20px; right:-10px;" alt="Description of the image" />
+										<figcaption> <a href="https://arxiv.org/abs/2101.01542"> Source Ajani et al. (2021) </a></figcaption>
+								</div>
+						</div>
+						</div>
+					</div>
+				</section>
+
+				</section>
+<!-- ######################################################################################################################################################################### -->
+<!-- ######################################################################################################################################################################### -->
+
+			<section>
+				<h3 class="slide-title">My work: Theoretical prediction of wavelet $\ell_1$-norm based on Large Deviation Theory</h3>
+				<div class="container">
+					<div class="col">
+					<div class="block fragment" >
+							<div class="block-title" style="font-size:36px;"></div>
+							<div class="block-content" style="font-size:32px;">
+								<ul>
+									<li> Part 1: What is LDT?
+									</li>
+									<li>Part 2: Prediction of one-Point PDF</li>
+									<li>Part 3: Derivation of wavelet $\ell_1$-norm</li>
+								</ul>
+							</div>
+					</div>
+					</div>
+				</div>
+			</section>
+
+<!-- ######################################################################################################################################################################### -->
+<!-- ######################################################################################################################################################################### -->
+			<section>
+				<h2>Part 1: Intuition to LDT</h2>
+
+				<div class="r-hstack">
+					<img src="assets/LDT_demo.png" class="plain" width="1820" height="940" />
+					<ul style="font-size:30px;">
+						<li>Central Limit Theorem gives accurate information around the mean.</li>
+						<br>
+						<li style="color: red;" >But what about the tail?</li>
+						$\hookrightarrow$Large Deviations Theory concerns the <span style="color: blue;">asymptotic behavior of remote tails</span> of sequences of probability distributions.
+						<br>
+						<br>
+						<li>If we know the behaviour of the tail $\Longrightarrow$ we can get the entire probability distribution.</li>
+
+					</ul>	
+
+				</div>
+				<!-- <div style="display: flex; justify-content: space-between; align-items: center;">
+					<div style="flex: 2; padding-right: 20px;">
+						<img src="assets/LDT_demo.png" class="plain" width="620" height="540" />
+					</div>
+					<div class="new-container" style="flex: 2;">
+						<ul>
+							<li>Central Limit Theorem gives accurate information around the mean.</li>
+							<br>
+							<li style="color: red;" >But what about the tail?</li>
+							$\hookrightarrow$Large Deviations Theory concerns the <span style="color: blue;">asymptotic behavior of remote tails</span> of sequences of probability distributions.
+							<br>
+							<br>
+							<li>If we know the behaviour of the tail $\Longrightarrow$ we can get the entire probability distribution.</li>
+
+						</ul>
+					</div>
+				</div> -->
+			</section>
+<!-- ######################################################################################################################################################################### -->
+<!-- ######################################################################################################################################################################### -->
+			
+
+<!-- ######################################################################################################################################################################### -->
+<!-- ######################################################################################################################################################################### -->
+
+			<section>
+				<!-- <section>
+							
+				</section> -->
+
+				<section>
+					<h3 class="slide-title">LDT in Cosmology and prediction of the one-point PDF</h3>
+					<div class="circle-container" id="container">
+						<div class="circle">
+						  Rate Function
+						</div>
+					</div>	
+					<br>
+					<br>
+					<div class="circle">
+						Cumulant Generating Function
+					</div>
+					<br>
+					<br>
+					<div class="circle">
+						PDF
+					</div>
+				</section>
+
+				<section>
+					<div class="r-hstack">
+						<div class="circle-container" id="container">
+							<div class="circle" style="border-color: white">
+							Rate Function
+							</div>
+						</div>
+						<div  class="another-container" style="border-color: white">
+				
+							From the first principles of Cosmology $\downarrow$ Spherical Collapse Model (one-to-one mapping between initial and final densities)
+							$\zeta(\bar{\tau_k}) = \rho_k = \Bigl( 1 - \frac{\bar{\tau_k}}{\nu}\Bigr)^{-\nu}$
+							$\psi (\{ \rho_i\}) = \frac{\sigma^2_{R1}}{2} \sum_{k,j}\Xi_{kj}(\{\tau_i \}) \bar{\tau_k} \bar{\tau_j}$
+						</div>
+					</div>
+					<br>
+					<br>
+					<div class="circle">
+						Cumulant Generating Function
+					</div>
+					<br>
+					<br>
+					<div class="circle">
+						PDF
+					</div>
+				</section>
+
+				<section>
+					<div class="r-hstack">
+						<div class="circle-container" id="container">
+							<div class="circle">
+							Rate Function
+							</div>
+						</div>	
+						<div  class="another-container">
+							From the first principles of Cosmology $\downarrow$ Spherical Collapse Model
+							$\zeta(\bar{\tau_k}) = \rho_k = \Bigl( 1 - \frac{\bar{\tau_k}}{\nu}\Bigr)^{-\nu}$
+							$\psi (\{ \rho_i\}) = \frac{\sigma^2_{R1}}{2} \sum_{k,j}\Xi_{kj}(\{\tau_i \}) \bar{\tau_k} \bar{\tau_j}$
+						</div>
+					</div>
+					<br>
+					<br>
+					<div class="r-hstack">
+						<div class="circle-container" id="container">
+							<div class="circle" style="border-color: white">
+							Cumulant Generating Function
+							</div>
+						</div>
+						<div  class="another-container" style="border-color: white">
+							<!-- Your text goes here -->
+							Legendre-Fenschel transformation
+							$\varphi_{\{ \rho_i\}}(\{ \lambda_i\}) = \sup_{\{ \rho_i\}} \Bigl[ \sum_{i}\lambda_i\rho_i -  \psi_{\{ \rho_i\}} (\{ \rho_i\})\Bigr]$
+						</div>
+					</div>
+					<br>
+					<br>
+					<div class="circle">
+						PDF
+					</div>
+				</section>
+
+				<section>
+					<div class="r-hstack">
+						<div class="circle-container" id="container">
+							<div class="circle">
+							Rate Function
+							</div>
+						</div>	
+						<div  class="another-container">
+							From the first principles of Cosmology $\downarrow$ Spherical Collapse Model
+							$\zeta(\bar{\tau_k}) = \rho_k = \Bigl( 1 - \frac{\bar{\tau_k}}{\nu}\Bigr)^{-\nu}$
+							$\psi (\{ \rho_i\}) = \frac{\sigma^2_{R1}}{2} \sum_{k,j}\Xi_{kj}(\{\tau_i \}) \bar{\tau_k} \bar{\tau_j}$
+						</div>
+					</div>
+					<br>
+					<div class="r-hstack">
+						<div class="circle-container" id="container">
+							<div class="circle">
+							Cumulant Generating Function
+							</div>
+						</div>
+						<div  class="another-container">
+							<!-- Your text goes here -->
+							Legendre-Fenschel transformation
+							<br>
+							$\varphi_{\{ \rho_i\}}(\{ \lambda_i\}) = \sup_{\{ \rho_i\}} \Bigl[ \sum_{i}\lambda_i\rho_i -  \psi_{\{ \rho_i\}} (\{ \rho_i\})\Bigr]$
+						</div>
+					</div>
+					<br>
+					<div class="r-hstack">
+						<div class="circle-container" id="container">
+							<div class="circle" style="border-color: white">
+							PDF
+							</div>
+						</div>
+						<div  class="another-container" style="border-color: white">
+							Inverse laplace transformation 
+							<br>
+							$P(\kappa) = \int_{-i\infty}^{+i\infty} \frac{dy}{2\pi i} exp(-\lambda \kappa + \phi_{\kappa,\theta}(\lambda))$
+						</div>
+
+					</div>
+				</section>
+			</section>
+<!-- ######################################################################################################################################################################### -->
+<!-- ######################################################################################################################################################################### -->
+			<section>
+				<div class="block-title" style="font-size:36px"> Filter Choice</div>
+				<div class="block">
+					<div class="block-content" style="font-size:32px">
+						<br>
+						<ul>
+							<li> Mass sheet degeneracy $\rightarrow$ Use aperture mass statistic</li>
+							$\hookrightarrow$ Equivalent to using a compensated filter on the convergence map 
+							<br>
+							<br>
+							
+							<li> Wavelet filters are formally inidentical to aperture mass </li>
+							<a href="https://arxiv.org/abs/1204.4293">A. Leonard et al, "Fast Calculation of the Weak Lensing Aperture Mass Statictic"</a>
+
+						</ul>
+					</div>
+				</div>
+				<div class="r-hstack">
+					<div class="block-content" style="font-size:32px">
+						<strong> <span style="size:36px; color:green"> In this work: </span> </strong>: use a function of concentric disks
+						<br>
+						$\hookrightarrow$ $M_{ap}(\nu) = \kappa_{<\theta_2}(\nu) - \kappa_{<\theta_1}(\nu)$
+					</div>
+					<img class="'plain" src="assets/filters.png" /img>
+				</div>
+
+			</section>
+
+<!-- ######################################################################################################################################################################### -->
+<!-- ######################################################################################################################################################################### -->
+			<section>
+				<div class="block-title" style="font-size:36px"> Deriving wavelet $\ell_1$-norm from PDF </div> 
+				
+				<div class="block">
+					<div class="block-content" style="font-size:32px">
+						<div class="anothe r-container" style="border-color: white">
+							$l_1^{j,i} = \sum_{u=1}^{coef(Sj,i)} |S_{j,i}[u]|$
+						</div>
+						<div class="r-hstack">
+							<div class="r-vstack">
+								
+								<br>
+								$S_{j,i} = {w_{j,k}/B_i < w_{j,k} < B_{i+1}}$ 
+								$w_{j,k}$ is a wavelet coefficient 
+							</div>
+							<hr>
+							<ul>
+								<li> information encoded in all pixels </li>
+								<li> automatically includes peaks and voids </li>
+								<li> multi-scale approach </li>
+								<li> avoids the problem of defining peaks and voids </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<br>
+				<p style="font-size:32px"> This is equivalent to obtaining the $\ell_1$-norm from the PDF using counts x bin method</p>
+			</section>
+<!-- ######################################################################################################################################################################### -->
+<!-- ######################################################################################################################################################################### -->
+			
+<!-- ######################################################################################################################################################################### -->
+<!-- ######################################################################################################################################################################### -->
+			<section>
+				<!-- <img src="assets/takahashi_z2_054_t_30.png" class="plain" height="480"/> -->
+				<section>
+					<img class="plain" src="assets/l1_takahashi_z2_054_t_20.png" height="880"/>
+				</section>
+				<section>
+					<img src="assets/l1_takahashi_z1_0334_t_30.png" class="plain" height="880"/>
+				</section>
+				
+			</section>
+
+<!-- ######################################################################################################################################################################### -->
+<!-- ######################################################################################################################################################################### -->
+			<section>
+				<h3 class="block-title" style="font-size:36px"> Conclusion </h3>
+				<div class="block">
+					<div class="block-content" style="font-size:32px;">
+						<ul>
+							<li> We need different analytical methods to extract non-Gaussianities</li>
+							$\hookrightarrow$ Using Higher-Order statistics<br>
+							$\hookrightarrow$ Wavelet $\ell_1$-norm is shown to be a better estimator in comparision to powerspectrum
+							<br>
+							<br>
+							<li> Current methods use simulations based approach $\rightarrow$ Highly resource intensive</li>
+							$\hookrightarrow$ Need theoretical modelling
+							<br>
+							<br>
+							<li> Use LDT based approach to obtain the PDF for aperture mass maps</li>
+							$\hookrightarrow$ <span style="color: green;"> Derieved wavelet $\ell_1$-norm from PDF </span>
+
+							<li> <span style="color:orange;"> Future work: Extending to any wavelet filter </span></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+<!-- ######################################################################################################################################################################### -->
+<!-- ######################################################################################################################################################################### -->
+
+
+<!-- ######################################################################################################################################################################### -->
+<!-- ######################################################################################################################################################################### -->
+
+
+			</div>
+		</div>
+
+		<style>
+			.reveal .slides {
+				min-height: 100%;
+				width: 158mm;
+				height: 96mm;
+			} 
+	
+			.reveal .block {
+				background-color: #191919;
+				margin-left: 15px;
+				margin-right: 15px;
+				text-align: left;
+				padding-bottom: 0.1em;
+			}
+	
+			.reveal .block-title {
+				background-color: #333333;
+				padding: 8px 35px 8px 14px;
+				color: #FFAA7F;
+				font-weight: bold;
+			}
+	
+			.reveal .block-content {
+				padding: 8px 35px 8px 14px;
+			}
+	
+			.reveal .slide-title {
+				border-left: 5px solid white;
+				text-align: left;
+				margin-left: 20px;
+				padding-left: 20px;
+			}
+	
+			.reveal .alert {
+				color: #FFAA7F;
+				font-weight: bold;
+			}
+	
+			.reveal .inverted {
+				filter: invert(100%);
+			}
+
+			.reveal .new-container {
+				/* Your CSS properties for the container go here */
+				border: 1px solid #000; /* Example border for visualization */
+				padding: 10px; /* Example padding */
+				background-color: #191919; /* Example background color */
+			}
+
+			.reveal .circle-container {
+				display: flex;
+				flex-direction: column;
+				align-items: left;
+			} 
+
+			.reveal .another-container {
+				display: flex;
+				flex-direction: column;
+				border: 1px solid #000;
+				background-color: #191919;
+				padding: 10px;
+				margin-left: 100px;
+				width:1050px;
+				text-align:center;
+				justify-content: center;
+				align-items: center;
+			}
+
+
+			.reveal .circle {
+				width: 200px;
+				height: 200px;
+				border-radius: 50%;
+				background-color: #1b1a1a;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				border: 2px solid transparent;
+				transition: border 0.3s;
+			}
+
+
+			.reveal .text-on-right {
+				/* Your styles for the text on the right go here */
+				float: right;
+				margin-right: 20px;
+			  }
+			  
+			.reveal .flow-container {
+				display: flex;
+				align-items: center;
+			}
+	
+			.reveal .square {
+				width: 200px;
+				height: 200px;
+				background-color: #0693f1;
+				border: 2px solid #2980b9;
+				text-align: center;
+				align-items: center;
+				line-height: 100px;
+				color: #fff;
+				justify-content: center;
+				border-radius: 20px;
+				margin: 0 20px
+			}
+	
+			.reveal .arrow {
+				width: 100px; /* Adjust the length of the arrow as needed */
+				height: 2px;
+				background-color: #2980b9;
+				position: relative;
+			}
+	
+			.reveal .arrow::before {
+				content: "";
+				position: absolute;
+				top: -5px; /* Adjust the position of the arrowhead */
+				right: -15px; /* Adjust the position of the arrowhead */
+				border-width: 5px;
+				border-style: solid;
+				border-color: transparent transparent transparent #2980b9;
+			}
+		
+		</style>
+
+		<script src="reveal.js/dist/reveal.js"></script>
+		<script src="reveal.js/plugin/notes/notes.js"></script>
+		<script src="reveal.js/plugin/markdown/markdown.js"></script>
+		<script src="reveal.js/plugin/highlight/highlight.js"></script>
+		<script src="reveal.js/plugin/math/math.js"></script>
+
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				controls: true,
+	
+				//center: false,
+				hash: true,
+	
+				// Visibility rule for backwards navigation arrows; "faded", "hidden"
+				// or "visible"
+				controlsBackArrows: 'visible',
+	
+				// Display a presentation progress bar
+				progress: true,
+	
+				// Display the page number of the current slide
+				slideNumber: true,
+	
+				transition: 'none', // none/fade/slide/convex/concave/zoom/slide
+				// The "normal" size of the presentation, aspect ratio will be preserved
+				// when the presentation is scaled to fit different resolutions. Can be
+				// specified using percentage units.
+				width: 1280,
+				height: 1020, //720,
+	
+				// Factor of the display size that should remain empty around the content
+				margin: 0.05,
+	
+				// Bounds for smallest/largest possible scale to apply to content
+				minScale: 0.2,
+				maxScale: 1.5,
+	
+				autoPlayMedia: true,
+	
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath],
+	
+				dependencies: [{
+						src: 'reveal.js/plugin/markdown/marked.js'
+					},
+					{
+						src: 'reveal.js/plugin/markdown/markdown.js'
+					},
+					{
+						src: 'reveal.js/plugin/notes/notes.js',
+						async: true
+					},
+					{
+						src: 'reveal.js/plugin/math/math.js',
+						async: true
+					},
+					{
+						src: 'reveal.js/plugin/reveal.js-d3/reveald3.js'
+					},
+					{
+						src: 'reveal.js/plugin/reveal.js-plugins/chart/Chart.min.js'
+					},
+					{
+						src: 'reveal.js/plugin/reveal.js-plugins/chart/csv2chart.js'
+					},
+					{
+						src: 'reveal.js/plugin/highlight/highlight.js',
+						async: true
+					},
+				]
+	
+			});
+		</script>
+		
+
+	</body>
+</html>

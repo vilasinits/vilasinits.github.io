@@ -104,3 +104,7 @@ minima:
 # collections:
 #   photos:
 #     output: true
+
+collections:
+  talks:
+    output: true
