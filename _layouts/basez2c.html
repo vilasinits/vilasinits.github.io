@@ -5,16 +5,10 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <!-- <style>
-      body {
-        background-image: url('{{ site.baseurl }}/assets/bkgrnd.jpeg');
-        background-size: contain;/* Add any additional background properties you want here, e.g., background-size, background-repeat, etc. */
-      }
-    </style> -->
   </head>
 
-  <body class="{% if page.title == 'z2C:Workshop' %}z2c{% endif %}">
-    {%- include header.html -%}
+  <body class=z2c>
+    {%- include headerz2c.html -%}
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
@@ -22,7 +16,7 @@
       </div>
     </main>
     
-    {%- include footer.html -%}
+    {%- include footerz2c.html -%}
 
     <script>
       const imageLinks = document.querySelectorAll('.image-link');

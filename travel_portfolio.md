@@ -243,3 +243,30 @@ permalink: /travel.html/
     <span id="close-button" class="close-button">&times;</span>
   </div>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+  const images = document.querySelectorAll('.image-link');
+  const overlay = document.getElementById('image-overlay');
+  const largeImage = document.getElementById('large-image');
+  const closeButton = document.getElementById('close-button');
+
+  images.forEach(image => {
+    image.addEventListener('click', function(e) {
+      e.preventDefault();
+      largeImage.src = this.href;
+      overlay.style.display = 'flex';
+    });
+  });
+
+  closeButton.addEventListener('click', function() {
+    overlay.style.display = 'none';
+  });
+
+  overlay.addEventListener('click', function(e) {
+    if (e.target !== largeImage) {
+      overlay.style.display = 'none';
+    }
+  });
+});
+</script>
