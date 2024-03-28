@@ -186,6 +186,65 @@ permalink: /travel.html/
   </figure>
 </div>
 
+<h3>Rajasthan, India
+<div class="portfolio-grid">
+  <figure class="portfolio-item">
+    <a href="/photos/rajasthan/pic1.jpg" class="image-link">
+      <img src="/photos/rajasthan/pic1.jpg" alt="Place 1">
+    </a>
+    <figcaption>
+    </figcaption>
+  </figure>
+
+  <figure class="portfolio-item">
+    <a href="/photos/rajasthan/pic2.jpg" class="image-link">
+      <img src="/photos/rajasthan/pic2.jpg" alt="Place 1">
+    </a>
+    <figcaption>
+    </figcaption>
+  </figure>
+
+  <figure class="portfolio-item">
+    <a href="/photos/rajasthan/pic3.jpg" class="image-link">
+      <img src="/photos/rajasthan/pic3.jpg" alt="Place 1">
+    </a>
+    <figcaption>
+    </figcaption>
+  </figure>
+
+  <figure class="portfolio-item">
+    <a href="/photos/rajasthan/pic4.jpg" class="image-link">
+      <img src="/photos/rajasthan/pic4.jpg" alt="Place 1">
+    </a>
+    <figcaption>
+    </figcaption>
+  </figure>
+
+  <figure class="portfolio-item">
+    <a href="/photos/rajasthan/pic5.jpg" class="image-link">
+      <img src="/photos/rajasthan/pic5.jpg" alt="Place 1">
+    </a>
+    <figcaption>
+    </figcaption>
+  </figure>
+
+  <figure class="portfolio-item">
+    <a href="/photos/rajasthan/pic6.jpg" class="image-link">
+      <img src="/photos/rajasthan/pic6.jpg" alt="Place 1">
+    </a>
+    <figcaption>
+    </figcaption>
+  </figure>
+
+  <figure class="portfolio-item">
+    <a href="/photos/rajasthan/pic7.jpg" class="image-link">
+      <img src="/photos/rajasthan/pic7.jpg" alt="Place 1">
+    </a>
+    <figcaption>
+    </figcaption>
+  </figure>
+</div>
+
 <h3>Uncategorised
 <div class="portfolio-grid">
   <figure class="portfolio-item">
