@@ -54,7 +54,7 @@ permalink: /travel.html/
   </figure>
 </div>
 
-<h3>The Great Smokeys Mountain, USA
+<h3>The Great Smokey Mountains, USA
 <div class="portfolio-grid">
   <figure class="portfolio-item">
     <a href="/photos/smokeys/pic1.jpg" class="image-link">
