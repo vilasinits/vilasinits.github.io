@@ -520,7 +520,8 @@
   height: 90vh; /* Use 100% of the viewport height */
   text-align: center;
   flex-direction: column; /* Stack items vertically */
-  font-size: 42px;
+  font-size: 38px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .z2cdynamic-title {
@@ -564,7 +565,7 @@
 /* Adjust the .content-section styles if necessary */
 .z2ccontent-section {
   padding: 40px 0;
-  font-size: 20px;
+  font-size: 18px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -583,6 +584,11 @@
 .z2ccontent-section ol li {
   cursor: pointer; /* Change cursor on hover */
   position: relative;
+  transition: transform 0.2s ease; /* Smooth transition for the transform property */
+}
+
+.z2ccontent-section ol li:hover {
+  transform: scale(1.05); /* Slightly enlarge text by 5% on hover */
 }
 
 .description {
@@ -598,4 +604,13 @@
   position: absolute;
   right: -20px;
   top: 0;
+}
+
+/* If you want the anchor tags specifically to enlarge on hover, keep this */
+.z2ccontent-section ol li a {
+  transition: transform 0.2s ease; /* Ensure smooth transition for link text as well */
+}
+
+.z2ccontent-section ol li a:hover {
+  transform: scale(1.1); /* Optional: Enlarge link text by 10% on hover */
 }

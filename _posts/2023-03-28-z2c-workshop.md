@@ -18,10 +18,9 @@ permalink: /z2c-workshop/
 
 <main>
   <section id="about" class="z2ccontent-section">
-  <h1>About</h1>
+  <h1 style="color: orange;">About</h1>
   <br>
   <br>
-    <!-- About content here -->
         Welcome to the "z2C: Zero to Cosmology" workshop, hosted by the PhD and PostDocs of <a href="https://www.cosmostat.org/"><strong>CosmoStat</strong></a> and its collaborators on the April 9th and 10th. People in CosmoStat and its collaborators, come from diverse backgrounds—some steeped in theory, others grounded in observations, and still others bridging the gap between cosmology and computer science. Our collaborative efforts converge on unraveling the mysteries of the cosmos, each of us approaching similar questions from unique perspectives. Our regular meetings, journal clubs, and learning sessions are a testament to this multifaceted approach, enriching our collective understanding and sparking innovative ideas.
         <br>
         Recognizing the value of our diverse expertise, we propose a "back-to-uni" style workshop: "z2C: Zero to Cosmology," scheduled for April 9th and 10th. This initiative is not about exhaustive coverage of cosmology or computer science. Instead, it's about offering a concise, comprehensive introduction to the key topics that frequently surface in our day-to-day work and discussions. By doing so, we aim to make it easier for everyone—regardless of their background—to follow along, participate more actively in discussions, and grasp the broader picture along with the specific advantages and limitations inherent to various approaches.
@@ -30,7 +29,7 @@ permalink: /z2c-workshop/
   </section>
 
 <section id="program" class="z2ccontent-section">
-  <h1>Program</h1>
+  <h1 style="color: orange;">Program</h1>
   <br>
   <br>
   <h3>Day 1</h3>
@@ -101,7 +100,7 @@ permalink: /z2c-workshop/
 </section>
 
 <section id="resources" class="z2ccontent-section">
-  <h1>Resources</h1>
+  <h1 style="color: orange;">Resources</h1>
   <br>
   <br>
   We will put the links to the github repo, codes, slides or any other relevant materials here!
