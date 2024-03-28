@@ -5,20 +5,6 @@ categories: misc
 permalink: /z2c-workshop/
 ---
 
-<!-- <div class="z2c-workshop">
-  <h1>z2C: Workshop</h1>
-  <p>
-    Welcome to the "z2C: Zero to Cosmology" workshop, hosted by the PhD and PostDocs of CosmoStat and its collaborators on the April 9th and 10th. Tailored specifically for master's students, PhD candidates, and postdoctoral researchers, this two-day event is dedicated to seamlessly connecting theoretical knowledge with practical data analysis. Through an engaging combination of lectures and interactive sessions, we aim to provide participants with a solid foundation in cosmology, while also expanding their understanding to encompass a more comprehensive view of the field. Join us for an enriching journey from the basics to the cutting edge of cosmological research.
-  </p>
-  <h2>Program Schedule</h2>
-  <ul>
-    <li>10:00 am - Introduction and Welcome</li>
-    <li>11:00 am - Session 1: Understanding the Basics</li>
-    <li>12:00 pm - Break</li>
-    <li>1:00 pm - Session 2: Advanced Techniques</li>
-  </ul>
-</div> -->
-
 <header class="z2csite-header">
   <div class="z2cdynamic-title">
     <h1 class="z2cmain-title">z2C: Workshop</h1>
@@ -36,7 +22,7 @@ permalink: /z2c-workshop/
   <br>
   <br>
     <!-- About content here -->
-        Welcome to the "z2C: Zero to Cosmology" workshop, hosted by the PhD and PostDocs of CosmoStat and its collaborators on the April 9th and 10th. People in CosmoStat and its collaborators, come from diverse backgrounds—some steeped in theory, others grounded in observations, and still others bridging the gap between cosmology and computer science. Our collaborative efforts converge on unraveling the mysteries of the cosmos, each of us approaching similar questions from unique perspectives. Our regular meetings, journal clubs, and learning sessions are a testament to this multifaceted approach, enriching our collective understanding and sparking innovative ideas.
+        Welcome to the "z2C: Zero to Cosmology" workshop, hosted by the PhD and PostDocs of <a href="https://www.cosmostat.org/"><strong>CosmoStat</strong></a> and its collaborators on the April 9th and 10th. People in CosmoStat and its collaborators, come from diverse backgrounds—some steeped in theory, others grounded in observations, and still others bridging the gap between cosmology and computer science. Our collaborative efforts converge on unraveling the mysteries of the cosmos, each of us approaching similar questions from unique perspectives. Our regular meetings, journal clubs, and learning sessions are a testament to this multifaceted approach, enriching our collective understanding and sparking innovative ideas.
         <br>
         Recognizing the value of our diverse expertise, we propose a "back-to-uni" style workshop: "z2C: Zero to Cosmology," scheduled for April 9th and 10th. This initiative is not about exhaustive coverage of cosmology or computer science. Instead, it's about offering a concise, comprehensive introduction to the key topics that frequently surface in our day-to-day work and discussions. By doing so, we aim to make it easier for everyone—regardless of their background—to follow along, participate more actively in discussions, and grasp the broader picture along with the specific advantages and limitations inherent to various approaches.
         <br>
@@ -51,43 +37,75 @@ permalink: /z2c-workshop/
   <ol>
     <li>GR introduction 
         <div class="description">
-            Contact Person: Sacha, Andreas
+            Contact Person: <a href="https://www.cosmostat.org/people/sacha-guerrini"><strong>Sacha</strong></a>, <a href="https://www.cosmostat.org/people/andreas-tersenov"><strong>Andreas</strong></a>
             <br>
             This will be a 45min lecture and ...
         </div>
     </li>
     <li>Introduction to Cosmology 
         <div class="description">
-            Contact person: Vilasini
+            Contact person: <a href="https://www.cosmostat.org/people/vilasini-tinnaneri-sreekanth"><strong>Vilasini</strong></a>
             <br>
             This will be a 90 min lecture and...
         </div>
     </li>
     <li>Bayes Theorem 
         <div class="description">
-        Contact Person: Lisa Goh, Andreas, Hugo
+        Contact Person: <a href="https://www.cosmostat.org/people/lisa-goh"><strong>Lisa Goh</strong></a>, <a href="https://www.cosmostat.org/people/andreas-tersenov"><strong>Andreas</strong></a>, <a href="link-to-hugo-profile"><strong>Hugo</strong></a>
         <br>
         This will be a 45min lecture and...
         </div>
     </li>
-    <li>Summary Statistics <div class="description">Contact Person: Vilasini <br>This will be a 45min lecture and on day 1...</div></li>
+    <li>Summary Statistics 
+      <div class="description">
+        Contact Person: <a href="https://www.cosmostat.org/people/vilasini-tinnaneri-sreekanth"><strong>Vilasini</strong></a> 
+        <br>
+        This will be a 45min lecture and on day 1...
+      </div>
+    </li>
   </ol>
+
   
   <h3>Day 2</h3>
   <ol>
-    <li>Summary Statistics <div class="description">This will be a 45min lecture and on day2...</div></li>
-    <li>Observables <div class="description">Contact Person: Lucie, Romain, Nicolas, Fabian, Sacha, Lisa, Hugo <br>This will be a 90min lecture and...(WL, GC, CMB, SL, Clusters, SNe1a, GW, Voids)</div></li>
-    <li>ML, Inverse problems (90m) <div class="description">Contact Person: Hubert, Ezequeil <br>This will be a 90min lecture and...</div></li>
-    <li>Surveys (45 min) <div class="description">Contact Person: Fabian <br>This will be a 45min lecture and...</div></li>
+    <li>Summary Statistics 
+      <div class="description">
+        Contact Person: <a href="https://www.cosmostat.org/people/vilasini-tinnaneri-sreekanth"><strong>Vilasini</strong></a> 
+        <br>
+        This will be a 45min lecture and on day2...
+      </div>
+    </li>
+    <li>Observables 
+        <div class="description">
+          Contact Person: <a href="https://www.cosmostat.org/people/lucie-baumont"><strong>Lucie</strong></a>, <a href="https://www.linkedin.com/in/romain-paviot-68853b260/?trk=people-guest_people_search-card&originalSubdomain=fr"><strong>Romain</strong></a>, <a href="https://www.linkedin.com/in/nicolas-cerardi/?originalSubdomain=fr"><strong>Nicolas</strong></a>, <a href="https://www.cosmostat.org/people/fabian-hervas-peters"><strong>Fabian</strong></a>, <a href="https://www.cosmostat.org/people/sacha-guerrini"><strong>Sacha</strong></a>, <a href="https://www.cosmostat.org/people/lisa-goh"><strong>Lisa</strong></a>, <a href="https://www.linkedin.com/in/hsimonfroy/?locale=fr_FR"><strong>Hugo</strong></a>
+          <br>
+          This will be a 90min lecture and...(WL, GC, CMB, SL, Clusters, SNe1a, GW, Voids)
+        </div>
+    </li>
+    <li>ML, Inverse problem 
+      <div class="description">
+        Contact Person: <a href="https://www.cosmostat.org/people/hubert-leterme"><strong>Hubert</strong></a>, <a href="https://www.cosmostat.org/people/ezequiel-centofanti"><strong>Ezequeil</strong></a>
+        <br>
+        This will be a 90min lecture and...
+      </div>
+    </li>
+    <li>Surveys
+      <div class="description">
+        Contact Person: <a href="https://www.cosmostat.org/people/fabian-hervas-peters"><strong>Fabian</strong></a>
+        <br>
+        This will be a 45min lecture and...
+      </div>
+    </li>
   </ol>
+
 </section>
 
-  <section id="resources" class="z2ccontent-section">
-    <h1>Resources</h1>
-    <br>
-    <br>
-    We will put the links to the github repo, codes, slides or any other relevant materials here!
-  </section>
+<section id="resources" class="z2ccontent-section">
+  <h1>Resources</h1>
+  <br>
+  <br>
+  We will put the links to the github repo, codes, slides or any other relevant materials here!
+</section>
 
 </main>
 
