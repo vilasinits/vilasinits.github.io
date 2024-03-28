@@ -2,6 +2,7 @@
 layout: z2c
 title: "z2C:Workshop"
 categories: misc
+permalink: /z2c-workshop/
 ---
 
 <!-- <div class="z2c-workshop">
