@@ -8,11 +8,6 @@ permalink: /z2c-workshop/
 <header class="z2csite-header">
   <div class="z2cdynamic-title">
     <h1 class="z2cmain-title">z2C: Workshop</h1>
-    <!-- <div class="z2cscroll-arrow-container">
-      <a href="#about" class="z2cscroll-down-arrow">
-        &#x2193; 
-      </a>
-    </div> -->
   </div>
 </header>
 
@@ -38,26 +33,26 @@ permalink: /z2c-workshop/
         <div class="description">
             Contact Person: <a href="https://www.cosmostat.org/people/sacha-guerrini"><strong>Sacha</strong></a>, <a href="https://www.cosmostat.org/people/andreas-tersenov"><strong>Andreas</strong></a>
             <br>
-            This will be a 45min lecture and ...
+            General Relativity was published by Einstein in 1915 and has completely changed our understanding of gravity. In this 45 minutes presentation, we will first introduce the ground principles of GR before giving an overview of the mathematical tools used to derive Einstein equations of General Relativity. We will finally conclude by discussing motivation behind beyong-GR theories of gravity and ho the latter can be constructed.
         </div>
     </li>
     <li>Introduction to Cosmology 
         <div class="description">
-            Contact person: <a href="https://www.cosmostat.org/people/vilasini-tinnaneri-sreekanth"><strong>Vilasini</strong></a>
+            Contact person: <a href="https://www.cosmostat.org/people/vilasini-tinnaneri-sreekanth"><strong>Vilasini</strong></a>, <a href="https://www.cosmostat.org/people/andreas-tersenov"><strong>Andreas</strong></a>
             <br>
             This will be a 90 min lecture and...
         </div>
     </li>
     <li>Bayes Theorem 
         <div class="description">
-        Contact Person: <a href="https://www.cosmostat.org/people/lisa-goh"><strong>Lisa Goh</strong></a>, <a href="https://www.cosmostat.org/people/andreas-tersenov"><strong>Andreas</strong></a>, <a href="link-to-hugo-profile"><strong>Hugo</strong></a>
+        Contact Person: <a href="https://www.cosmostat.org/people/lisa-goh"><strong>Lisa Goh</strong></a>, <a href="https://www.cosmostat.org/people/andreas-tersenov"><strong>Andreas</strong></a>, <a href="https://www.linkedin.com/in/hsimonfroy/?locale=fr_FR"><strong>Hugo</strong></a>
         <br>
-        This will be a 45min lecture and...
+        This will be a 90min lecture and...
         </div>
     </li>
     <li>Summary Statistics 
       <div class="description">
-        Contact Person: <a href="https://www.cosmostat.org/people/vilasini-tinnaneri-sreekanth"><strong>Vilasini</strong></a> 
+        Contact Person: <a href="https://www.cosmostat.org/people/fabian-hervas-peters"><strong>Fabian</strong></a>, <a href="https://www.cosmostat.org/people/vilasini-tinnaneri-sreekanth"><strong>Vilasini</strong></a> 
         <br>
         This will be a 45min lecture and on day 1...
       </div>
@@ -76,9 +71,15 @@ permalink: /z2c-workshop/
     </li>
     <li>Observables 
         <div class="description">
-          Contact Person: <a href="https://www.cosmostat.org/people/lucie-baumont"><strong>Lucie</strong></a>, <a href="https://www.linkedin.com/in/romain-paviot-68853b260/?trk=people-guest_people_search-card&originalSubdomain=fr"><strong>Romain</strong></a>, <a href="https://www.linkedin.com/in/nicolas-cerardi/?originalSubdomain=fr"><strong>Nicolas</strong></a>, <a href="https://www.cosmostat.org/people/fabian-hervas-peters"><strong>Fabian</strong></a>, <a href="https://www.cosmostat.org/people/sacha-guerrini"><strong>Sacha</strong></a>, <a href="https://www.cosmostat.org/people/lisa-goh"><strong>Lisa</strong></a>, <a href="https://www.linkedin.com/in/hsimonfroy/?locale=fr_FR"><strong>Hugo</strong></a>
+          Contact Person: <a href="https://www.cosmostat.org/people/lucie-baumont"><strong>Lucie</strong></a>, , <a href="https://www.linkedin.com/in/nicolas-cerardi/?originalSubdomain=fr"><strong>Nicolas</strong></a>, <a href="https://www.cosmostat.org/people/fabian-hervas-peters"><strong>Fabian</strong></a>, <a href="https://www.cosmostat.org/people/lisa-goh"><strong>Lisa</strong></a>, <a href="https://www.linkedin.com/in/hsimonfroy/?locale=fr_FR"><strong>Hugo</strong></a>
           <br>
-          This will be a 90min lecture and...(WL, GC, CMB, SL, Clusters, SNe1a, GW, Voids)
+          This will be a 90min session and the following observables will be covered: <br> <br>
+          <ul>
+          <li> <strong>Strong Lensing: </strong> <br> Contact: <a href="https://www.cosmostat.org/people/sacha-guerrini"><strong>Sacha</strong></a> <br>This short presentation aims at describing the gravitational lensing effect with a focus on its strong regime. We will give the useful theoretical tools to understand this effects before discussing the potentiality of its probes to constrain cosmological parameters. If time allows, a notebook will be presented in which a full analysis of a strong lens is performed, first on simulations, and then on real data. </li>
+          <li> <strong>Galaxy Clustering: </strong> <br> Contact: <a href="https://www.linkedin.com/in/romain-paviot-68853b260/?trk=people-guest_people_search-card&originalSubdomain=fr"><strong>Romain</strong></a> <br>Galaxy clustering corresponds to a field of observational cosmology that aim to extract cosmological informations from the spatial distribution of galaxies. Indeed, the way galaxies agglomerate - the clustering - is driven by gravationnal collapse (and thus the nature of gravity) and by the expansion of the Universe (and therefore the nature of Dark Energy). Looking at the spatial distribution of galaxies at different epochs is therefore a powerful tool to constrain the expansion rate of the Universe and the growth rate of structure. </li>
+          </ul>
+
+
         </div>
     </li>
     <li>ML, Inverse problem 
