@@ -4,7 +4,7 @@ const AWS = require('aws-sdk');
 const s3 = new AWS.S3({
   accessKeyId: process.env.MY_AWS_ACCESS_KEY_ID,
   secretAccessKey: process.env.MY_AWS_SECRET_ACCESS_KEY,
-  region: 'Europe (Paris) eu-west-3',
+  region: 'eu-west-3',
   signatureVersion: 'v4',
 });
 
@@ -24,6 +24,7 @@ exports.handler = async (event) => {
     return {
       statusCode: 200,
       headers: {
+        'Content-Type': 'application/json',
         "Access-Control-Allow-Origin": "https://vilasinits.github.io/z2c-workshop/", // Adjust according to your CORS policy
       },
       body: JSON.stringify({ url }),

@@ -5,8 +5,10 @@ async function uploadToS3() {
       alert('Please select a file first.');
       return;
     }
-    const fileName = file.name; // Or any custom name you wish to use
-    const fileType = file.type;
+
+    // const fileName = file.name; 
+    // const fileType = file.type;
+
     // Fetch pre-signed URL from your Netlify function
     const presignedUrlResponse = await fetch('/.netlify/functions/generate-presigned-url', {
         method: 'POST', // Ensure method is POST to send data
@@ -21,6 +23,7 @@ async function uploadToS3() {
 
     if (!presignedUrlResponse.ok) {
         alert('Failed to get the upload URL.');
+        console.error('Response error:', await presignedUrlResponse.text());
         return;
       }
     const { url } = await presignedUrlResponse.json();
@@ -42,6 +45,7 @@ async function uploadToS3() {
         document.getElementById('uploaded-links').innerHTML += `<a href="${fileUrl}" target="_blank">${fileName}</a><br>`;
       } else {
         alert('Upload failed.');
+        console.error('Upload error:', await uploadResponse.text());
       }
   }
   
