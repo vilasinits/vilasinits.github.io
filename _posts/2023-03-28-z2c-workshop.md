@@ -154,8 +154,10 @@ permalink: /z2c-workshop/
   <button id="login-button">Login to Upload Files</button>
   <div id="upload-area" style="display:none;">
     <input type="file" id="file-input" />
+    <input type="text" id="link-text" placeholder="Enter Title" />
     <button onclick="uploadFile()">Upload File</button>
   </div>
+  <div id="uploaded-links"></div>
 </section>
 
 </main>
@@ -184,7 +186,7 @@ permalink: /z2c-workshop/
   });
 });
 </script>
-
+<!-- 
 <script>
     document.addEventListener('DOMContentLoaded', (event) => {
   document.querySelectorAll('.z2ccontent-section ol li').forEach((item) => {
@@ -193,4 +195,4 @@ permalink: /z2c-workshop/
     });
   });
 });
-</script>
+</script> -->
