@@ -48,5 +48,77 @@
         }
       });
     </script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const allowedEmail = 'z2Cmember';
+        const loginButton = document.getElementById('login-button');
+        const uploadArea = document.getElementById('upload-area');
+      
+        if (window.netlifyIdentity) {
+          // Initialize the widget
+          window.netlifyIdentity.init();
+      
+          // Listen for login button click
+          loginButton.addEventListener('click', function() {
+            window.netlifyIdentity.open(); // Open login modal
+          });
+      
+          // Customizing the login process
+          window.netlifyIdentity.on('login', (user) => {
+            if (user.email === allowedEmail) {
+              // Show upload area for the allowed user
+              uploadArea.style.display = 'block';
+            } else {
+              // Logout and show an error for unauthorized users
+              window.netlifyIdentity.logout();
+              alert('Access is restricted. Please contact the administrator.');
+            }
+          });
+      
+          // Hide upload area and logout on user logout
+          window.netlifyIdentity.on('logout', () => {
+            uploadArea.style.display = 'none';
+          });
+        }
+      });
+      </script>
+
+    <input type="file" id="file-input" />
+    <input type="text" id="link-text" placeholder="Enter Title" />
+    <button onclick="uploadFile()">Upload File</button>
+    <div id="uploaded-links"></div>
+    
+    <script>
+      async function uploadFile() {
+        const fileInput = document.getElementById('file-input');
+        const file = fileInput.files[0];
+        const linkText = document.getElementById('link-text').value;
+      
+        const reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload = async () => {
+          const fileContent = reader.result;
+      
+          const response = await fetch('/.netlify/functions/upload', {
+            method: 'POST',
+            body: JSON.stringify({ 
+              fileContent: fileContent,
+              fileName: file.name
+            }),
+            headers: { 'Content-Type': 'application/json' },
+          });
+      
+          if (response.ok) {
+            const responseData = await response.json();
+            const uploadedLinks = document.getElementById('uploaded-links');
+            uploadedLinks.innerHTML += `<a href="${responseData.link}">${linkText}</a><br>`;
+          } else {
+            console.error('Upload failed');
+          }
+        };
+        reader.onerror = error => console.log(error);
+      }
+      </script>     
   </body>
 </html>

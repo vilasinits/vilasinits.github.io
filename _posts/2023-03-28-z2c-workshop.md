@@ -31,7 +31,7 @@ permalink: /z2c-workshop/
   <ol>
     <li>GR introduction 
         <div class="description">
-            Time: 09:00hrs - 09:45hrs
+            Time: 09:00hrs - 09:45hrs<br>
             Contact Person: <a href="https://www.cosmostat.org/people/sacha-guerrini"><strong>Sacha</strong></a>, <a href="https://www.cosmostat.org/people/andreas-tersenov"><strong>Andreas</strong></a>
             <br>
             General Relativity was published by Einstein in 1915 and has completely changed our understanding of gravity. In this presentation, we will first introduce the ground principles of GR before giving an overview of the mathematical tools used to derive Einstein equations of General Relativity. We will finally conclude by discussing motivation behind beyong-GR theories of gravity and how the latter can be constructed.
@@ -39,15 +39,15 @@ permalink: /z2c-workshop/
     </li>
     <li>Introduction to Cosmology 
         <div class="description">
-            Time: 10:00hrs - 11:45hrs with 15 min break in between
+            Time: 10:00hrs - 11:45hrs with 15 min break in between<br>
             Contact person: <a href="https://www.cosmostat.org/people/vilasini-tinnaneri-sreekanth"><strong>Vilasini</strong></a>, <a href="https://www.cosmostat.org/people/andreas-tersenov"><strong>Andreas</strong></a>
             <br>
             In this presentation, we will embark on a journey through the universe's thermal history, exploring key milestones from the Cosmic Microwave Background (CMB) to the horizon problem, and the theory of cosmic inflation. We'll then delve into baryon acoustic oscillations (BAOs), and the era of the dark ages, and reionization, leading up to the formation of cosmic structures. Through understanding gravitational instability and the Jeans length, we will examine the growth of perturbation modes across different epochs, culminating in an overview of the Lambda-CDM model and alternative cosmological frameworks. The presentation will conclude by addressing the current challenges and open questions in cosmology, offering a comprehensive yet concise exploration of the universe's evolution and structure.
         </div>
     </li>
-    <li>Bayes Theorem 
+    <li>Bayesianism
         <div class="description">
-        Time: 14:00hrs - 15:45hrs with 15 min break in between
+        Time: 14:00hrs - 15:45hrs with 15 min break in between<br>
         Contact Person: <a href="https://www.cosmostat.org/people/lisa-goh"><strong>Lisa Goh</strong></a>, <a href="https://www.cosmostat.org/people/andreas-tersenov"><strong>Andreas</strong></a>, <a href="https://www.linkedin.com/in/hsimonfroy/?locale=fr_FR"><strong>Hugo</strong></a>
         <br>
         This will be a 90min lecture and...
@@ -55,10 +55,11 @@ permalink: /z2c-workshop/
     </li>
     <li>Summary Statistics 
       <div class="description">
-        Time: 16:00hrs - 16:45hrs
+        Time: 16:00hrs - 16:45hrs<br>
         Contact Person: <a href="https://www.cosmostat.org/people/fabian-hervas-peters"><strong>Fabian</strong></a>, <a href="https://www.cosmostat.org/people/vilasini-tinnaneri-sreekanth"><strong>Vilasini</strong></a> 
         <br>
-        In the first session of our summary statistics course, we will introduce the concept of summary statistics, providing an intuitive understanding of its importance in data analysis. The discussion will then pivot to two-point statistics, laying the foundation for why and how we move beyond these traditional methods. 
+        Bayesianism is a formal approach for building-up knowledge and making rational decision under uncertainty. One key application of Bayesianism is that given *a priori* information about the possible states of the world, one is able to propagate information from observed states to unobserved (latent) states, resulting into *a posteriori* information. This propagation process is known as inference.
+        In a cosmological context, this translates typically into an a priori $\Lambda$CDM model, which links latent cosmology ($\Omega$, $H_0$, etc.) to observations (galaxy, lensing, clusters, etc.). From given observations, one is then able to infer cosmology. After a theoretical introduction, we will present current methodology involving sampling methods based on Monte Carlo Markov Chains (MCMC) and variational methods based on Neural Networks (NN).
       </div>
     </li>
   </ol>
@@ -66,7 +67,7 @@ permalink: /z2c-workshop/
   <ol>
     <li>Summary Statistics 
       <div class="description">
-        Time: 09:00hrs-09:45hrs
+        Time: 09:00hrs-09:45hrs<br>
         Contact Person: <a href="https://www.cosmostat.org/people/vilasini-tinnaneri-sreekanth"><strong>Vilasini</strong></a> 
         <br>
         In this second session we'll explore advanced statistical measures including the bispectrum, probability distribution functions (PDFs), L1-norm, and peak and void statistics. The session aims to broaden our statistical toolkit for analyzing complex datasets, and will include hands-on material if time allows, setting the stage for a deeper dive into practical applications.
@@ -74,7 +75,7 @@ permalink: /z2c-workshop/
     </li>
     <li>Observables 
         <div class="description">
-          Time: 10:00hrs-11:45hrs with 15 min break in between
+          Time: 10:00hrs-11:45hrs with 15 min break in between<br>
           <br>
           In this presentation the following observables will be covered: <br> <br>
           <ul>
@@ -110,7 +111,7 @@ permalink: /z2c-workshop/
     </li>
     <li>ML, Inverse problem 
       <div class="description">
-        Time: 14:00hrs-15:45hrs
+        Time: 14:00hrs-15:45hrs<br>
         Contact: <a href="https://www.cosmostat.org/people/hubert-leterme"><strong>Hubert</strong></a>, <a href="https://www.cosmostat.org/people/ezequiel-centofanti"><strong>Ezequeil</strong></a>
         <br>
         In this presentation the following topics will be covered:
@@ -135,7 +136,7 @@ permalink: /z2c-workshop/
     </li>
     <li>Surveys
       <div class="description">
-        Time: 16:00hrs-16:45hrs
+        Time: 16:00hrs-16:45hrs<br>
         Contact Person: <a href="https://www.cosmostat.org/people/fabian-hervas-peters"><strong>Fabian</strong></a>
         <br>
         In this presentation we will give a brief historical overview of the surveys, where the main characteristics will be discussed for each of them.
@@ -149,6 +150,12 @@ permalink: /z2c-workshop/
   <br>
   <br>
   We will put the links to the github repo, codes, slides or any other relevant materials here!
+
+  <button id="login-button">Login to Upload Files</button>
+  <div id="upload-area" style="display:none;">
+    <input type="file" id="file-input" />
+    <button onclick="uploadFile()">Upload File</button>
+  </div>
 </section>
 
 </main>
