@@ -151,13 +151,13 @@ permalink: /z2c-workshop/
   <br>
   We will put the links to the github repo, codes, slides or any other relevant materials here!
 
-  <button id="login-button">Login to Upload Files</button>
+  <!-- <button id="login-button">Login to Upload Files</button>
   <div id="upload-area" style="display:none;">
     <input type="file" id="file-input" />
     <input type="text" id="link-text" placeholder="Enter Title" />
     <button onclick="uploadFile()">Upload File</button>
   </div>
-  <div id="uploaded-links"></div>
+  <div id="uploaded-links"></div> -->
 </section>
 
 </main>
