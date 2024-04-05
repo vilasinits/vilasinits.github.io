@@ -22,7 +22,7 @@ permalink: /z2c-workshop/
         <br>
         Tailored for master's students, PhD candidates, and postdoctoral researchers within CosmoStat and beyond, this workshop will blend lectures with hands-on sessions. Our goal is to ensure that participants not only understand the foundational theories but also how these theories are applied in practice, thereby fostering a deeper comprehension of our work's impact. Join us for an enlightening journey that promises to broaden your horizons and deepen your understanding of the cosmos as we explore it from every angle.
   </section>
-<!-- 
+
 <section id="program" class="z2ccontent-section">
   <h1 style="color: orange;">Program</h1>
   <br>
@@ -40,7 +40,7 @@ permalink: /z2c-workshop/
         <div class="description">
             Contact person: <a href="https://www.cosmostat.org/people/vilasini-tinnaneri-sreekanth"><strong>Vilasini</strong></a>, <a href="https://www.cosmostat.org/people/andreas-tersenov"><strong>Andreas</strong></a>
             <br>
-            In this 90 minutes presentation, we will embark on a journey through the universe's thermal history, exploring key milestones from the Cosmic Microwave Background (CMB) to the horizon problem, and the theory of cosmic inflation. We'll then delve into baryon acoustic oscillations (BAOs), and the era of the dark ages, and reionization, leading up to the formation of cosmic structures. Through understanding gravitational instability and the Jeans length, we will examine the growth of perturbation modes across different epochs, culminating in an overview of the ΛCDM model and alternative cosmological frameworks. The presentation will conclude by addressing the current challenges and open questions in cosmology, offering a comprehensive yet concise exploration of the universe's evolution and structure.
+            In this 90 minutes presentation, we will embark on a journey through the universe's thermal history, exploring key milestones from the Cosmic Microwave Background (CMB) to the horizon problem, and the theory of cosmic inflation. We'll then delve into baryon acoustic oscillations (BAOs), and the era of the dark ages, and reionization, leading up to the formation of cosmic structures. Through understanding gravitational instability and the Jeans length, we will examine the growth of perturbation modes across different epochs, culminating in an overview of the Lambda-CDM model and alternative cosmological frameworks. The presentation will conclude by addressing the current challenges and open questions in cosmology, offering a comprehensive yet concise exploration of the universe's evolution and structure.
         </div>
     </li>
     <li>Bayes Theorem 
@@ -110,7 +110,7 @@ permalink: /z2c-workshop/
       </div>
     </li>
   </ol>
-</section> -->
+</section>
 
 <section id="resources" class="z2ccontent-section">
   <h1 style="color: orange;">Resources</h1>
