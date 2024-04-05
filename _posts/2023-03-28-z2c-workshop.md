@@ -58,15 +58,13 @@ permalink: /z2c-workshop/
       </div>
     </li>
   </ol>
-
-  
   <h3>Day 2</h3>
   <ol>
     <li>Summary Statistics 
       <div class="description">
         Contact Person: <a href="https://www.cosmostat.org/people/vilasini-tinnaneri-sreekanth"><strong>Vilasini</strong></a> 
         <br>
-        In this second session we'll explore advanced statistical measures including the bispectrum, probability distribution functions (PDFs), $\ell_1$-norm, and peak and void statistics. The session aims to broaden our statistical toolkit for analyzing complex datasets, and will include hands-on material if time allows, setting the stage for a deeper dive into practical applications.
+        In this second session we'll explore advanced statistical measures including the bispectrum, probability distribution functions (PDFs), L1-norm, and peak and void statistics. The session aims to broaden our statistical toolkit for analyzing complex datasets, and will include hands-on material if time allows, setting the stage for a deeper dive into practical applications.
       </div>
     </li>
     <li>Observables 
