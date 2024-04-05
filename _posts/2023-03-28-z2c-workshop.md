@@ -33,14 +33,14 @@ permalink: /z2c-workshop/
         <div class="description">
             Contact Person: <a href="https://www.cosmostat.org/people/sacha-guerrini"><strong>Sacha</strong></a>, <a href="https://www.cosmostat.org/people/andreas-tersenov"><strong>Andreas</strong></a>
             <br>
-            General Relativity was published by Einstein in 1915 and has completely changed our understanding of gravity. In this 45 minutes presentation, we will first introduce the ground principles of GR before giving an overview of the mathematical tools used to derive Einstein equations of General Relativity. We will finally conclude by discussing motivation behind beyong-GR theories of gravity and ho the latter can be constructed.
+            General Relativity was published by Einstein in 1915 and has completely changed our understanding of gravity. In this 45 minutes presentation, we will first introduce the ground principles of GR before giving an overview of the mathematical tools used to derive Einstein equations of General Relativity. We will finally conclude by discussing motivation behind beyong-GR theories of gravity and how the latter can be constructed.
         </div>
     </li>
     <li>Introduction to Cosmology 
         <div class="description">
             Contact person: <a href="https://www.cosmostat.org/people/vilasini-tinnaneri-sreekanth"><strong>Vilasini</strong></a>, <a href="https://www.cosmostat.org/people/andreas-tersenov"><strong>Andreas</strong></a>
             <br>
-            This will be a 90 min lecture and...
+            In this 90 minutes presentation, we will embark on a journey through the universe's thermal history, exploring key milestones from the Cosmic Microwave Background (CMB) to the horizon problem, and the theory of cosmic inflation. We'll then delve into baryon acoustic oscillations (BAOs), and the era of the dark ages, and reionization, leading up to the formation of cosmic structures. Through understanding gravitational instability and the Jeans length, we will examine the growth of perturbation modes across different epochs, culminating in an overview of the ΛCDM model and alternative cosmological frameworks. The presentation will conclude by addressing the current challenges and open questions in cosmology, offering a comprehensive yet concise exploration of the universe's evolution and structure.
         </div>
     </li>
     <li>Bayes Theorem 
@@ -54,7 +54,7 @@ permalink: /z2c-workshop/
       <div class="description">
         Contact Person: <a href="https://www.cosmostat.org/people/fabian-hervas-peters"><strong>Fabian</strong></a>, <a href="https://www.cosmostat.org/people/vilasini-tinnaneri-sreekanth"><strong>Vilasini</strong></a> 
         <br>
-        This will be a 45min lecture and on day 1...
+        In the first session of our summary statistics course, we will introduce the concept of summary statistics, providing an intuitive understanding of its importance in data analysis. The discussion will then pivot to two-point statistics, laying the foundation for why and how we move beyond these traditional methods. 
       </div>
     </li>
   </ol>
@@ -66,7 +66,7 @@ permalink: /z2c-workshop/
       <div class="description">
         Contact Person: <a href="https://www.cosmostat.org/people/vilasini-tinnaneri-sreekanth"><strong>Vilasini</strong></a> 
         <br>
-        This will be a 45min lecture and on day2...
+        In this second session we'll explore advanced statistical measures including the bispectrum, probability distribution functions (PDFs), $\ell_1$-norm, and peak and void statistics. The session aims to broaden our statistical toolkit for analyzing complex datasets, and will include hands-on material if time allows, setting the stage for a deeper dive into practical applications.
       </div>
     </li>
     <li>Observables 
