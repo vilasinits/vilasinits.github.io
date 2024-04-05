@@ -186,7 +186,7 @@ permalink: /z2c-workshop/
   });
 });
 </script>
-<!-- 
+
 <script>
     document.addEventListener('DOMContentLoaded', (event) => {
   document.querySelectorAll('.z2ccontent-section ol li').forEach((item) => {
@@ -195,4 +195,4 @@ permalink: /z2c-workshop/
     });
   });
 });
-</script> -->
+</script>
