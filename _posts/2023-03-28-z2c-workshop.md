@@ -58,58 +58,7 @@ permalink: /z2c-workshop/
       </div>
     </li>
   </ol>
-  <h3>Day 2</h3>
-  <ol>
-    <li>Summary Statistics 
-      <div class="description">
-        Contact Person: <a href="https://www.cosmostat.org/people/vilasini-tinnaneri-sreekanth"><strong>Vilasini</strong></a> 
-        <br>
-        In this second session we'll explore advanced statistical measures including the bispectrum, probability distribution functions (PDFs), L1-norm, and peak and void statistics. The session aims to broaden our statistical toolkit for analyzing complex datasets, and will include hands-on material if time allows, setting the stage for a deeper dive into practical applications.
-      </div>
-    </li>
-    <li>Observables 
-        <div class="description">
-          Contact Person: <a href="https://www.cosmostat.org/people/lucie-baumont"><strong>Lucie</strong></a>, , <a href="https://www.linkedin.com/in/nicolas-cerardi/?originalSubdomain=fr"><strong>Nicolas</strong></a>, <a href="https://www.cosmostat.org/people/fabian-hervas-peters"><strong>Fabian</strong></a>, <a href="https://www.cosmostat.org/people/lisa-goh"><strong>Lisa</strong></a>, <a href="https://www.linkedin.com/in/hsimonfroy/?locale=fr_FR"><strong>Hugo</strong></a>
-          <br>
-          This will be a 90min session and the following observables will be covered: <br> <br>
-          <ul>
-          <li> <strong>Strong Lensing: </strong> <br> Contact: <a href="https://www.cosmostat.org/people/sacha-guerrini"><strong>Sacha</strong></a> <br>This short presentation aims at describing the gravitational lensing effect with a focus on its strong regime. We will give the useful theoretical tools to understand this effects before discussing the potentiality of its probes to constrain cosmological parameters. If time allows, a notebook will be presented in which a full analysis of a strong lens is performed, first on simulations, and then on real data. </li>
-          <li> <strong>Galaxy Clustering: </strong> <br> Contact: <a href="https://www.linkedin.com/in/romain-paviot-68853b260/?trk=people-guest_people_search-card&originalSubdomain=fr"><strong>Romain</strong></a> <br>Galaxy clustering corresponds to a field of observational cosmology that aim to extract cosmological informations from the spatial distribution of galaxies. Indeed, the way galaxies agglomerate - the clustering - is driven by gravationnal collapse (and thus the nature of gravity) and by the expansion of the Universe (and therefore the nature of Dark Energy). Looking at the spatial distribution of galaxies at different epochs is therefore a powerful tool to constrain the expansion rate of the Universe and the growth rate of structure. </li>
-          </ul>
-        </div>
-    </li>
-    <li>ML, Inverse problem 
-      <div class="description">
-        Contact: <a href="https://www.cosmostat.org/people/hubert-leterme"><strong>Hubert</strong></a>, <a href="https://www.cosmostat.org/people/ezequiel-centofanti"><strong>Ezequeil</strong></a>
-        <br>
-        In this 90 minutes slot the following will be covered:
-        <ul>
-            <li>General introduction to inverse problems</li>
-            <li>Optimization problems (classical vs Bayesian frameworks)</li>
-            <li>Applications to cosmology:
-                <ul>
-                <li>weak lensing mass mapping</li> 
-                <li>radio-interferometry</li>
-              </ul>
-             </li>
-            <li>Resolution algorithms:
-              <ul>
-              <li>"Classical" approaches</li>
-              <li>Data-driven approaches: deep learning framework</li>
-              </ul>
-            </li>
-            <li>And Uncertainty quantification if time permits.</li>
-        </ul>
-      </div>
-    </li>
-    <li>Surveys
-      <div class="description">
-        Contact Person: <a href="https://www.cosmostat.org/people/fabian-hervas-peters"><strong>Fabian</strong></a>
-        <br>
-        This will be a 45min lecture and...
-      </div>
-    </li>
-  </ol>
+
 
 </section>
 
