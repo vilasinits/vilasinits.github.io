@@ -88,7 +88,7 @@ permalink: /z2c-workshop/
             <li> <strong>Galaxy Clustering: </strong> 
               <br> Contact: <a href="https://www.linkedin.com/in/romain-paviot-68853b260/?trk=people-guest_people_search-card&originalSubdomain=fr"><strong>Romain</strong></a>, <a href="https://www.linkedin.com/in/hsimonfroy/?locale=fr_FR"><strong>Hugo</strong></a> 
               <br>
-              Galaxy clustering corresponds to a field of observational cosmology that aim to extract cosmological informations from the spatial distribution of galaxies. Indeed, the way galaxies agglomerate - the clustering - is driven by gravationnal collapse (and thus the nature of gravity) and by the expansion of the Universe (and therefore the nature of Dark Energy). Looking at the spatial distribution of galaxies at different epochs is therefore a powerful tool to constrain the expansion rate of the Universe and the growth rate of structure. 
+              Galaxy clustering corresponds to a field of observational cosmology that aim to extract cosmological informations from the spatial distribution of galaxies. Indeed, the way galaxies agglomerate - the clustering - is driven by gravitational collapse (and thus the nature of gravity) and by the expansion of the Universe (and therefore the nature of Dark Energy). Looking at the spatial distribution of galaxies at different epochs is therefore a powerful tool to constrain the expansion rate of the Universe and the growth rate of structure. 
             </li>
             <li> <strong>Weak lensing: </strong>
               <br>
@@ -150,14 +150,13 @@ permalink: /z2c-workshop/
   <br>
   <br>
   We will put the links to the github repo, codes, slides or any other relevant materials here!
-
-  <button id="login-button">Login to Upload Files</button>
+  <!-- <button id="login-button">Login to Upload Files</button>
   <div id="upload-area" style="display:none;">
     <input type="file" id="file-input" />
     <input type="text" id="link-text" placeholder="Enter Title" />
     <button onclick="uploadFile()">Upload File</button>
   </div>
-  <div id="uploaded-links"></div>
+  <div id="uploaded-links"></div> -->
 </section>
 
 </main>
