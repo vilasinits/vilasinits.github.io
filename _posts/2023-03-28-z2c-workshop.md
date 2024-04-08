@@ -20,13 +20,21 @@ permalink: /z2c-workshop/
         <br>
         Recognizing the value of our diverse expertise, we propose a "back-to-uni" style workshop: "z2C: Zero to Cosmology," scheduled for April 9th and 10th. This initiative is not about exhaustive coverage of cosmology or computer science. Instead, it's about offering a concise, comprehensive introduction to the key topics that frequently surface in our day-to-day work and discussions. By doing so, we aim to make it easier for everyone—regardless of their background—to follow along, participate more actively in discussions, and grasp the broader picture along with the specific advantages and limitations inherent to various approaches.
         <br>
-        Tailored for master's students, PhD candidates, and postdoctoral researchers within CosmoStat and beyond, this workshop will blend lectures with hands-on sessions. Our goal is to ensure that participants not only understand the foundational theories but also how these theories are applied in practice, thereby fostering a deeper comprehension of our work's impact. Join us for an enlightening journey that promises to broaden your horizons and deepen your understanding of the cosmos as we explore it from every angle.
+        Tailored for master's students, PhD candidates, and postdoctoral researchers within CosmoStat and beyond, this workshop will blend presentations with hands-on sessions. Our goal is to ensure that participants not only understand the foundational theories but also how these theories are applied in practice, thereby fostering a deeper comprehension of our work's impact. Join us for an enlightening journey that promises to broaden your horizons and deepen your understanding of the cosmos as we explore it from every angle.
   </section>
 
 <section id="program" class="z2ccontent-section">
   <h1 style="color: orange;">Program</h1>
   <br>
   <br>
+  <h3> Date and Time: </h3>
+  <ul> 09 April 2024 & 10 April 2024 <br> 09:00hrs - 17:00hrs</ul>
+  <h3> Place: </h3>
+  <ul> 
+    <li> Tuesday: Cassini room, ground floor, Bât 709 (DAp), Orme des Merisiers </li>
+    <li> Wednesday morning: Cassini room, ground floor, Bât 709 (DAp), Orme des Merisiers </li>
+    <li> Wednesday afternoon: Galilée seminar room, Bât 713, Orme des Merisiers </li> 
+  </ul>
   <h3>Day 1</h3>
   <ol>
     <li>GR introduction 
@@ -101,10 +109,11 @@ permalink: /z2c-workshop/
               Contact: <a href="https://www.cosmostat.org/people/lucie-baumont"><strong>Lucie</strong></a>, <a href="https://www.linkedin.com/in/nicolas-cerardi/?originalSubdomain=fr"><strong>Nicolas</strong></a>
               <br>
             </li>
-            <li> <strong> CMB and SNe1a </strong>
+            <li> <strong> CMB</strong>
               <br>
               Contact: <a href="https://www.cosmostat.org/people/lisa-goh"><strong>Lisa</strong></a>
               <br>
+              In this short presentation we aim to cover what the CMB is, and what the state of the art is with CMB.
             </li>
           </ul>
         </div>
