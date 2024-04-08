@@ -108,6 +108,7 @@ permalink: /z2c-workshop/
               <br>
               Contact: <a href="https://www.cosmostat.org/people/lucie-baumont"><strong>Lucie</strong></a>, <a href="https://www.linkedin.com/in/nicolas-cerardi/?originalSubdomain=fr"><strong>Nicolas</strong></a>
               <br>
+              Galaxy clusters, as the most massive collapsed objects in the Universe, occupy the nodes of the Cosmic Web. They are hence tracers of both the formation of structures and the history of expansion. We will describe the different components of galaxy clusters (dark matter, hot gas and galaxies) and present their observational aspects (in optical, Xrays and mm), with their advantages and inconvenients. We will finally review the main cosmological tests with galaxy clusters, develop their principle and the latest results.
             </li>
             <li> <strong> CMB</strong>
               <br>
