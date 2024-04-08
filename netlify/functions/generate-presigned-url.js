@@ -25,7 +25,7 @@ exports.handler = async (event) => {
       statusCode: 200,
       headers: {
         'Content-Type': 'application/json',
-        "Access-Control-Allow-Origin": "https://vilasinits.github.io/z2c-workshop/", // Adjust according to your CORS policy
+        "Access-Control-Allow-Origin": "*", // Adjust according to your CORS policy
       },
       body: JSON.stringify({ url }),
     };

@@ -157,10 +157,10 @@ permalink: /z2c-workshop/
     <button onclick="uploadFile()">Upload File</button>
   </div>
   <div id="uploaded-links"></div> -->
-  <input type="file" id="file-input" />
+  <!-- <input type="file" id="file-input" />
   <input type="text" id="file-name" placeholder="Optional: Enter a file name" />
   <button onclick="uploadToS3()">Upload File</button>
-  <script src="/assets/js/simple-upload-script.js"></script>
+  <script src="/assets/js/simple-upload-script.js"></script> -->
 </section>
 
 </main>
