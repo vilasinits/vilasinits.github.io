@@ -64,6 +64,13 @@ minima:
   #   - { platform: twitter,        user_url: "https://twitter.com/jekyllrb" }
   #   - { platform: youtube,        user_url: "https://www.youtube.com/jekyll" }
 
+header_pages:
+  - index.markdown    # Home page
+  - about.markdown       # CV page
+  - research.md # My Research page
+  - misc.md # Potpourri of Thoughts page
+  - travel_portfolio.md   # Travel page
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

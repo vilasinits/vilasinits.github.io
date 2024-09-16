@@ -1,8 +1,15 @@
 ---
-layout: post
+layout: z2c
 title: "Solo travelling through Baltic countries"
 categories: misc
+image: /assets/warsaw5.jpg
 ---
+<header class="z2csite-header">
+  <div class="z2cdynamic-title">
+    <h1 class="z2cmain-title" style="font-family: 'Brush Script MT, cursive;">Solo travelling through Baltic countries</h1>
+
+  </div>
+</header>
 
 <img src="{{ '/assets/solo-map-route.png' | relative_url }}" alt="Solo Baltic Adventure" style="width:50%; height:auto; float:left; margin-right:20px; margin-bottom:10px;">
 
@@ -144,7 +151,7 @@ As I traveled through Krakow, Warsaw, Riga, Klaipeda, and Vilnius, one of the mo
 
 <h2>Embracing the Unexpected</h2>
 
-<p style="text-align: justify;">This journey was as much about self-discovery as it was about exploring new places. By choosing dormitories and free walking tours, I connected with fellow travelers and locals alike, sharing stories and learning about the world from a variety of perspectives. As an introverted perseon by default, this is a huge step, took all of my will power, and in the end was worth every bit of it! I never knew exactly what the next day would bring, and that was the beauty of it.</p>
+<p style="text-align: justify;">This journey was as much about self-discovery as it was about exploring new places. By choosing dormitories and free walking tours, I connected with fellow travelers and locals alike, sharing stories and learning about the world from a variety of perspectives. As an introverted person by default, this is a huge step, took all of my will power, and in the end was worth every bit of it! I never knew exactly what the next day would bring, and that was the beauty of it.</p>
 
 <p style="text-align: justify;">From the missed bus in Klaipeda to the chance encounters on walking tours, these moments of unpredictability became the highlights of the trip. Traveling without a fixed plan allowed me to embrace the spontaneous nature of the journey, and in doing so, I learned to trust the road, knowing it would lead me exactly where I needed to go.</p>
 

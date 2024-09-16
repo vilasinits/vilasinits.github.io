@@ -1,8 +1,15 @@
 ---
-layout: post
+layout: z2c
 title: "Exploring the Royal Cities: Jodhpur, Jaipur, and Udaipur"
 categories: misc
+image: /assets/camel1.JPG
 ---
+<header class="z2csite-header">
+  <div class="z2cdynamic-title">
+    <h1 class="z2cmain-title" style="font-family: 'Brush Script MT, cursive;">Exploring the Royal Cities: Jodhpur, Jaisalmer, and Udaipur</h1>
+
+  </div>
+</header>
 
 <p style="text-align: justify;">Rajasthan is a land of vibrant culture, royal heritage, and breathtaking landscapes, and I had the privilege of exploring three of its most iconic cities—Jaisalmer, Jodhpur, and Udaipur—with my parents. Each city had its unique charm, from the golden sands of Jaisalmer to the blue streets of Jodhpur and the serene lakes of Udaipur. Here's a glimpse into our family adventure through this magnificent state.</p>
 
