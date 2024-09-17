@@ -3,51 +3,149 @@ layout: page
 title: Travel
 permalink: /travel.html/
 ---
+
+<style>
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  .portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .portfolio-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.1s ease;
+  }
+
+  .portfolio-item:hover img {
+    transform: scale(1.15); /* Slight zoom on hover */
+  }
+
+  .portfolio-item figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9em;
+    display: none; /* Hidden by default, can be used later for captions */
+  }
+
+  .portfolio-item:hover figcaption {
+    display: block;
+  }
+
+    /* Overlay styles */
+  .image-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  /* Image container in overlay */
+  .image-container {
+    max-width: 90%;
+    max-height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Ensure the large image maintains its aspect ratio and is centered */
+  .image-container img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain; /* Maintain aspect ratio */
+    border-radius: 10px;
+    margin: auto;
+  }
+
+  /* Close button */
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+    background: none;
+    border: none;
+  }
+
+  /* Ensure everything works responsively */
+  @media (max-width: 768px) {
+    .portfolio-item img {
+      height: 150px;
+    }
+}
+</style>
+
 <h3>Athens, Greece
 <div class="portfolio-grid">
   <figure class="portfolio-item">
-    <a href="/photos/greece/pic7.jpg" class="image-link">
-      <img src="/photos/greece/pic7.jpg" alt="Place 1">
+    <a href="/photos/greece/pic7.webp" class="image-link">
+      <img src="/photos/greece/pic7.webp" alt="Place 1">
+    </a>
+    <figcaption> Athens, greece
+    </figcaption>
+  </figure>
+
+  <figure class="portfolio-item">
+    <a href="/photos/greece/pic2.webp" class="image-link">
+      <img src="/photos/greece/pic2.webp" alt="Place 1">
+    </a>
+    <figcaption> Acropolic in Athens
+    </figcaption>
+  </figure>
+
+  <figure class="portfolio-item">
+    <a href="/photos/greece/pic3.webp" class="image-link">
+      <img src="/photos/greece/pic3.webp" alt="Place 1">
     </a>
     <figcaption>
     </figcaption>
   </figure>
 
   <figure class="portfolio-item">
-    <a href="/photos/greece/pic2.jpg" class="image-link">
-      <img src="/photos/greece/pic2.jpg" alt="Place 1">
+    <a href="/photos/greece/pic4.webp" class="image-link">
+      <img src="/photos/greece/pic4.webp" alt="Place 1">
     </a>
     <figcaption>
     </figcaption>
   </figure>
 
   <figure class="portfolio-item">
-    <a href="/photos/greece/pic3.jpg" class="image-link">
-      <img src="/photos/greece/pic3.jpg" alt="Place 1">
+    <a href="/photos/greece/pic5.webp" class="image-link">
+      <img src="/photos/greece/pic5.webp" alt="Place 1">
     </a>
     <figcaption>
     </figcaption>
   </figure>
 
   <figure class="portfolio-item">
-    <a href="/photos/greece/pic4.jpg" class="image-link">
-      <img src="/photos/greece/pic4.jpg" alt="Place 1">
-    </a>
-    <figcaption>
-    </figcaption>
-  </figure>
-
-  <figure class="portfolio-item">
-    <a href="/photos/greece/pic5.jpg" class="image-link">
-      <img src="/photos/greece/pic5.jpg" alt="Place 1">
-    </a>
-    <figcaption>
-    </figcaption>
-  </figure>
-
-  <figure class="portfolio-item">
-    <a href="/photos/greece/pic6.jpg" class="image-link">
-      <img src="/photos/greece/pic6.jpg" alt="Place 1">
+    <a href="/photos/greece/pic6.webp" class="image-link">
+      <img src="/photos/greece/pic6.webp" alt="Place 1">
     </a>
     <figcaption>
     </figcaption>
