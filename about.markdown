@@ -34,10 +34,18 @@ permalink: /cv.html/
 - [XV Tonale Cosmology Winter School, Dec 4th-10th 2022, Passo del Tonale, Italy](https://indico.physi.uni-heidelberg.de/event/728/)
 - [Future Cosmology April 23th – 29th, 2023, IESC Cargese, France (Poster)](https://www.cpt.univ-mrs.fr/~cosmo/EC2023/index.php)
 - [ADA X summer school, Sept 18-22 2023, Hersonissos, Crete, Greece](https://ada10.cosmostat.org/)
+- Colloque national Action Dark Energy, Nov 06-07 2023, Annecy, France (Talk)
+- TOSCA reunion meeting, Nov 16-17 2023, Nice, France (Talk)
+- Euclid-France Symposium 12 - 24-26 2024, Lyon, France (Talk)
+- Cosmology and Statistics Days, 01-02 February, CosmoStat, CEA Paris-Saclay, France (Talk)
+- Euclid-SWG WL meeting 19-21 February, 2024, Innsbruck, Austria (Talk)
+- COSMO21, 21-24 December, 2024, Chania, Greece (Talk)
+- Euclid Consortium meeting,17-21 June 2024, Rome, Italy
 
 
 ## Publications
 - In prep: "Cosmological N-body simulations with topological defects"
+- Accepted: ["Theoretical wavelet ℓ1-norm from one-point PDF prediction"](https://www.aanda.org/component/article?access=doi&doi=10.1051/0004-6361/202450061)
 
 ## Awards and Scholarships
 - Excellence Master Fellowship recepient at [UNIGE](https://www.unige.ch/sciences/en/enseignements/formations/masters/excellencemasterfellowships/)

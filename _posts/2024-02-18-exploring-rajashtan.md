@@ -1,6 +1,6 @@
 ---
 layout: z2c
-title: "Exploring the Royal Cities: Jodhpur, Jaipur, and Udaipur"
+title: "Exploring the Royal Cities: Jodhpur, Jaisalmer, and Udaipur"
 categories: misc
 image: /assets/camel1.JPG
 ---
