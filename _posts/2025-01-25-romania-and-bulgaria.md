@@ -12,7 +12,7 @@ image: /assets/romania_title.JPEG
 </header>
 
 <h1> Romania </h1>
-<p>This winter, we had the chance to visit Romania, a country that left me unexpectedly enchanted. My journey began in <strong>Bucharest</strong>, where we immersed myself in the city’s vibrant culture through walking tours. One of the highlights was visiting the famous <strong>Cărtureștwe bookstore</strong>—a stunning space filled with books and unique gifts. On the top floor, we discovered a cozy café, which unfortunately was closed by the time we had gotten there- we got distracted by the books collection!.</p>
+<p>This winter, we had the chance to visit Romania, a country that left me unexpectedly enchanted. Our journey began in <strong>Bucharest</strong>, where we immersed ourselves in the city’s vibrant culture through walking tours. One of the highlights was visiting the famous <strong>Cărtureștwe bookstore</strong>—a stunning space filled with books and unique gifts. On the top floor, we discovered a cozy café, which unfortunately was closed by the time we had gotten there- we got distracted by the books collection!.</p>
     
 <h2>Exploring Brașov</h2>
 
@@ -50,9 +50,10 @@ image: /assets/romania_title.JPEG
 </figure>
 
 <h2>Final Reflections</h2>
-<p style="text-align: justify;">Returning to Bucharest, we reflected on how much we had experienced in such a short time. Romania had surprised me with its diverse architecture, breathtaking landscapes, and festive holiday spirit. we loved the vegetarian dishes we tried, the warm and cozy feel of the Christmas markets, and the countless cups of hot chocolate we indulged in along the way.</p>
+<p style="text-align: justify;">Returning to Bucharest, I reflected on how much I had experienced in such a short time. Romania had surprised me with its diverse architecture, breathtaking landscapes, and festive holiday spirit. I loved the vegetarian dishes I tried, the warm and cozy feel of the Christmas markets, and the countless cups of hot chocolate I indulged in along the way. Watching the traditional bear dance performances in Brașov and Sibiu was particularly memorable. The bear dance, a traditional Romanian ritual performed around the winter holidays, featured dancers wearing elaborate bear costumes made of real fur. Accompanied by rhythmic drumbeats and chants, the performers moved with a raw, primal energy that was both captivating and symbolic. It was fascinating to learn that this ritual, rooted in ancient traditions, was believed to chase away evil spirits and bring good fortune for the year ahead.</p>
 
-<p style="text-align: justify;">Above all, what struck me most was the beauty of the countryside. Despite knowing Romania was sparsely populated, we wasn’t prepared for how stunning and peaceful it would feel. From snowy castles to underground marvels, Romania gave me memories I’ll treasure forever.</p>
+<p style="text-align: justify;">Above all, what struck me most was the beauty of the countryside. Despite knowing Romania was sparsely populated, I wasn’t prepared for how stunning and peaceful it would feel. From snowy castles to underground marvels, Romania gave me memories I’ll treasure forever.</p>
+
 
 <h2>Exploring Bulgaria: Sofia, Plovdiv, and Beyond</h2>
 
@@ -88,3 +89,5 @@ image: /assets/romania_title.JPEG
 <p style="text-align: justify;">We returned to <strong>Sofia</strong> to spend New Year’s Eve, but we hadn’t anticipated how many restaurants would be closed for the holiday. The few that were open had been booked well in advance, leaving us with limited options. In the end, we grabbed gyros from a stall and strolled around the city. The crisp, -6°C air made it difficult to stay out for long, so we called it an early night.</p>
 
 <p style="text-align: justify;">The next day, we explored more of Sofia’s landmarks, including its stunning <strong>cathedrals</strong>. The mix of historical and modern elements in the city made for a fascinating experience. As our time in Bulgaria came to an end, we felt grateful for the blend of planned adventures and unexpected moments that made the trip so memorable.</p>
+
+<p style="text-align: justify;">As my journey through Romania and Bulgaria came to an end, I couldn’t help but feel grateful for the incredible memories—snowy castles, mesmerizing traditions, breathtaking landscapes, and charming towns. The trip was made even more delightful by the countless stray cats we encountered, whose charm often derailed our plans as we stopped to pet every friendly feline that crossed our path. Yet, I know there’s still so much left to explore in these beautiful countries, and I hope to return someday to uncover even more of their hidden treasures.</p>
