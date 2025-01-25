@@ -12,7 +12,8 @@ image: /assets/romania_title.JPEG
 </header>
 
 <h1> Romania </h1>
-<p>This winter, we had the chance to visit Romania, a country that left me unexpectedly enchanted. Our journey began in <strong>Bucharest</strong>, where we immersed ourselves in the city’s vibrant culture through walking tours. One of the highlights was visiting the famous <strong>Cărtureștwe bookstore</strong>—a stunning space filled with books and unique gifts. On the top floor, we discovered a cozy café, which unfortunately was closed by the time we had gotten there- we got distracted by the books collection!.</p>
+
+<p style="text-align: justify;">This winter, we had the chance to visit Romania, a country that left me unexpectedly enchanted. Our journey began in <strong>Bucharest</strong>, where we immersed ourselves in the city’s vibrant culture through walking tours. One of the highlights was visiting the famous <strong>Cărtureștwe bookstore</strong>—a stunning space filled with books and unique gifts. On the top floor, we discovered a cozy café, which unfortunately was closed by the time we had gotten there- we got distracted by the books collection!.</p>
     
 <h2>Exploring Brașov</h2>
 
@@ -21,9 +22,9 @@ image: /assets/romania_title.JPEG
   <figcaption>Bran castle</figcaption>
 </figure>
 
-<p>From Bucharest, we took a train to <strong>Brașov</strong>, a town that felt like it was pulled straight from a postcard. As the train wound its way through snowy landscapes, we could feel the excitement building. Brașov greeted me with its charming cobbled streets, colorful buildings, and the towering <strong>Black Church</strong>. Visiting <strong>Bran Castle</strong> was the highlight of this leg of my trip. Snow began to fall as we approached, transforming the castle into a magical, wintry masterpiece. It felt like something out of a dream.</p>
+<p style="text-align: justify;">From Bucharest, we took a train to <strong>Brașov</strong>, a town that felt like it was pulled straight from a postcard. As the train wound its way through snowy landscapes, we could feel the excitement building. Brașov greeted me with its charming cobbled streets, colorful buildings, and the towering <strong>Black Church</strong>. Visiting <strong>Bran Castle</strong> was the highlight of this leg of my trip. Snow began to fall as we approached, transforming the castle into a magical, wintry masterpiece. It felt like something out of a dream.</p>
 
-<p>While in Brașov, we tried <strong>cozonac</strong>, a traditional Romanian cake. Its rich, slightly sweet flavor and soft texture were perfect for the cold winter day. The experience was made even better by the cozy atmosphere at the bistro aptly called- Couchette, traveller's bistro, which was popular amongst the visitors due to its proximity to the train station, and which had absolutule friendly staff- who helped me figure the logistics.</p>
+<p style="text-align: justify;">While in Brașov, we tried <strong>cozonac</strong>, a traditional Romanian cake. Its rich, slightly sweet flavor and soft texture were perfect for the cold winter day. The experience was made even better by the cozy atmosphere at the bistro aptly called- Couchette, traveller's bistro, which was popular amongst the visitors due to its proximity to the train station, and which had absolutule friendly staff- who helped me figure the logistics.</p>
 
 <figure style="width:30%; float:left; margin-right:20px; margin-bottom:10px;">
   <img src="{{ '/assets/cozonac.jpg' | relative_url }}" alt="Cozonac" style="width:100%; height:auto;">
