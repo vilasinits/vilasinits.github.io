@@ -13,7 +13,7 @@ image: /assets/romania_title.JPEG
 
 <h1> Romania </h1>
 
-<p style="text-align: justify;">This winter, we had the chance to visit Romania, a country that left me unexpectedly enchanted. Our journey began in <strong>Bucharest</strong>, where we immersed ourselves in the city’s vibrant culture through walking tours. One of the highlights was visiting the famous <strong>Cărtureștwe bookstore</strong>—a stunning space filled with books and unique gifts. On the top floor, we discovered a cozy café, which unfortunately was closed by the time we had gotten there- we got distracted by the books collection!.</p>
+<p style="text-align: justify;">This winter, we had the chance to visit Romania, a country that left me unexpectedly enchanted. Our journey began in <strong>Bucharest</strong>, where we immersed ourselves in the city’s vibrant culture through walking tours. One of the highlights was visiting the famous <strong>Cărtureștwe bookstore</strong>—a stunning space filled with books and unique gifts. On the top floor, we discovered a cozy café, which unfortunately was closed by the time we had gotten there- we got distracted by the books collection!</p>
     
 <h2>Exploring Brașov</h2>
 
@@ -32,7 +32,7 @@ image: /assets/romania_title.JPEG
 </figure>
 
 <h2>A Spontaneous Detour to Turda</h2>
-<p>After Brașov, we boarded a night train to Cluj but decided, on a whim, to get off early at <strong>Câmpia Turzii</strong>. This unplanned detour turned into one of my favorite parts of the trip. From there, we caught a bus to <strong>Turda</strong>, where we had breakfast before visiting <strong>Salina Turda</strong>. This underground salt mine was breathtaking, with its enormous caverns and an ethereal underground lake. Walking through the surreal tunnels, we couldn’t help but marvel at how unique and unexpected this experience was.</p>
+<p style="text-align: justify;">After Brașov, we boarded a night train to Cluj but decided, on a whim, to get off early at <strong>Câmpia Turzii</strong>. This unplanned detour turned into one of my favorite parts of the trip. From there, we caught a bus to <strong>Turda</strong>, where we had breakfast before visiting <strong>Salina Turda</strong>. This underground salt mine was breathtaking, with its enormous caverns and an ethereal underground lake. Walking through the surreal tunnels, we couldn’t help but marvel at how unique and unexpected this experience was.</p>
 
 <h2>Wandering Cluj and Sibiu</h2>
 
