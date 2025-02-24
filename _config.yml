@@ -68,7 +68,7 @@ header_pages:
   - index.markdown    # Home page
   - about.markdown       # CV page
   - research.md # My Research page
-  - misc.md # Potpourri of Thoughts page
+  - thoughts.md # Potpourri of Thoughts page
   - travel_portfolio.md   # Travel page
 
 # Exclude from processing.
@@ -116,3 +116,9 @@ header_pages:
 # collections:
 #   talks:
 #     output: true
+
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: mathjax

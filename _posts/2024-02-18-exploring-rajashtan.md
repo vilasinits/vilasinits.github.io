@@ -6,7 +6,7 @@ image: /assets/camel1.JPG
 ---
 <header class="z2csite-header">
   <div class="z2cdynamic-title">
-    <h1 class="z2cmain-title" style="font-family: 'Brush Script MT, cursive;">Exploring the Royal Cities: Jodhpur, Jaisalmer, and Udaipur</h1>
+    <h1 class="z2cmain-title" style="font-family: 'Brush Script MT', cursive;">Exploring the Royal Cities: Jodhpur, Jaisalmer, and Udaipur</h1>
 
   </div>
 </header>

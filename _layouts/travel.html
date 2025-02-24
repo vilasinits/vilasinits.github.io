@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body class>
+    
+    {%- include header.html -%}
+
+    <section class="about-section">
+        <div class="about-container">
+          <div class="about-content">
+            <h2 class="about-title">Through the Lens</h2>
+            <div class="about-text">
+              <p class="lead">Capturing moments where light meets soul</p>
+              <p>I wander with my camera as my companion, especially when I’m in unfamiliar places, letting light, color, and architecture guide my thoughts. Each frame holds more than just a scene—it tries to capture the pulse beneath it: the rush of life, the quiet of reflection, the melancholy, and the peace. Through my lens, I try to preserve the fleeting moments that make a place unique—the raw beauty of its people, its spaces, its soul. Each shot is a letter from me to the world, an honest attempt to share what many might miss in the bustle of everyday life. </p>
+              <div class="signature">
+                <span>✧ Explore. Frame. Reveal. ✧</span>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {% if page.layout == 'travel' %}
+            <div class="gallery">
+                {{ content }}
+            </div>
+        {% else %}
+            {{ content }}
+        {% endif %}
+      </div>
+    </main>
+    
+    {%- include footer.html -%}
+
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        body {
+          font-family: Arial, sans-serif;
+          color: #333;
+          overflow-x: hidden;
+        }
+
+        .wrapper {
+            max-width: 1500px;
+            margin: 0 auto;
+            overflow: hidden;
+          }
+          
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Flexible columns */
+            grid-auto-rows: minmax(100px, auto); /* Rows adapt to content size */
+            gap: 2vmin;
+            width: 100%; /* Full width of the window */
+            min-height: 150vh; /* At least the height of the viewport */
+            padding: 1rem;
+            box-sizing: border-box;
+            grid-auto-flow: row;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            object-fit: cover; /* Ensure images fill the grid cell without distortion */
+            border-radius: 0.5rem; /* Optional: adds rounded corners */
+        }     
+
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+            aspect-ratio:1;
+            z-index: 100;
+        }
+      
+        .portfolio-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            will-change: transform;
+            cursor: pointer;
+        }
+      
+        @media (max-width: 768px) {
+          .gallery {
+            grid-template-columns: 1fr;
+          }
+          
+          .portfolio-item[data-ratio] {
+            grid-column: span 1 !important;
+            grid-row: span 1 !important;
+          }
+        }
+
+        .image-link {
+            display: block;
+            width: 100%;
+            height: 100%;
+            cursor: zoom-in;
+        }
+
+        .portfolio-item img:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Lightbox Styles */
+        .lightbox-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            cursor: pointer;
+        }
+
+        .lightbox-content {
+            position: relative;
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+        .lightbox-image {
+            max-height: 80vh;
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+        }
+        
+        .close-btn {
+            position: absolute;
+            top: -35px;
+            right: -35px;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease;
+        }
+
+        .close-btn:hover {
+            transform: rotate(90deg);
+        }
+        
+        @media (max-width: 768px) {
+            .close-btn {
+                top: -25px;
+                right: 0;
+            }
+        }
+
+        
+        .about-section {
+          padding: 4rem 0;
+          background: linear-gradient(
+            to right bottom, 
+            rgba(34, 34, 34, 0.95), 
+            rgba(25, 25, 25, 0.98)
+          );
+          position: relative;
+          overflow: hidden;
+          z-index: 2;
+          margin: 2rem 0;
+        }
+      
+        .about-section::before {
+          content: '';
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          right: 0px;
+          bottom: 0px;
+          background: url('/photos/thumbs/crete/pic1-400.webp') center/cover;
+          filter: grayscale(100%) blur(3px);
+          opacity: 0.5;
+          z-index: -1;
+        }
+      
+        .about-container {
+          max-width: 800px;
+          margin: 0 auto;
+          padding: 2rem;
+          background: rgba(255, 255, 255, 0.05);
+          border-radius: 15px;
+          backdrop-filter: blur(8px);
+          box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+          position: relative;
+        }
+      
+        .about-title {
+          font-family: 'Playfair Display', serif;
+          font-size: 2.5rem;
+          color: #e6e6e6;
+          text-align: center;
+          margin-bottom: 2rem;
+          letter-spacing: 2px;
+          position: relative;
+        }
+      
+        .about-title::after {
+          content: '';
+          position: absolute;
+          bottom: -10px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 60px;
+          height: 2px;
+          background: #c5a782;
+        }
+      
+        .about-text {
+          font-size: 1.1rem;
+          line-height: 1.8;
+          color: #d9d9d9;
+          position: relative;
+        }
+      
+        .lead {
+          font-size: 1.3rem;
+          font-style: italic;
+          color: #c5a782;
+          margin-bottom: 2rem;
+          text-align: center;
+          display: block;
+        }
+      
+        .signature {
+          margin-top: 2rem;
+          text-align: center;
+          font-family: 'Dancing Script', cursive;
+          font-size: 1.4rem;
+          color: #e6e6e6;
+          opacity: 0.9;
+        }
+      
+        /* Animation */
+        .about-container {
+          animation: fadeInUp 1s ease-out;
+        }
+      
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      
+        @media (max-width: 768px) {
+          .about-container {
+            margin: 0 1rem;
+            padding: 1.5rem;
+          }
+          
+          .about-title {
+            font-size: 2rem;
+          }
+          
+          .lead {
+            font-size: 1.1rem;
+          }
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Auto-detect image orientation
+            document.querySelectorAll('.portfolio-item img').forEach(img => {
+            img.addEventListener('load', function() {
+                const parent = this.closest('.portfolio-item');
+                const ratio = this.naturalWidth / this.naturalHeight;
+                parent.dataset.ratio = ratio > 4. ? 'landscape' : ratio < 3.1 ? 'portrait' : 'square';
+            });
+            });
+
+            // Lightbox functionality
+            const lightboxOverlay = document.getElementById('lightboxOverlay');
+            const lightboxImage = document.getElementById('lightboxImage');
+            const closeBtn = document.getElementById('closeBtn');
+
+            document.querySelectorAll('.portfolio-item .image-link').forEach(link => {
+                link.addEventListener('click', (e) => {
+                  e.preventDefault();
+                  // Instead of taking the thumbnail src, get the full-size path
+                  const fullsize = link.dataset.fullsize;   // <-- important line
+                  lightboxImage.src = fullsize;             // set to full-size
+                  lightboxOverlay.style.display = 'flex';
+                  document.body.style.overflow = 'hidden';
+                });
+            });
+
+            // Add to lightbox functionality
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') closeLightbox();
+            });
+
+            closeBtn.addEventListener('click', closeLightbox);
+            lightboxOverlay.addEventListener('click', (e) => {
+                if (e.target === lightboxOverlay) closeLightbox();
+            });
+
+            function closeLightbox() {
+                lightboxOverlay.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        
+            // Lazy loading
+            const lazyImages = document.querySelectorAll('img.lazy');
+            const lazyObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                const img = entry.target;
+                img.srcset = img.dataset.srcset;
+                img.classList.add('loaded');
+                lazyObserver.unobserve(img);
+                }
+            });
+            });
+            lazyImages.forEach(img => lazyObserver.observe(img));
+        
+
+        });
+
+    </script>
+
+    <!-- Add before </body> -->
+    <div class="lightbox-overlay" id="lightboxOverlay">
+        <div class="lightbox-content">
+            <span class="close-btn" id="closeBtn">&times;</span>
+            <img class="lightbox-image" id="lightboxImage" alt="Enlarged view">
+        </div>
+    </div>
+
+  </body>
+</html>
+

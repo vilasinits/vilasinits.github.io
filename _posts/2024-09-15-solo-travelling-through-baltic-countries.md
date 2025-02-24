@@ -6,7 +6,7 @@ image: /assets/warsaw5.jpg
 ---
 <header class="z2csite-header">
   <div class="z2cdynamic-title">
-    <h1 class="z2cmain-title" style="font-family: 'Brush Script MT, cursive;">Solo travelling through Baltic countries</h1>
+    <h1 class="z2cmain-title" style="font-family: 'Brush Script MT', cursive;">Solo travelling through Baltic countries</h1>
 
   </div>
 </header>

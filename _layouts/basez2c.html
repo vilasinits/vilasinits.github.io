@@ -51,6 +51,20 @@
         }
       });
     </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$','$$'], ['\\[','\\]']],
+          packages: {'[+]': ['ams']},
+        },
+        loader: {load: ['[tex]/ams']},
+        chtml: {font: 'TeX'}  /* or 'STIX', 'Asana Math', etc. */
+      };
+    </script>
+    <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
     <!-- <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script>
       if (window.netlifyIdentity) {
@@ -64,6 +78,6 @@
       }
     </script>
     <script src="/assets/js/upload.js"></script> -->
-  
+    
   </body>
 </html>
