@@ -40,7 +40,7 @@ image: /assets/romania_title.JPEG
   <figcaption>A random street in Cluj</figcaption>
 </figure>
 
-<p style="text-align: justify;">Later, we made **our** way to <strong>Cluj</strong>, where the town’s Austro-Hungarian architecture created a different but equally beautiful vibe. **We** wandered through its streets, admiring shops filled with handmade pottery featuring intricate, colorful designs. Each piece felt like a tiny window into Romania’s rich artistic tradition.</p>
+<p style="text-align: justify;">Later, we made our way to <strong>Cluj</strong>, where the town’s Austro-Hungarian architecture created a different but equally beautiful vibe. **We** wandered through its streets, admiring shops filled with handmade pottery featuring intricate, colorful designs. Each piece felt like a tiny window into Romania’s rich artistic tradition.</p>
 
 <p style="text-align: justify;">My journey continued to <strong>Sibiu</strong>, where Christmas lights and decorations adorned the streets. The <strong>ASTRA Museum</strong>, an open-air showcase of traditional Romanian life, was a highlight of my visit. The museum featured an impressive collection of model houses from various regions across Romania, each uniquely crafted to reflect the lifestyle, culture, and occupation of its original inhabitants. It was fascinating to see how the design of a house varied depending on whether it belonged to farmers, craftsmen, or fishermen, and how the architectural styles were influenced by the towns or regions they came from. Strolling among the old wooden houses and traditional windmills, we felt as though we had stepped back in time, walking through centuries of Romanian history.</p>
 
