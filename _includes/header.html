@@ -6,55 +6,15 @@
   <title>Vilasini Tinnaneri Sreekanth</title>
   <style>
     /* CSS styles for the header and navigation */
-
     /* Header container styles */
-    .header-container {
-      display: flex;
+     /* Flex container for header */
+     .header-container {
+      max-width: 1200px; /* Center the content within the screen */
+      margin: 0 auto; /* Ensure the content is centered */
+      display: grid;
       justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-    }
-
-    /* Site title styles */
-    .site-title {
-      font-size: 1.5em; /* Adjust size of the title */
-      font-weight: bold;
-      text-decoration: none;
-      color: #333;
-    }
-
-    .site-title:hover {
-      color: #007BFF; /* Change color on hover */
-    }
-
-    /* Navigation styles */
-    .site-nav {
-      display: flex;
-      align-items: center;
-    }
-
-    .site-nav .trigger {
-      display: flex;
-      gap: 20px; /* Space between links */
-    }
-
-    .page-link {
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
-
-    .page-link:hover {
-      color: #007BFF;
-    }
-
-    /* For mobile view */
-    .nav-trigger {
-      display: none; /* Hide checkbox for mobile nav */
-    }
-
-    .menu-icon {
-      display: none; /* Hide the mobile icon */
+      align-items: space-evenly;
+      padding: 0 100px; /* Add some padding to the sides */
     }
 
     /* Responsive styling for mobile */
@@ -69,33 +29,11 @@
         cursor: pointer;
       }
 
-      .trigger {
-        display: none;
-      }
-
       #nav-trigger:checked ~ .trigger {
         display: block;
         flex-direction: column;
         gap: 10px;
       }
-    }
-
-    /* Full-width header */
-    .site-header {
-      width: 100%;
-      background-color: #f8f9fa; /* Change this to match your theme */
-      padding: 10px 0; /* Padding to give it some space */
-      border-bottom: 1px solid #e5e5e5; /* Optional: Add a border at the bottom */
-    }
-
-    /* Flex container for header */
-    .header-container {
-      max-width: 1200px; /* Center the content within the screen */
-      margin: 0 auto; /* Ensure the content is centered */
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 20px; /* Add some padding to the sides */
     }
 
     /* Site title styles */
@@ -104,6 +42,14 @@
       font-weight: bold;
       text-decoration: none;
       color: #333;
+    }
+
+    /* Full-width header */
+    .site-header {
+      width: 100%;
+      background-color: #f8f9fa; /* Change this to match your theme */
+      padding: 10px 0; /* Padding to give it some space */
+      border-bottom: 1px solid #e5e5e5; /* Optional: Add a border at the bottom */
     }
 
     .site-title:hover {
@@ -117,8 +63,29 @@
     }
 
     .site-nav .trigger {
-      display: flex;
-      gap: 20px; /* Space between links */
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); 
+      gap: 20px;
+    }
+
+    /* Responsive styling for mobile: single column */
+    @media (max-width: 768px) {
+      .site-nav .trigger {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .trigger {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); 
+      gap: 50px; 
+    }
+
+    /* For mobile view: revert to a single column if desired */
+    @media (max-width: 768px) {
+      .trigger {
+        grid-template-columns: 1fr;
+      }
     }
 
     .page-link {
@@ -140,28 +107,6 @@
       display: none; /* Hide the mobile icon */
     }
 
-    /* Responsive styling for mobile */
-    @media (max-width: 768px) {
-      .header-container {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-    .menu-icon {
-      display: inline-block;
-      cursor: pointer;
-    }
-
-    .trigger {
-      display: none;
-    }
-
-    #nav-trigger:checked ~ .trigger {
-      display: block;
-      flex-direction: column;
-      gap: 10px;
-    }
-  }
     :root {
       /* Light theme variables */
       --background-color: #f8f9fa;
@@ -188,14 +133,6 @@
       background-color: var(--background-color);
       color: var(--text-color);
       transition: background-color 0.3s, color 0.3s; /* Smooth transition */
-    }
-
-    .page-link {
-      color: var(--link-color);
-    }
-
-    .page-link:hover {
-      color: var(--link-color);
     }
 
     /* Toggle button styling */
@@ -238,9 +175,12 @@
         <div class="trigger">
           <a class="page-link" href="{{ "/" | relative_url }}">Home</a>
           <a class="page-link" href="{{ "/cv.html" | relative_url }}">CV</a>
-          <a class="page-link" href="{{ "/potpourri.html" | relative_url }}">Potpourri of Thoughts</a>
           <a class="page-link" href="{{ "/research.html" | relative_url }}">My Research</a>
-          <a class="page-link" href="{{ "/travel.html" | relative_url }}">Travel</a>
+          <a class="page-link" href="{{ "/softwares.html" | relative_url }}">Softwares</a>
+          <a class="page-link" href="{{ "/talks.html" | relative_url }}">Talks</a>
+          <a class="page-link" href="{{ "/papers.html" | relative_url }}">Papers</a>
+          <a class="page-link" href="{{ "/potpourri.html" | relative_url }}">Potpourri of Thoughts</a>
+          <a class="page-link" href="{{ "/travel.html" | relative_url }}">Through my lens</a>
         </div>
       </nav>
 

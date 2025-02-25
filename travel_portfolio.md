@@ -1,12 +1,12 @@
 ---
 layout: travel
-title: Travel
+title: Through my lens
 permalink: /travel.html/
 ---
 
 <section class="gallery">
   {% comment %} Define your photo groups {% endcomment %}
-  {% assign groups = "uncategorised,rajasthan,southfrance,crete,chicago,smokeys,baltic,romania" | split: "," %}
+  {% assign groups = "uncategorised,rajasthan,southfrance,crete,chicago,smokeys,baltic,romania,ny" | split: "," %}
   {% comment %} Loop through each group {% endcomment %}
   {% for group in groups %}
     {% comment %} First loop for 400px thumbnails {% endcomment %}

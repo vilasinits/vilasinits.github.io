@@ -70,6 +70,9 @@ header_pages:
   - research.md # My Research page
   - thoughts.md # Potpourri of Thoughts page
   - travel_portfolio.md   # Travel page
+  - softwares.md # Softwares page
+  - talks.md # Talks page
+  - papers.md
 
 # Exclude from processing.
 # The following items will not be processed, by default.
