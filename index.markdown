@@ -73,7 +73,7 @@ layout: home
   <h1>Welcome to My Space</h1>
   <p>
     I am a PhD student at <a href="https://www.cosmostat.org/" target="_blank" style="color:#00d0ff;">CosmoStat</a>, 
-    unraveling the universe’s mysteries using weak lensing, dark energy models, and machine learning.
+    unraveling the universe’s mysteries using weak lensing, dark energy models, and simulations.
   </p>
 </div>
 
