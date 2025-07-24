@@ -10,10 +10,12 @@ permalink: /papers.html/
   <ul class="publication-list">
     <li>
       <div class="pub-info">
-        <span class="pub-status">Submitted:</span>
+        <span class="pub-status">Accepted:</span>
         <div class="pub-details">
-            <a>
+            <a> 
+            <a href="https://arxiv.org/abs/2507.01707" target="_blank" class="pub-title">
             "Generative modeling of convergence maps based on predicted one-point statistics"
+            </a> 
             </a>
             <p class="pub-authors">
             Vilasini Tinnaneri Sreekanth, Jean-Luc Starck and Sandrine Codis

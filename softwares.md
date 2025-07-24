@@ -29,28 +29,22 @@ permalink: /softwares.html/
   
   <div class="cards-wrapper">    
     <div class="card">
-      <h3>LDT l1-norm Prediction</h3>
+      <h3>WALE</h3>
       <p>Repo to get the prediction of the wavelet l1-norm of weak lensing convergence for a given cosmology.</p>
-      <a href="https://github.com/vilasinits/LDT_2cell_l1_norm" target="_blank">View on GitHub</a>
+      <a href="https://github.com/vilasinits/WALE" target="_blank">View on GitHub</a>
+      <a href="https://vilasinits.github.io/WALE/" target="_blank" class="docs-link">View Docs</a>
     </div>
-    
-    <div class="card">
-      <h3>Global Defects</h3>
-      <p>Repo to simulate global topological defects.</p>
-      <a href="https://github.com/vilasinits/GlobalDefect" target="_blank">View on GitHub</a>
-    </div>
-    
     <div class="card">
       <h3>GOLCONDA</h3>
       <p>Repo to emulate weak lensing convergence maps for a given input power spectrum and the wavelet l1-norm, 
       based on a generalized forward-backwards method.</p>
       <a href="https://github.com/vilasinits/GOLCONDA" target="_blank">View on GitHub</a>
+      <a href="https://vilasinits.github.io/GOLCONDA/" target="_blank" class="docs-link">View Docs</a>
     </div>
-
     <div class="card">
-      <h3>TALKS</h3>
-      <p>A repository of my talks.</p>
-      <a href="https://github.com/vilasinits/Talks" target="_blank">View on GitHub</a>
+      <h3>Global Defects</h3>
+      <p>Repo to simulate global topological defects.</p>
+      <a href="https://github.com/vilasinits/GlobalDefect" target="_blank">View on GitHub</a>
     </div>
   </div>
 </div>

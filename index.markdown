@@ -117,4 +117,32 @@ layout: home
     learning about different architectural styles, and photography. Head over to my travel section 
     for some great shots, or check out the "Potpourri of Thoughts" section to read about my latest adventures!
   </p>
-</div>
+  </div>
+  <!-- Latest News Banner -->
+  <div class="latest-news-banner">
+    <strong>📣 Latest News:</strong> My PhD defence is scheduled for <strong>22nd October 2025</strong>.
+  </div>
+
+  <style>
+  .latest-news-banner {
+    max-width: 900px;
+    margin: 0 auto 3rem auto;
+    padding: 1rem 1.5rem;
+    border-left: 5px solid #007acc;
+    border-radius: 8px;
+    background-color: #f5faff;
+    color: #1e3a5f;
+    font-size: 0.95rem;
+    font-weight: 500;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    text-align: left;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .latest-news-banner {
+      background-color: #1c2734;
+      color: #cce7ff;
+      border-left-color: #4db8ff;
+    }
+  }
+  </style>

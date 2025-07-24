@@ -61,9 +61,8 @@ permalink: /cv.html/
     <h2>Publications</h2>
     <ul class="publication-list">
       <li>
-      Submitted: 
-      <em>"Generative Modeling of Convergence Maps Based on Predicted One-Point Statistics"</em>, 
-      <strong>A&A</strong>  
+      Accepted: 
+      <em><a href="https://arxiv.org/abs/2507.01707" target="_blank">"Generative Modeling of Convergence Maps Based on Predicted One-Point Statistics" </a>, <strong>A&A</strong> </em>, 
       <!-- If you have a preprint link, e.g., arXiv, you can add it: -->
       <!-- <a href="https://arxiv.org/abs/..." target="_blank">(arXiv link)</a> -->
     </li>
