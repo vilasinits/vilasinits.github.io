@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+  <head>
+    {%- include head.html -%}
+    <meta charset="utf-8" />
+    <title>{{ page.title }}</title>
+
+    <!-- MathJax (single load) -->
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$','$$'], ['\\[','\\]']],
+          packages: {'[+]': ['ams']}
+        },
+        loader: { load: ['[tex]/ams'] },
+        chtml: { font: 'TeX' }
+      };
+    </script>
+    <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+    <!-- Layout-scoped tweaks for this template -->
+    <style>
+      :root{ --header-h: 64px; }
+
+      /* Make sure content never hides under a sticky header */
+      body.z2c main.page-content { padding-top: var(--header-h); }
+
+      /* Comfortable, readable content width */
+      body.z2c .wrapper { width: min(1100px, 92vw); margin-inline: auto; }
+
+      /* Smaller, card-like figures by default */
+      body.z2c figure.figure{
+        max-width: 420px;
+        background: color-mix(in oklab, Canvas 90%, black 10%);
+        border: 1px solid color-mix(in oklab, CanvasText 12%, transparent);
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 10px 24px rgba(0,0,0,.25);
+      }
+      body.z2c figure.figure img{
+        width: 100%;
+        height: clamp(140px, 22vw, 200px);
+        object-fit: cover;
+        display: block;
+      }
+      body.z2c figure.figure figcaption{
+        font-size: .85rem;
+        padding: .5rem .8rem;
+        color: color-mix(in oklab, currentColor 60%, transparent);
+        border-top: 1px solid color-mix(in oklab, currentColor 12%, transparent);
+      }
+
+      /* If you’re using a two-column CSS grid in posts (e.g., .travel-grid) */
+      body.z2c .travel-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: clamp(16px, 2.6vw, 28px);
+        align-items: start;  /* keep cards aligned to top */
+      }
+      body.z2c .left{ grid-column: 1; justify-self: start; }
+      body.z2c .right{ grid-column: 2; justify-self: end; }
+      body.z2c .wide{ grid-column: 1 / -1; }
+
+      @media (max-width: 820px){
+        body.z2c .travel-grid{ grid-template-columns: 1fr; }
+        body.z2c .left, body.z2c .right, body.z2c .wide{ grid-column: 1; justify-self: stretch; }
+        body.z2c figure.figure{ max-width: 100%; }
+      }
+    </style>
+  </head>
+
+  <body class="z2c">
+    {%- include headerz2c.html -%}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+
+    {%- include footerz2c.html -%}
+
+    <!-- Optional lightbox helper (guarded so it won't error if elements are absent) -->
+    <script>
+      (function(){
+        const imageLinks   = document.querySelectorAll('.image-link');
+        const imageOverlay = document.getElementById('image-overlay');
+        const largeImage   = document.getElementById('large-image');
+        const closeButton  = document.getElementById('close-button');
+
+        if (!imageLinks.length || !imageOverlay || !largeImage || !closeButton) return;
+
+        imageLinks.forEach(link => {
+          link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const largeImagePath = link.getAttribute('href');
+            largeImage.src = largeImagePath;
+            imageOverlay.style.display = 'block';
+            largeImage.style.maxWidth = '100%';
+            largeImage.style.maxHeight = '100%';
+            document.body.style.overflow = 'hidden';
+          });
+        });
+
+        function close() {
+          imageOverlay.style.display = 'none';
+          document.body.style.overflow = '';
+        }
+        closeButton.addEventListener('click', close);
+        imageOverlay.addEventListener('click', (e) => { if (e.target === imageOverlay) close(); });
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+      })();
+    </script>
+
+    <!-- Statcounter -->
+    <script type="text/javascript">
+      var sc_project=13093804, sc_invisible=1, sc_security="263c7895";
+    </script>
+    <script async src="https://www.statcounter.com/counter/counter.js"></script>
+    <noscript>
+      <div class="statcounter">
+        <a title="web counter" href="https://statcounter.com/" target="_blank">
+          <img class="statcounter" src="https://c.statcounter.com/13093804/0/263c7895/1/" alt="web counter"
+               referrerPolicy="no-referrer-when-downgrade">
+        </a>
+      </div>
+    </noscript>
+  </body>
+</html>

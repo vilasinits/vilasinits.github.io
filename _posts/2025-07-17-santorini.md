@@ -1,5 +1,5 @@
 ---
-layout: z2c
+layout: custompost
 title: "Trip to Santorini"
 categories: misc
 image: /assets/santorini/IMG_4138.JPG

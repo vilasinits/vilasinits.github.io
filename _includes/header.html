@@ -1,236 +1,115 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vilasini Tinnaneri Sreekanth</title>
+<!-- Header include (no <html>/<head>/<body>) -->
   <style>
-    /* CSS styles for the header and navigation */
-    /* Header container styles */
-     /* Flex container for header */
-     .header-container {
-      max-width: 1100px; /* Center the content within the screen */
-      margin: 0 auto; /* Ensure the content is centered */
-      display: grid;
-      justify-content: space-between;
-      align-items: space-evenly;
-      padding: 0 0px; /* Add some padding to the sides */
+    :root{
+      --bg:#0e1525; --ink:#e9eef5; --muted:#a7b3c5; --brand:#4db8ff;
+      --bar:#0f1b2e; --border:rgba(255,255,255,.12);
     }
-
-    /* Responsive styling for mobile */
-    @media (max-width: 768px) {
-      .header-container {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .menu-icon {
-        display: inline-block;
-        cursor: pointer;
-      }
-
-      #nav-trigger:checked ~ .trigger {
-        display: block;
-        flex-direction: column;
-        gap: 10px;
-      }
+    @media (prefers-color-scheme: light){
+      :root{ --bg:#f7fbff; --ink:#0f172a; --muted:#475569; --bar:#ffffff; --border:rgba(2,8,23,.12); }
     }
-
-    /* Site title styles */
-    .site-title {
-      font-size: 1.5em; /* Adjust size of the title */
-      font-weight: bold;
-      text-decoration: none;
-      color: #333;
-    }
-
-    /* Full-width header */
-    .site-header {
+  
+    /* Sticky top bar */
+    .site-header{
+      position: sticky; top: 0; z-index: 50;
       width: 100%;
-      background-color: #f8f9fa; /* Change this to match your theme */
-      padding: 10px 0; /* Padding to give it some space */
-      border-bottom: 1px solid #e5e5e5; /* Optional: Add a border at the bottom */
+      backdrop-filter: blur(10px);
+      background: color-mix(in oklab, var(--bar) 92%, transparent);
+      border-bottom: 1px solid var(--border);
     }
-
-    .site-title:hover {
-      color: #007BFF; /* Change color on hover */
+  
+    .header-container{
+      width: min(1100px, 92vw);
+      margin-inline: auto;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 16px; padding: 12px 0;
     }
-
-    /* Navigation styles */
-    .site-nav {
-      display: flex;
-      align-items: center;
+  
+    /* Brand */
+    .site-title{
+      color: var(--ink) !important; text-decoration: none; font-weight: 800;
+      font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+      letter-spacing: .2px;
     }
-
-    .site-nav .trigger {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr); 
-      gap: 20px;
+    .site-title:hover{ color: var(--brand) !important; text-decoration: underline; }
+  
+    /* Nav */
+    .site-nav{ display:flex; align-items:center; gap: 14px; }
+  
+    .nav-list{
+      display:flex; align-items:center; gap: 18px;
+      list-style:none; margin:0; padding:0;  /* remove bullets/padding */
     }
-
-    /* Responsive styling for mobile: single column */
-    @media (max-width: 768px) {
-      .site-nav .trigger {
-        grid-template-columns: 1fr;
+    .nav-list > li{ list-style:none; }
+  
+    .page-link{
+      color: var(--ink) !important; text-decoration:none; font-weight:600; font-size:.95rem;
+      padding: 6px 8px; border-radius:10px;
+    }
+    .page-link:hover{ color: var(--brand) !important; text-decoration: underline; }
+  
+    /* Hamburger */
+    .menu-btn{
+      display:none; background:none; border:1px solid var(--border);
+      width:40px; height:36px; border-radius:10px; color:var(--ink); cursor:pointer;
+    }
+    .menu-btn:hover{
+      color: var(--brand);
+      border-color: color-mix(in oklab, var(--brand) 50%, var(--border));
+    }
+  
+    /* Mobile menu */
+    @media (max-width: 880px){
+      .nav-list{
+        position: absolute; top: 56px; left: 0; right: 0;
+        display: none; flex-direction: column; align-items: flex-start;
+        width: 100%; gap: 8px; padding: 10px 4vw 14px;
+        background: color-mix(in oklab, var(--bar) 96%, transparent);
+        border-bottom: 1px solid var(--border);
       }
+      .nav-list.open{ display:flex; }
+      .menu-btn{ display:block; }
     }
-
-    .trigger {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr); 
-      gap: 50px; 
-    }
-
-    /* For mobile view: revert to a single column if desired */
-    @media (max-width: 768px) {
-      .trigger {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    .page-link {
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
-
-    .page-link:hover {
-      color: #007BFF;
-    }
-
-    /* For mobile view */
-    .nav-trigger {
-      display: none; /* Hide checkbox for mobile nav */
-    }
-
-    .menu-icon {
-      display: none; /* Hide the mobile icon */
-    }
-
-    :root {
-      /* Light theme variables */
-      --background-color: #f8f9fa;
-      --text-color: #333;
-      --link-color: #007bff;
-    }
-
-    body.dark-theme {
-      /* Dark theme variables */
-      --background-color: #181818;
-      --text-color: #f1f1f1;
-      --link-color: #1e90ff;
-    }
-
-    .content-container {
-      background-color: var(--content-bg-color); /* Use the CSS variable for background */
-      padding: 20px;
-      border-radius: 10px;
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
-
-    /* Apply the variables throughout CSS */
-    body {
-      background-color: var(--background-color);
-      color: var(--text-color);
-      transition: background-color 0.3s, color 0.3s; /* Smooth transition */
-    }
-
-    /* Toggle button styling */
-    #theme-toggle {
-      background: none;
-      border: none;
-      cursor: pointer;
-      font-size: 1.5em;
-      color: var(--text-color);
-      transition: color 0.3s;
-    }
-
-    #theme-toggle:hover {
-      color: var(--link-color);
-    }
-
   </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-
-</head>
-
-<body>
-
-  <header class="site-header">
+  
+  <header class="site-header" role="banner">
     <div class="header-container">
-      <!-- Site Title -->
-      <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+      <a class="site-title" rel="author" href="{{ '/' | relative_url }}">
+        {{ site.title | escape }}
+      </a>
   
-      <!-- Navigation Menu -->
-      <nav class="site-nav">
-        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        <label for="nav-trigger">
-          <span class="menu-icon">
-            <svg viewBox="0 0 18 15" width="18px" height="15px">
-              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
-            </svg>
-          </span>
-        </label>
+      <nav class="site-nav" role="navigation" aria-label="Primary">
+        <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">
+          <!-- hamburger icon -->
+          <svg width="22" height="18" viewBox="0 0 20 14" fill="currentColor" aria-hidden="true">
+            <rect y="0" width="20" height="2" rx="1"></rect>
+            <rect y="6" width="20" height="2" rx="1"></rect>
+            <rect y="12" width="20" height="2" rx="1"></rect>
+          </svg>
+        </button>
   
-        <div class="trigger">
-          <a class="page-link" href="{{ "/" | relative_url }}">Home</a>
-          <a class="page-link" href="{{ "/cv.html" | relative_url }}">CV</a>
-          <a class="page-link" href="{{ "/research.html" | relative_url }}">My Research</a>
-          <a class="page-link" href="{{ "/softwares.html" | relative_url }}">Softwares</a>
-          <a class="page-link" href="{{ "/talks.html" | relative_url }}">Talks</a>
-          <a class="page-link" href="{{ "/papers.html" | relative_url }}">Papers</a>
-          <a class="page-link" href="{{ "/potpourri.html" | relative_url }}">Potpourri of Thoughts</a>
-          <a class="page-link" href="{{ "/travel.html" | relative_url }}">Through my lens</a>
-        </div>
+        <ul id="primary-nav" class="nav-list">
+          <li><a class="page-link" href="{{ '/' | relative_url }}">Home</a></li>
+          <li><a class="page-link" href="{{ '/cv.html' | relative_url }}">CV</a></li>
+          <li><a class="page-link" href="{{ '/research.html' | relative_url }}">Research</a></li>
+          <li><a class="page-link" href="{{ '/softwares.html' | relative_url }}">Softwares</a></li>
+          <li><a class="page-link" href="{{ '/talks.html' | relative_url }}">Talks</a></li>
+          <li><a class="page-link" href="{{ '/papers.html' | relative_url }}">Papers</a></li>
+          <li><a class="page-link" href="{{ '/blog.html' | relative_url }}">Blog</a></li>
+          <li><a class="page-link" href="{{ '/travel.html' | relative_url }}">Through my lens</a></li>
+        </ul>
       </nav>
-
-      <!-- Theme Toggle Button -->
-    <button id="theme-toggle" aria-label="Switch between light and dark theme">
-      <i class="fas fa-moon"></i>
-    </button>
     </div>
-    
   </header>
   
   <script>
-    const themeToggleBtn = document.getElementById('theme-toggle');
-    const body = document.body;
-  
-    // Check localStorage for saved theme preference
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-      body.classList.toggle('dark-theme', savedTheme === 'dark');
-      updateThemeIcon(savedTheme);
-    }
-  
-    // Toggle theme on button click
-    themeToggleBtn.addEventListener('click', () => {
-      body.classList.toggle('dark-theme');
-      
-      // Save theme preference in localStorage
-      if (body.classList.contains('dark-theme')) {
-        localStorage.setItem('theme', 'dark');
-        updateThemeIcon('dark');
-      } else {
-        localStorage.setItem('theme', 'light');
-        updateThemeIcon('light');
-      }
-    });
-  
-    function updateThemeIcon(theme) {
-      const icon = themeToggleBtn.querySelector('i');
-      if (theme === 'dark') {
-        icon.classList.remove('fa-moon');
-        icon.classList.add('fa-sun');
-      } else {
-        icon.classList.remove('fa-sun');
-        icon.classList.add('fa-moon');
-      }
-    }
+    // Mobile menu toggle
+    (function(){
+      const btn = document.getElementById('menu-btn');
+      const list = document.getElementById('primary-nav');
+      btn.addEventListener('click', () => {
+        const open = list.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    })();
   </script>
   
-
-</body>
-</html>
-
-

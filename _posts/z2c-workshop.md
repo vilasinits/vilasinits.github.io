@@ -1,5 +1,5 @@
 ---
-layout: z2c
+layout: custompost
 title: "z2C:Workshop"
 categories: misc
 permalink: /z2c-workshop/

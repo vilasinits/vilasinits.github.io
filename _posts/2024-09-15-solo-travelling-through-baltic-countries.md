@@ -1,5 +1,5 @@
 ---
-layout: z2c
+layout: custompost
 title: "Solo travelling through Baltic countries"
 categories: misc
 image: /assets/warsaw5.jpg

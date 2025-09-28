@@ -4,179 +4,172 @@ title: My Papers
 permalink: /papers.html/
 ---
 
-<!-- PUBLICATIONS -->
-<div class="cv-section">
-  <h2>Publications</h2>
+<style>
+  /* Full width like your other pages */
+  .page .page-content, .page .page-content .wrapper {
+    max-width: 100% !important; margin: 0 !important; padding: 0 !important;
+  }
+
+  /* Design tokens aligned with the rest of the site */
+  :root{
+    --bg:#0e1525; --ink:#e9eef5; --muted:#a7b3c5; --brand:#4db8ff; --brand-2:#8a7dff;
+    --card:#0f1b2e; --ring:rgba(77,184,255,.28); --shadow:0 10px 30px rgba(0,0,0,.25);
+  }
+  @media (prefers-color-scheme: light){
+    :root{ --bg:#f7fbff; --ink:#0f172a; --muted:#475569; --card:#ffffff; --shadow:0 8px 24px rgba(2,8,23,.06); }
+  }
+  body{ background: linear-gradient(180deg,#111827,var(--bg)); }
+
+  .papers-wrap{ width:min(1100px,92vw); margin-inline:auto; padding:40px 0 70px; color:var(--ink); }
+  .papers-head{ display:flex; align-items:end; justify-content:space-between; gap:16px; margin-bottom:18px; }
+  .papers-head h1{ margin:0; font-size: clamp(1.8rem,3.2vw,2.3rem); }
+  .sub{ color:var(--muted); margin-top:6px; }
+
+  /* Paper cards */
+  .paper{
+    background:var(--card);
+    border:1px solid rgba(255,255,255,.10);
+    border-radius:18px;
+    padding:18px;
+    box-shadow:var(--shadow);
+    display:flex; flex-direction:column; gap:10px;
+    margin-top:16px;
+    transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+  }
+  .paper:hover{ transform:translateY(-2px); border-color:var(--ring); box-shadow:0 12px 26px rgba(0,0,0,.18); }
+
+  .row-top{ display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
+  .status{
+    padding:.22rem .55rem; border-radius:999px; font-size:.85rem; font-weight:700;
+    border:1px solid rgba(255,255,255,.18); background:rgba(255,255,255,.06); color:var(--ink);
+  }
+  .title{
+    margin:0; font-size:1.05rem; line-height:1.4;
+  }
+  .title a{ color:var(--ink); text-decoration:none; }
+  .title a:hover{ text-decoration:underline; }
+
+  .meta{ color:var(--muted); font-size:.95rem; }
+  .actions{ display:flex; gap:10px; flex-wrap:wrap; margin-top:4px; }
+
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:8px 12px; border-radius:12px; text-decoration:none; font-weight:600;
+    border:1px solid rgba(255,255,255,.12); color:var(--ink);
+    background: rgba(255,255,255,.05);
+  }
+  .btn:hover{ border-color:var(--ring); background: rgba(255,255,255,.08); }
+  .btn.primary{ background: linear-gradient(180deg, var(--brand), var(--brand-2)); color:#fff; border-color:transparent; }
+
+  .icon{ width:18px; height:18px; flex:0 0 18px; color:currentColor; }
+
+  /* Abstract toggle */
+  details{
+    border:1px solid rgba(255,255,255,.10);
+    border-radius:14px;
+    padding:12px 14px;
+    background:rgba(255,255,255,.04);
+  }
+  details summary{
+    cursor:pointer; list-style:none; user-select:none; color:var(--ink); font-weight:600;
+  }
+  details[open]{ background:rgba(255,255,255,.06); }
+  details p{ margin:10px 0 0 0; color:var(--muted); line-height:1.6; }
+
+  /* List reset (reuse your class name if you want) */
+  .publication-list{ list-style:none; padding:0; margin:0; }
+</style>
+<div class="papers-wrap">
+  <header class="papers-head">
+    <div>
+      <h1>My Papers</h1>
+      <div class="sub">Peer reviewed and in preparation</div>
+    </div>
+  </header>
+
   <ul class="publication-list">
-    <li>
-      <div class="pub-info">
-        <span class="pub-status">Accepted:</span>
-        <div class="pub-details">
-            <a> 
-            <a href="https://arxiv.org/abs/2507.01707" target="_blank" class="pub-title">
-            "Generative modeling of convergence maps based on predicted one-point statistics"
-            </a> 
-            </a>
-            <p class="pub-authors">
-            Vilasini Tinnaneri Sreekanth, Jean-Luc Starck and Sandrine Codis
-            </p>
-            <p class="pub-journal">
-            A&A
-            </p>
-            <!-- <p class="pub-doi">
-            DOI: <a href="https://doi.org/10.1051/0004-6361/202450061" target="_blank">10.1051/0004-6361/202450061</a>
-            </p> -->
-        </div>
-        <p class="pub-abstract">
-        Abstract: 
-        Weak gravitational lensing is a crucial probe for cosmology, yet conventional power spectrum analyses overlook the non-Gaussian features arising from nonlinear structure formation. We introduce an emulator that directly generates convergence kappa maps from an input power spectrum and wavelet ℓ1-norm, eliminating the need for resource-intensive simulations. By iteratively tuning wavelet coefficients to match target marginal distributions and inter-scale correlations, our method incorporates higher-order statistics, resulting in kappa maps that accurately reproduce the input power spectrum and capture the necessary statistical complexities for weak lensing studies.
-      </p>
+    <!-- Paper 1 -->
+    <li class="paper">
+      <div class="row-top">
+        <span class="status">Accepted</span>
+        <h3 class="title">
+          <a href="https://arxiv.org/abs/2507.01707" target="_blank" rel="noopener">
+            Generative modeling of convergence maps based on predicted one-point statistics
+          </a>
+        </h3>
       </div>
+      <div class="meta">
+        Vilasini Tinnaneri Sreekanth, Jean-Luc Starck, Sandrine Codis • A&amp;A
+      </div>
+      <div class="actions">
+        <a class="btn primary" href="https://arxiv.org/abs/2507.01707" target="_blank" rel="noopener">
+          <!-- arXiv -->
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 4h18v2H3V4Zm0 7h18v2H3v-2Zm0 7h18v2H3v-2Z"/></svg>
+          <span>arXiv</span>
+        </a>
+        <a class="btn" href="https://vilasinits.github.io/GOLCONDA/" target="_blank" rel="noopener">
+          <!-- External -->
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3ZM5 5h6v2H7v10h10v-4h2v6H5V5Z"/></svg>
+          <span>Project page</span>
+        </a>
+      </div>
+      <details>
+        <summary>Show abstract</summary>
+        <p>
+          Weak gravitational lensing is a key probe, but classic power spectrum analyses miss non Gaussian features. We introduce an emulator that generates convergence maps directly from an input power spectrum and a target wavelet l1 norm. By tuning wavelet coefficients to match target marginal distributions and inter scale correlations, the method reproduces the input spectrum and captures higher order structure with far less simulation cost.
+        </p>
+      </details>
     </li>
-    <li>
-      <div class="pub-info">
-        <span class="pub-status">Accepted:</span>
-        <div class="pub-details">
-            <a href="https://www.aanda.org/component/article?access=doi&doi=10.1051/0004-6361/202450061" target="_blank" class="pub-title">
-            "Theoretical wavelet ℓ1-norm from one-point probability density function prediction"
-            </a>
-            <p class="pub-authors">
-            Vilasini Tinnaneri Sreekanth, Sandrine Codis, Alexandre Barthelemy, and Jean-Luc Starck
-            </p>
-            <p class="pub-journal">
-            A&A, 691 (2024) A80
-            </p>
-            <p class="pub-doi">
-            DOI: <a href="https://doi.org/10.1051/0004-6361/202450061" target="_blank">10.1051/0004-6361/202450061</a>
-            </p>
-        </div>
-        <p class="pub-abstract">
-        Abstract:
-        Context. Weak gravitational lensing, which results from the bending of light by matter along the line of sight, is a potent tool for exploring large-scale structures, particularly in quantifying non-Gaussianities. It is a pivotal objective for upcoming surveys. In the realm of current and forthcoming full-sky weak-lensing surveys, convergence maps, which represent a line-of-sight integration of the matter density field up to the source redshift, facilitate field-level inference. This provides an advantageous avenue for cosmological exploration. Traditional two-point statistics fall short of capturing non-Gaussianities, necessitating the use of higher-order statistics to extract this crucial information. Among the various available higher-order statistics, the wavelet ℓ1 -norm has proven its efficiency in inferring cosmology. However, the lack of a robust theoretical framework mandates reliance on simulations, which demand substantial resources and time.
-        Aims. Our novel approach introduces a theoretical prediction of the wavelet ℓ1-norm for weak-lensing convergence maps that is grounded in the principles of large-deviation theory. This method builds upon recent work and offers a theoretical prescription for an aperture mass one-point probability density function.
-        Methods. We present for the first time a theoretical prediction of the wavelet ℓ1-norm for convergence maps that is derived from the theoretical prediction of their one-point probability distribution. Additionally, we explored the cosmological dependence of this prediction and validated the results on simulations.
-        Results. A comparison of our predicted wavelet ℓ1 -norm with simulations demonstrates a high level of accuracy in the weakly nonlinear regime. Moreover, we show its ability to capture cosmological dependence. This paves the way for a more robust and efficient parameter-inference process.
-      </p>
-      </div> 
+    <!-- Paper 2 -->
+    <li class="paper">
+      <div class="row-top">
+        <span class="status">Accepted</span>
+        <h3 class="title">
+          <a href="https://www.aanda.org/component/article?access=doi&doi=10.1051/0004-6361/202450061" target="_blank" rel="noopener">
+            Theoretical wavelet ℓ1-norm from one-point probability density function prediction
+          </a>
+        </h3>
+      </div>
+      <div class="meta">
+        Vilasini Tinnaneri Sreekanth, Sandrine Codis, Alexandre Barthelemy, Jean-Luc Starck • A&amp;A, 691 (2024) A80
+      </div>
+      <div class="actions">
+        <a class="btn primary" href="https://www.aanda.org/component/article?access=doi&doi=10.1051/0004-6361/202450061" target="_blank" rel="noopener">
+          <!-- Journal -->
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6 2h9l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm8 2v4h4l-4-4Z"/></svg>
+          <span>Journal</span>
+        </a>
+        <a class="btn" href="https://doi.org/10.1051/0004-6361/202450061" target="_blank" rel="noopener">
+          <!-- DOI -->
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m14 3 7 7-9 9H5v-7l9-9Zm-7 9v3h3l8-8-3-3-8 8Z"/></svg>
+          <span>DOI</span>
+        </a>
+      </div>
+      <details>
+        <summary>Show abstract</summary>
+        <p>
+          We derive a theory prediction for the wavelet l1 norm of convergence maps from a theory prediction of the one point distribution using Large Deviation Theory. The result agrees with simulations in the weakly non linear regime and tracks cosmological dependence, enabling an efficient path for parameter inference.
+        </p>
+      </details>
     </li>
-    <li>
-      <div class="pub-info">
-        <span class="pub-status">In Prep:</span>
-        <div class="pub-details">
-            <a>
-            "Cosmological N-body simulations with topological defects"
-            </a>
-            <p class="pub-authors">
-            Tinnaneri S Vilasini, Maulik Bhatt, Disrael Cunha, Martin Kunz and Asier Lopez-Eiguren
-            </p>
-            <p class="pub-journal">
-            JCAP
-            </p>
-        </div>
-        <p class="pub-abstract">
-        Abstract:
-        This paper explores the impact of topological defects on cosmic structure formation through a novel integration of global defect evolution within N-body simulations. Topological defects, which form during phase transitions in the early universe through spontaneous symmetry breaking, serve as potential fossil relics of high-energy physics and could provide direct probes of early universe conditions. We implement a methodology where global defects evolve independently while their stress-energy tensor contributes to metric solutions in the relativistic N-body code Gevolution. Our approach offers a general framework applicable to various cosmological scenarios. We present tests validating the accuracy and consistency of our implementation, followed by results demonstrating how these defects influence structure formation. This work provides new insights into the observable consequences of topological defects, and offers a computational tool for studying defect-influenced cosmological evolution.
-      </p>
-      </div> 
+    <!-- Paper 3 -->
+    <li class="paper">
+      <div class="row-top">
+        <span class="status">In preparation</span>
+        <h3 class="title">
+          Cosmological N-body simulations with topological defects
+        </h3>
+      </div>
+      <div class="meta">
+        Tinnaneri S Vilasini, Maulik Bhatt, Disrael Cunha, Martin Kunz, Asier Lopez-Eiguren • JCAP (in prep)
+      </div>
+      <details>
+        <summary>Show abstract</summary>
+        <p>
+          We couple the evolution of global defects to a relativistic N body code through the stress energy source in the metric sector and study the impact on structure formation. The framework is general, validated with controlled tests, and shows measurable signatures in density and velocity fields.
+        </p>
+      </details>
     </li>
+
   </ul>
 </div>
-
-
-
-<style>
-    /* Overall page styling (if not already in a global stylesheet) */
-    body {
-        font-family: "Open Sans", Arial, sans-serif;
-        line-height: 1.6;
-        color: #333;
-        margin: 0;
-        padding: 0;
-    }
-
-    .cv-section {
-    background-color: #f8f8f8;
-    border-radius: 8px;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .publication-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    }
-
-    .publication-list li {
-    border-bottom: 1px solid #ddd;
-    padding: 1.5rem 0;
-    }
-
-    .publication-list li:last-child {
-    border-bottom: none;
-    }
-
-    .pub-info {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    align-items: baseline;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #fff;
-    }
-
-    .pub-status {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 0.5rem;
-    color: #333;
-    }
-
-    .pub-title {
-    font-style: italic;
-    color: #333;
-    }
-
-    .pub-details .pub-title {
-    font-size: 1.1em;
-    color: #007BFF;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 0.5rem;
-    }
-
-    .pub-details .pub-authors,
-    .pub-details .pub-journal,
-    .pub-details .pub-doi {
-    margin: 0.3rem 0;
-    color: #555;
-    font-size: 0.95em;
-    }
-
-    .pub-details .pub-doi a {
-    color: #007BFF;
-    text-decoration: none;
-    }
-
-    .pub-journal {
-    color: #007BFF;
-    }
-
-    .pub-abstract {
-    margin: 0.8rem 0 0;
-    font-size: 0.9rem;
-    color: #666;
-    line-height: 1.4;
-    max-width: 800px;
-    }
-
-    /* Optional: Add a hover effect to publication items */
-    .publication-list li:hover {
-    background-color: #efefef;
-    transition: background-color 0.3s ease;
-    }
-</style>

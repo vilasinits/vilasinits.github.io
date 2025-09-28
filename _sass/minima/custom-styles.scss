@@ -1,11 +1,11 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
 .content-container {
-    max-width: 1200px; /* Adjust the maximum width as needed */
-    margin: 0 auto;   /* Center the container horizontally */
-    padding: 20px;    /* Add some padding to the content */
-    background-color: #f5f5f5; /* Set a background color */
-  }
+  max-width: 1200px; /* Adjust the maximum width as needed */
+  margin: 0 auto;   /* Center the container horizontally */
+  padding: 0px;    /* Add some padding to the content */
+  background-color: #f5f5f5; /* Set a background color */
+}
 
 // // Widen layout
 // .wrapper,
@@ -18,3 +18,27 @@
 //   padding-left: 2rem;
 //   padding-right: 2rem;
 // }
+
+/* Force bright headings on the dark background */
+:root { --ink: #e9eef5; }
+
+.page-content h1,
+.page-content h2,
+.page-content h3,
+.page-content h4,
+.page-content h5,
+.page-content h6,
+.post-title,
+.post-title a,
+.page-heading,
+.home .post-list-heading {
+  color: var(--ink) !important;
+  -webkit-text-fill-color: var(--ink); /* fixes Safari dimming */
+}
+
+/* If your landing page renders the H1 inside .home or .wrapper, cover those too */
+.home h1,
+.wrapper h1 { 
+  color: var(--ink) !important; 
+  -webkit-text-fill-color: var(--ink);
+}

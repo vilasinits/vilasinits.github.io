@@ -1,7 +1,7 @@
 /**
  * Site header
  */
-.site-header {
+ .site-header {
   border-top: 5px solid $border-color-03;
   border-bottom: 1px solid $border-color-01;
   min-height: $spacing-unit * 1.865;
@@ -109,7 +109,7 @@
       padding: 0;
 
       &:not(:last-child) {
-        margin-right: 20px;
+        margin-right: 0px;
       }
       margin-left: auto;
     }
@@ -130,7 +130,7 @@
 }
 
 .feed-subscribe .svg-icon {
-  padding: 5px 5px 2px 0
+  padding: 0px 0px 0px 0
 }
 
 .contact-list,
@@ -593,7 +593,7 @@
 
 .description {
   display: none;
-  padding: 10px;
+  padding: 0px;
   margin-top: 5px;
   /* Style the description as needed */
 }

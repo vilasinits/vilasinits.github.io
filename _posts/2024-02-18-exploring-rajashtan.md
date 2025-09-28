@@ -1,5 +1,5 @@
 ---
-layout: z2c
+layout: custompost
 title: "Exploring the Royal Cities: Jodhpur, Jaisalmer, and Udaipur"
 categories: misc
 image: /assets/camel1.JPG

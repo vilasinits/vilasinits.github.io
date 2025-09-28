@@ -1,5 +1,5 @@
 ---
-layout: z2c
+layout: custompost
 title: "Visiting Romania and Bulgaria"
 categories: misc
 image: /assets/romania_title.JPEG
