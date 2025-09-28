@@ -2,91 +2,113 @@
   <style>
     :root{
       --bar:#0f1b2e;      /* header background */
-      --ink:#e9eef5;      /* header text */
+      --ink:#e9eef5;      /* header text (light) */
       --brand:#4db8ff;
       --border:rgba(255,255,255,.12);
       --header-h:64px;
     }
+  
+    /* keep header dark + text light even in light OS theme */
     @media (prefers-color-scheme: light){
-      :root{ --bg:#f7fbff; --ink:#0f172a; --muted:#475569; --bar:#ffffff; --border:rgba(2,8,23,.12); }
+      :root{ --bar:#0f1b2e; --ink:#e9eef5; --border:rgba(2,8,23,.12); }
     }
   
-   /* Header bar */
+    /* Header bar */
     .site-header{
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: #0e1525;;
+      position: sticky; top: 0; z-index: 1000;
+      background:#0e1525;
       border-bottom: 1px solid var(--border);
     }
-
-    .site-header .site-title,
-    .site-header .page-link,
-    .site-header .menu-btn {
-      color: #e9eef5 !important;   /* soft white */
-    }
-  
     .header-container{
-      width: min(1100px, 80vw);
+      width: min(1100px, 92vw);
       margin-inline: auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      display: flex; align-items: center; justify-content: space-between;
       min-height: var(--header-h);
       padding: 8px 0;
     }
   
-    /* Brand */
+    /* Title */
     .site-title{
-      color: var(--ink);
-      text-decoration: none;
-      font-weight: 800;
-      font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+      color: var(--ink); text-decoration: none;
+      font-weight: 800; font-size: clamp(1.05rem, 1.6vw, 1.25rem);
     }
     .site-title:hover{ color: var(--brand); }
   
-    /* Nav */
+    /* Desktop nav */
     .site-nav{ display:flex; align-items:center; gap: 14px; }
-    .nav-list{ display:flex; align-items:center; gap:18px; list-style:none; margin:0; padding:0; }
-    .page-link{ color: var(--ink); text-decoration:none; font-weight:600; padding:6px 8px; border-radius:10px; }
+    .nav-list{
+      display:flex; align-items:center; gap:18px;
+      list-style:none; margin:0; padding:0;
+    }
+    .page-link{
+      color: var(--ink); text-decoration:none; font-weight:600;
+      padding:6px 8px; border-radius:10px;
+    }
     .page-link:hover{ color: var(--brand); text-decoration: underline; }
-
   
-    /* MOBILE: hamburger button — transparent, no white box */
+    /* Hamburger (mobile) */
     .menu-btn{
-      display:none;             /* hidden on desktop */
-      background: transparent;  /* remove white background */
+      display:none;              /* hidden on desktop */
+      background-color: transparent !important; /* kill the white pill */
       border: 1px solid var(--border);
-      width: 40px; height: 36px;
-      border-radius: 10px;
-      color: var(--ink);
-      cursor: pointer;
-      display: none;
-      align-items: center;
-      justify-content: center;
+      width: 40px; height: 36px; border-radius: 10px;
+      color: var(--ink); cursor: pointer;
+      align-items: center; justify-content: center;
+      box-shadow: none !important;
+      -webkit-tap-highlight-color: transparent; /* iOS highlight */
     }
     .menu-btn:hover{
       color: var(--brand);
-      border-color: color-mix(in oklab, var(--brand) 40%, var(--border));
+      border-color: color-mix(in oklab, var(--brand) 50%, var(--border));
+      background-color: rgba(255,255,255,0.04) !important;
     }
     .menu-btn svg{ display:block; }
   
-    /* Mobile dropdown */
+    /* Mobile drawer */
     @media (max-width: 880px){
-      .menu-btn{ display:flex; }              /* show button */
+      .menu-btn{ display:flex; }
+  
+      /* fixed panel so you never have to scroll the page to reach items */
       .nav-list{
-        position: absolute;
-        top: var(--header-h);                 /* sit below header */
-        left: 0; right: 0;
+        position: fixed;
+        top: calc(var(--header-h) + 8px);
+        right: 12px;
+        left: auto;                 /* keep it on the right */
+        width: min(560px, 86vw);
         display: none;
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: column; align-items: stretch;
         gap: 8px;
-        padding: 10px 4vw 14px;
+        padding: 12px;
         background: color-mix(in oklab, var(--bar) 96%, transparent);
-        border-bottom: 1px solid var(--border);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0,0,0,.35);
+        z-index: 1100;
+  
+        /* Make the panel scroll within viewport height */
+        max-height: calc(100dvh - var(--header-h) - 24px);
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
       }
       .nav-list.open{ display:flex; }
+  
+      /* Bigger, tappable links */
+      .nav-list .page-link{
+        padding: 10px 12px;
+        border-radius: 10px;
+        color: var(--ink) !important;      /* force white text */
+        background: transparent;
+      }
+      .nav-list .page-link:hover{
+        background: rgba(255,255,255,0.06);
+        color: var(--brand) !important;
+        text-decoration: none;
+      }
+    }
+  
+    /* Hard guard so header text is always light */
+    .site-header, .site-header a, .site-header .page-link, .site-header .site-title, .site-header .menu-btn {
+      color:#e9eef5 !important;
     }
   </style>
   
@@ -100,8 +122,8 @@
         <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">
           <!-- hamburger icon -->
           <svg width="22" height="18" viewBox="0 0 20 14" fill="currentColor" aria-hidden="true">
-            <rect y="0" width="20" height="2" rx="1"></rect>
-            <rect y="6" width="20" height="2" rx="1"></rect>
+            <rect y="0"  width="20" height="2" rx="1"></rect>
+            <rect y="6"  width="20" height="2" rx="1"></rect>
             <rect y="12" width="20" height="2" rx="1"></rect>
           </svg>
         </button>
@@ -123,11 +145,15 @@
   <script>
     // Mobile menu toggle
     (function(){
-      const btn = document.getElementById('menu-btn');
+      const btn  = document.getElementById('menu-btn');
       const list = document.getElementById('primary-nav');
       btn.addEventListener('click', () => {
         const open = list.classList.toggle('open');
         btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  
+        // Lock page scroll when menu is open (so it never slides under your thumb)
+        document.documentElement.style.overflow = open ? 'hidden' : '';
+        document.body.style.overflow = open ? 'hidden' : '';
       });
     })();
   </script>
