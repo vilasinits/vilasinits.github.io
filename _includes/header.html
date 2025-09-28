@@ -11,66 +11,82 @@
       :root{ --bg:#f7fbff; --ink:#0f172a; --muted:#475569; --bar:#ffffff; --border:rgba(2,8,23,.12); }
     }
   
-    /* Sticky top bar */
+   /* Header bar */
     .site-header{
-      position: sticky; top: 0; z-index: 50;
-      width: 100%;
-      backdrop-filter: blur(10px);
-      background: color-mix(in oklab, var(--bar) 92%, transparent);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #0e1525;;
       border-bottom: 1px solid var(--border);
+    }
+
+    .site-header .site-title,
+    .site-header .page-link,
+    .site-header .menu-btn {
+      color: #e9eef5 !important;   /* soft white */
     }
   
     .header-container{
       width: min(1100px, 92vw);
       margin-inline: auto;
-      display: flex; align-items: center; justify-content: space-between;
-      gap: 16px; padding: 12px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: var(--header-h);
+      padding: 8px 0;
     }
   
     /* Brand */
     .site-title{
-      color: var(--ink) !important; text-decoration: none; font-weight: 800;
+      color: var(--ink);
+      text-decoration: none;
+      font-weight: 800;
       font-size: clamp(1.05rem, 1.6vw, 1.25rem);
-      letter-spacing: .2px;
     }
-    .site-title:hover{ color: var(--brand) !important; text-decoration: underline; }
+    .site-title:hover{ color: var(--brand); }
   
     /* Nav */
     .site-nav{ display:flex; align-items:center; gap: 14px; }
+    .nav-list{ display:flex; align-items:center; gap:18px; list-style:none; margin:0; padding:0; }
+    .page-link{ color: var(--ink); text-decoration:none; font-weight:600; padding:6px 8px; border-radius:10px; }
+    .page-link:hover{ color: var(--brand); text-decoration: underline; }
+
   
-    .nav-list{
-      display:flex; align-items:center; gap: 18px;
-      list-style:none; margin:0; padding:0;  /* remove bullets/padding */
-    }
-    .nav-list > li{ list-style:none; }
-  
-    .page-link{
-      color: var(--ink) !important; text-decoration:none; font-weight:600; font-size:.95rem;
-      padding: 6px 8px; border-radius:10px;
-    }
-    .page-link:hover{ color: var(--brand) !important; text-decoration: underline; }
-  
-    /* Hamburger */
+    /* MOBILE: hamburger button — transparent, no white box */
     .menu-btn{
-      display:none; background:none; border:1px solid var(--border);
-      width:40px; height:36px; border-radius:10px; color:var(--ink); cursor:pointer;
+      display:none;             /* hidden on desktop */
+      background: transparent;  /* remove white background */
+      border: 1px solid var(--border);
+      width: 40px; height: 36px;
+      border-radius: 10px;
+      color: var(--ink);
+      cursor: pointer;
+      display: none;
+      align-items: center;
+      justify-content: center;
     }
     .menu-btn:hover{
       color: var(--brand);
       border-color: color-mix(in oklab, var(--brand) 50%, var(--border));
     }
+    .menu-btn svg{ display:block; }
   
-    /* Mobile menu */
+    /* Mobile dropdown */
     @media (max-width: 880px){
+      .menu-btn{ display:flex; }              /* show button */
       .nav-list{
-        position: absolute; top: 56px; left: 0; right: 0;
-        display: none; flex-direction: column; align-items: flex-start;
-        width: 100%; gap: 8px; padding: 10px 4vw 14px;
+        position: absolute;
+        top: var(--header-h);                 /* sit below header */
+        left: 0; right: 0;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        padding: 10px 4vw 14px;
         background: color-mix(in oklab, var(--bar) 96%, transparent);
         border-bottom: 1px solid var(--border);
       }
       .nav-list.open{ display:flex; }
-      .menu-btn{ display:block; }
     }
   </style>
   
