@@ -93,7 +93,7 @@ layout: home
       <img class="avatar" src="/assets/images/Profile_new.jpg" alt="T S Vilasini profile photo">
       <div class="card affil">
         <h3>Current Affiliation</h3>
-        <p>PhD student, <a class="link" href="https://www.cosmostat.org/" target="_blank" rel="noopener">CosmoStat</a></p>
+        <p>PhD, <a class="link" href="https://www.cosmostat.org/" target="_blank" rel="noopener">CosmoStat</a></p>
         <p class="meta">CEA Paris Saclay • Université Paris Saclay</p>
       </div>
       <div class="card links" style="display:flex; flex-direction:column; gap:10px;">
@@ -125,41 +125,44 @@ layout: home
     <main class="content">
       <h1>About Me</h1>
       <p>
-        I study how dark matter shapes the universe. My work sits at the meeting point of theory, large scale simulations, and weak lensing. I build simple and reliable tools that learn as much as possible from the data before asking for heavy computation.
+        I recently completed my doctorate in Astrophysics, where I studied how dark matter shapes the universe. My work sat at the meeting point of theory, large-scale simulations, and weak lensing. I built simple and reliable tools designed to learn as much as possible from data before resorting to heavy computation.
       </p>
       <p>
-        I focus on higher order statistics and wavelet methods. These ideas let me do parameter inference in a way that is light on simulations and heavy on understanding. Lately I have been developing a theory driven path for likelihood free inference so that results stay transparent and robust while storage and compute stay reasonable.
+        My research focused on higher-order statistics and wavelet methods — approaches that allowed me to perform parameter inference in a way that was light on simulations and heavy on understanding. In the later part of my PhD, I developed a theory-driven framework for likelihood-free inference so that results remained transparent and robust while storage and compute demands stayed reasonable.
       </p>
       <p>
-        I am part of the Euclid collaboration, where I care about turning careful theory into useful practice. At CosmoStat I co organize the Journal Club and enjoy meeting people who bring new ideas and even better questions.
+        I was part of the <strong>Euclid</strong> collaboration, where I worked on bridging careful theoretical modeling with practical application. At <strong>CosmoStat</strong>, I co-organized the Journal Club and thoroughly enjoyed the discussions — the questions, debates, and exchange of ideas that constantly pushed me to think deeper.
       </p>
       <p>
-        When I am not thinking about statistics and lensing, I am usually out with my camera, reading, or planning the next trip. I love to travel, learn from new cultures, and when I can, wander through old ruins and museums. If you are curious, head to my <a class="link" href="/blog.html">blog</a> to read a few of these experiences I have penned down.
+        Beyond research, I loved spending time with my camera, reading, and planning my next trip. I travelled widely during my PhD — learning from new cultures, wandering through old ruins and museums, and collecting small stories along the way. You can find some of these experiences on my <a class="link" href="/blog.html">blog</a>.
       </p>
       <p>
-        I enjoy learning by doing. I pick up new tools, run small experiments with real data, and build little projects for everyday use. It keeps me curious and close to what works.
+        I’ve always believed in learning by doing. I enjoy picking up new tools, running small experiments with real data, and building little projects for everyday use. It keeps me curious — and close to what truly works.
       </p>
       <div class="chips">
-        <span class="chip">Higher order statistics</span>
+        <span class="chip">Higher-order statistics</span>
         <span class="chip">Wavelets</span>
         <span class="chip">Simulations</span>
         <span class="chip">Euclid</span>
       </div>
       <div class="section">
-        <h2>What I am working on</h2>
+        <h2>During My PhD, I Worked On</h2>
         <ul class="bullets">
-          <li>Theory for the wavelet ℓ₁ norm and its use in inference.</li>
-          <li>Generating synthetic map using optimisation scheme with the correct HOS, that is both fast and accurate and robust.</li>
-          <li>Validation on synthetic maps and preparation for real data.</li>
+          <li>Developing a theoretical model for the wavelet ℓ₁-norm and applying it to cosmological inference.</li>
+          <li>Generating synthetic convergence maps through an optimization-based scheme that preserves higher-order statistics while remaining fast and robust.</li>
+          <li>Validating theoretical predictions on simulations and preparing the framework for real data analysis.</li>
         </ul>
       </div>
       <div class="section">
         <h2>Contact</h2>
         <p>
-          The best way to reach me is through <a class="link" href="https://www.linkedin.com/in/vilasini-ts/" target="_blank" rel="noopener">LinkedIn</a>.
-          You can also explore my code on <a class="link" href="https://github.com/vilasinits" target="_blank" rel="noopener">GitHub</a>.
+          The best way to reach me is through 
+          <a class="link" href="https://www.linkedin.com/in/vilasini-ts/" target="_blank" rel="noopener">LinkedIn</a>.
+          You can also explore my code on 
+          <a class="link" href="https://github.com/vilasinits" target="_blank" rel="noopener">GitHub</a>.
         </p>
       </div>
     </main>
+
   </div>
 </div>
