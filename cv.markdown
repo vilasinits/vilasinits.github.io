@@ -5,266 +5,712 @@ permalink: /cv.html/
 ---
 
 <style>
-  /* Use the same full-bleed look as home */
-  .page .page-content, .page .page-content .wrapper {
-    max-width: 100% !important; margin: 0 !important; padding: 0 !important;
-  }
+/* ============================================================
+   DARK/LIGHT THEME + MODERN RESPONSIVE CV LAYOUT
+============================================================ */
 
-  /* Design tokens (aligned with landing page) */
+:root{
+  --bg:#0e1525;
+  --ink:#e9eef5;
+  --muted:#a7b3c5;
+  --accent:#4db8ff;
+  --divider:rgba(255,255,255,.18);
+}
+
+@media (prefers-color-scheme: light){
   :root{
-    --bg:#0e1525; --ink:#e9eef5; --muted:#a7b3c5; --brand:#4db8ff; --brand-2:#8a7dff;
-    --card:#0f1b2e; --ring:rgba(77,184,255,.28);
-    --shadow:0 10px 30px rgba(0,0,0,.25);
+    --bg:#f8fafc;
+    --ink:#0f172a;
+    --muted:#475569;
+    --divider:rgba(0,0,0,.15);
   }
-  @media (prefers-color-scheme: light){
-    :root{ --bg:#f7fbff; --ink:#0f172a; --muted:#475569; --card:#ffffff; --shadow:0 8px 24px rgba(2,8,23,.06); }
+}
+
+body{
+  background:var(--bg);
+  color:var(--ink);
+}
+
+/* Main CV wrapper */
+.cv-wrap{
+  width:min(1100px,92vw);
+  margin:auto;
+  padding:40px 0 70px;
+  font-size:1rem;
+  line-height:1.55;
+}
+
+/* Header */
+.cv-head h1{
+  margin:0;
+  font-size:clamp(2rem,3.2vw,2.7rem);
+  font-weight:700;
+}
+.contact{
+  margin-top:10px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+}
+.contact a{
+  color:var(--accent);
+  text-decoration:none;
+}
+.contact a:hover{ text-decoration:underline; }
+
+/* Header actions (download button) */
+.cv-actions{
+  margin-top:16px;
+}
+.cv-download-btn{
+  display:inline-block;
+  padding:8px 16px;
+  border-radius:999px;
+  border:1px solid var(--accent);
+  color:var(--accent);
+  font-size:0.95rem;
+  text-decoration:none;
+  transition:background 0.2s ease,color 0.2s ease,transform 0.15s ease;
+}
+.cv-download-btn:hover{
+  background:var(--accent);
+  color:#020617;
+  transform:translateY(-1px);
+}
+
+/* Section titles */
+.cv-section{
+  margin-top:40px;
+}
+.cv-section h2{
+  margin:0 0 12px;
+  font-size:1.35rem;
+  font-weight:600;
+  padding-bottom:5px;
+  border-bottom:1px solid var(--divider);
+}
+
+/* ================================
+   CARD GRIDS (Education + Research)
+=================================== */
+
+.edu-grid,
+.exp-grid{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:28px;
+  margin-top:24px;
+}
+
+/* 2 columns for medium screens */
+@media (max-width: 1100px) {
+  .edu-grid,
+  .exp-grid{
+    grid-template-columns:repeat(2, 1fr);
   }
+}
 
-  body{ background: linear-gradient(180deg,#111827,var(--bg)); }
-
-  .cv-wrap{ width:min(1100px,92vw); margin-inline:auto; padding:40px 0 70px; color:var(--ink); }
-
-  /* Page header */
-  .cv-head{
-    display:grid; grid-template-columns: 1fr auto; gap: 22px; align-items:end;
-    margin-bottom: 22px;
+/* 1 column for mobile */
+@media (max-width: 750px) {
+  .edu-grid,
+  .exp-grid{
+    grid-template-columns:1fr;
   }
-  .cv-head h1{ margin:0; font-size: clamp(1.8rem,3.2vw,2.3rem); }
-  .tagline{ color:var(--muted); margin-top:6px; }
+}
 
-  .contact{
-    display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end;
+/* Generic card (used for education + research) */
+.edu-card{
+  width:100%;
+  border-radius:18px;
+  overflow:hidden;
+  background:#111827;
+  box-shadow:0 6px 20px rgba(0,0,0,0.40);
+  border:1px solid rgba(255,255,255,0.07);
+  display:flex;
+  flex-direction:column;
+}
+
+@media (prefers-color-scheme: light) {
+  .edu-card{
+    background:#ffffff;
+    border-color:rgba(0,0,0,0.1);
+    box-shadow:0 6px 16px rgba(0,0,0,0.12);
   }
-  .pill{
-    display:flex; align-items:center; gap:8px;
-    padding:8px 12px; border-radius:999px;
-    background: rgba(255,255,255,.05);
-    border:1px solid rgba(255,255,255,.10);
-    text-decoration:none; color:var(--ink);
+}
+
+/* Banner */
+.edu-banner{
+  position:relative;
+  height:150px;
+  overflow:hidden;
+}
+.edu-banner img.bg{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  filter:brightness(45%) blur(0.4px);
+}
+
+@media (max-width:750px){
+  .edu-banner{ height:120px; }
+}
+
+/* ================================
+   LOGOS ON TOP OF BANNER
+=================================== */
+
+.banner-logos{
+  position:absolute;
+  bottom:18px;
+  left:50%;
+  transform:translateX(-50%);
+  display:flex;
+  gap:22px;
+  align-items:center;
+  justify-content:center;
+  padding:8px 18px;
+  background:linear-gradient(
+    to top,
+    rgba(0,0,0,0.55),
+    rgba(0,0,0,0.40),
+    rgba(0,0,0,0.20),
+    transparent
+  );
+  border-radius:18px;
+}
+
+/* Base size */
+.banner-logos img{
+  height:80px;
+  width:auto;
+  filter:drop-shadow(0 0 7px rgba(0,0,0,.9));
+  transition:transform 0.2s ease, filter 0.2s ease;
+}
+
+/* Hover effect */
+.banner-logos a:hover img{
+  transform:scale(1.05);
+  filter:drop-shadow(0 0 10px rgba(255,255,255,.6));
+}
+
+/* Per-logo tweaks */
+
+/* Education logos */
+.logo-ups{
+  max-height:95px;
+  max-width:180px;
+}
+.logo-cea{
+  max-height:90px;
+  max-width:140px;
+}
+.logo-unige{
+  max-height:100px;
+  max-width:260px;
+}
+.logo-svnit{
+  max-height:95px;
+  max-width:180px;
+}
+
+/* Research logos */
+.logo-cosmostat{
+  max-height:90px;
+  max-width:260px;
+}
+.logo-integral{
+  max-height:90px;
+  max-width:220px;
+}
+.logo-inaf{
+  max-height:80px;
+  max-width:160px;
+}
+.logo-pinocchio{
+  max-height:90px;
+  max-width:160px;
+}
+.logo-trieste{
+  max-height:90px;
+  max-width:260px;
+}
+
+/* Responsive scaling */
+@media (max-width: 1100px) {
+  .banner-logos img          { height:70px; }
+  .banner-logos img.logo-ups   { height:80px; }
+  .banner-logos img.logo-cea   { height:65px; }
+  .banner-logos img.logo-unige { height:80px; }
+  .banner-logos img.logo-svnit { height:80px; }
+  .banner-logos img.logo-cosmostat { height:80px; }
+  .banner-logos img.logo-integral  { height:75px; }
+  .banner-logos img.logo-inaf      { height:65px; }
+  .banner-logos img.logo-pinocchio { height:70px; }
+  .banner-logos img.logo-trieste   { height:80px; }
+}
+
+@media (max-width: 750px) {
+  .banner-logos{
+    bottom:12px;
+    gap:16px;
   }
-  .pill:hover{ border-color:var(--ring); background: rgba(255,255,255,.08); }
-  .icon{ width:18px; height:18px; flex:0 0 18px; color:currentColor; }
+  .banner-logos img          { height:55px; }
+  .banner-logos img.logo-ups   { height:65px; }
+  .banner-logos img.logo-cea   { height:50px; }
+  .banner-logos img.logo-unige { height:65px; }
+  .banner-logos img.logo-svnit { height:70px; }
+  .banner-logos img.logo-cosmostat { height:60px; }
+  .banner-logos img.logo-integral  { height:60px; }
+  .banner-logos img.logo-inaf      { height:52px; }
+  .banner-logos img.logo-pinocchio { height:58px; }
+  .banner-logos img.logo-trieste   { height:65px; }
+}
 
-  /* Section cards */
-  .cv-section{
-    background:var(--card);
-    border:1px solid rgba(255,255,255,.10);
-    border-radius:18px;
-    padding:22px;
-    box-shadow:var(--shadow);
-    margin-top:16px;
-  }
-  .cv-section h2{
-    margin:0 0 12px 0; font-size:1.2rem; border-left: 3px solid var(--ring);
-    padding-left:10px;
-  }
+/* Card content */
+.edu-content{
+  padding:18px 22px 30px;
+  flex:1;
+}
+.edu-content h3{
+  margin:0 0 8px;
+  font-size:1.15rem;
+  font-weight:600;
+}
+.edu-content .meta{
+  font-size:0.9rem;
+  color:#9ca3af;
+  margin-bottom:10px;
+}
+.edu-content p{
+  margin-top:8px;
+  font-size:0.98rem;
+  line-height:1.50;
+}
 
-  /* Two-column rows when helpful */
-  .row{ display:grid; grid-template-columns: 1fr 1fr; gap:18px; }
-  @media (max-width: 900px){ .row{ grid-template-columns: 1fr; } }
+/* Skills */
+.skills-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:24px;
+}
+@media(max-width:900px){
+  .skills-grid{ grid-template-columns:1fr; }
+}
+.skill-card h3{
+  font-size:1.05rem;
+  margin-bottom:6px;
+}
+.chip{
+  display:inline-block;
+  margin-right:10px;
+  color:var(--muted);
+  font-size:.95rem;
+}
 
-  /* Lists */
-  .list{ list-style:none; padding:0; margin:0; }
-  .list li{ margin: 8px 0; }
-  .sub{ color:var(--muted); font-size:.95rem; }
-  .degree h3{ margin:0 0 6px 0; font-size:1.05rem; }
-  .degree .meta{ color:var(--muted); font-size:.95rem; }
-
-  a.link{ color:var(--brand); text-decoration:none; font-weight:600; }
-  a.link:hover{ text-decoration:underline; }
-
-  /* Skills */
-  .skills-grid{ display:grid; grid-template-columns: 1fr 1fr; gap:14px; }
-  @media (max-width: 900px){ .skills-grid{ grid-template-columns: 1fr; } }
-  .skill-card{
-    background: rgba(255,255,255,.04);
-    border:1px solid rgba(255,255,255,.08);
-    border-radius:14px; padding:14px;
-  }
-  .skill-card h3{ margin:0 0 8px 0; font-size:1rem; }
-  .chips{ display:flex; flex-wrap:wrap; gap:8px; }
-  .chip{
-    padding:.35rem .6rem; font-size:.9rem; border-radius:999px;
-    border:1px solid rgba(255,255,255,.18); color:var(--muted);
-    background: rgba(255,255,255,.06);
-  }
-
-  /* Publication style */
-  .pub-title{ font-style:italic; }
-  .venue{ font-weight:700; }
-
-  /* Subtle rule between items when needed */
-  .rule{ height:1px; background: rgba(255,255,255,.08); margin:14px 0; }
-
-  /* Make Education a responsive row of cards */
-  .row.education{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 18px;
-  }
-
-  /* Optional: give each degree a light card look to match the theme */
-  .cv-section .degree{
-    background: rgba(255,255,255,.04);
-    border: 1px solid rgba(255,255,255,.08);
-    border-radius: 14px;
-    padding: 16px;
-  }
-
-  .cv-section .degree h3{ margin: 0 0 6px 0; font-size: 1.05rem; }
-  .cv-section .degree .meta{ color: var(--muted); font-size: .95rem; margin-bottom: 8px; }
-
+/* Publications */
+.pub-title{ font-style:italic; }
+.venue{ font-weight:600; }
 </style>
+
 
 <div class="cv-wrap">
 
-  <!-- Header -->
-  <header class="cv-head">
-    <div>
-      <h1>Vilasini Tinnaneri Sreekanth</h1>
-      <!-- <div class="tagline">Cosmology • Weak Lensing • Higher Order Statistics • Theory to Practice</div> -->
-    </div>
-    <nav class="contact">
-      <a class="pill" href="mailto:vilasini.tinnanerisreekanth@cea.fr">
-        <!-- mail -->
-        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 3.2V18H4V7.2l8 5.3 8-5.3ZM4.8 6h14.4L12 10.9 4.8 6Z"/></svg>
-        <span>vilasini.tinnanerisreekanth@gmail.com</span>
-      </a>
-      <a class="pill" href="https://github.com/vilasinits" target="_blank" rel="noopener" aria-label="GitHub">
-        <!-- GitHub -->
-        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.42c.58.1.8-.25.8-.56v-2c-3.26.7-3.95-1.4-3.95-1.4-.53-1.37-1.3-1.73-1.3-1.73-1.06-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.05 1.8 2.75 1.28 3.42.98.1-.77.41-1.28.75-1.58-2.6-.3-5.33-1.3-5.33-5.78 0-1.28.46-2.32 1.2-3.14-.12-.3-.52-1.53.12-3.18 0 0 .98-.31 3.22 1.2a11.1 11.1 0 0 1 5.86 0c2.24-1.5 3.22-1.2 3.22-1.2.64 1.65.24 2.87.12 3.18.74.82 1.2 1.86 1.2 3.14 0 4.49-2.73 5.47-5.34 5.77.42.36.8 1.07.8 2.17v3.22c0 .31.2.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
-        <span>vilasinits</span>
-      </a>
-      <a class="pill" href="https://www.linkedin.com/in/vilasini-ts/" target="_blank" rel="noopener" aria-label="LinkedIn">
-        <!-- LinkedIn -->
-        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.62c0-1.34-.02-3.07-1.87-3.07-1.88 0-2.17 1.47-2.17 2.98v5.71H9.3V9.75h3.42v1.46h.05c.47-.89 1.62-1.83 3.34-1.83 3.57 0 4.23 2.35 4.23 5.4v5.67ZM5.34 8.29a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM3.56 20.45h3.56V9.75H3.56v10.7ZM22.23 0H1.77C.8 0 0 .78 0 1.73v20.54C0 23.22.8 24 1.77 24h20.46c.98 0 1.77-.78 1.77-1.73V1.73C24 .78 23.21 0 22.23 0Z"/></svg>
-        <span>vilasini-ts</span>
-      </a>
-    </nav>
-  </header>
+<!-- =======================
+        HEADER
+======================= -->
+<header class="cv-head">
+  <h1>Vilasini Tinnaneri Sreekanth</h1>
+  <div class="intro-card">
+  <p>
+    I am a data scientist and research engineer with a strong background in 
+    <strong>machine learning, probabilistic modelling, scientific computing, and high-performance Python</strong>.
+    I enjoy turning complex problems into clean, well-engineered solutions whether it involves building data pipelines, designing modelling frameworks, or developing scalable inference systems.
+    <br><br>
+    I thrive in roles where I can combine analytical thinking with hands-on engineering, 
+    and I am motivated by opportunities that blend 
+    <strong>ML, simulation-free modelling, numerical optimisation, and real-world data</strong>.
+    I’m particularly excited about teams that value clarity, reproducibility, and 
+    technically rigorous product development.
+  </p>
+</div>
 
-    <!-- Education -->
-  <section class="cv-section">
-    <h2>Education</h2>
-    <div class="row education">
-      <div class="degree">
-        <h3>PhD, University of Paris-Saclay, France</h3>
-        <div class="meta">Expected 2025</div>
-        <ul class="list">
-          <li><strong>Dissertation:</strong> Likelihood free inference using higher order statistics</li>
-          <li><strong>Supervisors:</strong> <a class="link" href="https://www.cosmostat.org/people/jeanluc-starck" target="_blank" rel="noopener">Jean Luc Starck</a> and <a class="link" href="https://sandrinecodis.wixsite.com/sandrinewebsite" target="_blank" rel="noopener">Sandrine Codis</a></li>
-        </ul>
-      </div>
-      <div class="degree">
-        <h3>MS in Astrophysics, University of Geneva, Switzerland</h3>
-        <div class="meta">2021</div>
-        <ul class="list">
-          <li><strong>Thesis:</strong> Simulations of global cosmic strings with N body simulations to study their impact on large scale structure</li>
-          <li><strong>Supervisors:</strong> <a class="link" href="https://cosmology.unige.ch/users/martin-kunz" target="_blank" rel="noopener">Martin Kunz</a> and David Daverio</li>
-        </ul>
-      </div>
-      <div class="degree">
-        <h3>Integrated Masters in Physics, S V National Institute of Technology, Surat, India</h3>
-        <div class="meta">2019</div>
-      </div>
-    </div>
-  </section>
-  <!-- Skills -->
+
+  <div class="cv-actions">
+    <a class="cv-download-btn" href="/assets/Curriculum_Vitae_Vilasini.pdf" target="_blank">
+      Download CV (PDF)
+    </a>
+  </div>
+</header>
+
+
+<!-- =======================
+        EDUCATION
+======================= -->
 <section class="cv-section">
-  <h2>Skills</h2>
-  <div class="skills-grid">
-    <div class="skill-card">
-      <h3>Modeling and Inference</h3>
-      <div class="chips">
-        <span class="chip">Statistical modeling</span>
-        <span class="chip">Probabilistic inference</span>
-        <span class="chip">Simulation based inference</span>
-        <span class="chip">Generative modeling</span>
-        <span class="chip">Uncertainty quantification</span>
-        <span class="chip">Evaluation and cross validation</span>
-        <span class="chip">Feature extraction with wavelets</span>
+  <h2>Education</h2>
+
+  <div class="edu-grid">
+
+    <!-- PARIS-SACLAY + CEA -->
+    <div class="edu-card">
+      <div class="edu-banner">
+        <img class="bg" src="/assets/ups-image.jpg" alt="UPS Campus">
+        <div class="banner-logos">
+          <a href="https://www.universite-paris-saclay.fr" target="_blank">
+            <img class="logo-ups" src="/assets/ups_white_bg.png" alt="Université Paris-Saclay Logo">
+          </a>
+          <a href="https://www.cosmostat.org" target="_blank">
+            <img class="logo-cea" src="/assets/CEA_logo_nouveau.svg.png" alt="CEA / CosmoStat Logo">
+          </a>
+        </div>
+      </div>
+
+      <div class="edu-content">
+        <h3>Doctorate of Philosophy - Physics</h3>
+        <div class="meta">Université Paris-Saclay &middot; 2022 – 2025 [Expected]</div>
+        <p>
+          PhD at Université Paris-Saclay with the CosmoStat Laboratory, CEA.
+          Working on <strong>simulation-free cosmological inference</strong> using
+          wavelet-based higher-order statistics, PDF modelling, and generative models for weak lensing.
+        </p>
       </div>
     </div>
-    <div class="skill-card">
-      <h3>Data and Experimentation</h3>
-      <div class="chips">
-        <span class="chip">Exploratory data analysis</span>
-        <span class="chip">Experiment design and benchmarking</span>
-        <span class="chip">Reproducible notebooks</span>
-        <span class="chip">Result tracking and reports</span>
-        <span class="chip">Large scale simulation data</span>
-        <span class="chip">Spatial and image like data</span>
+
+    <!-- UNIVERSITY OF GENEVA -->
+    <div class="edu-card">
+      <div class="edu-banner">
+        <img class="bg" src="/assets/unige_astro.jpeg" alt="University of Geneva Astronomy">
+        <div class="banner-logos">
+          <a href="https://www.unige.ch" target="_blank">
+            <img class="logo-unige" src="/assets/Uni_GE_logo.svg.png" alt="UNIGE Logo">
+          </a>
+        </div>
+      </div>
+
+      <div class="edu-content">
+        <h3>Master of Science - Astrophysics</h3>
+        <div class="meta">University of Geneva &middot; 2019 – 2021</div>
+        <p>
+          MSc in Astrophysics with a thesis on <strong>relativistic N-body simulations</strong> of global
+          cosmic strings using <strong>Gevolution</strong>, focusing on defect signatures in large-scale structure.
+        </p>
       </div>
     </div>
-    <div class="skill-card">
-      <h3>Programming and Tools</h3>
-      <div class="chips">
-        <span class="chip">Python</span>
-        <span class="chip">NumPy and SciPy</span>
-        <span class="chip">pandas</span>
-        <span class="chip">scikit learn</span>
-        <span class="chip">PyTorch</span>
-        <span class="chip">JAX</span>
-        <span class="chip">Matplotlib</span>
-        <span class="chip">Git and GitHub</span>
-        <span class="chip">Linux</span>
-        <span class="chip">SLURM and HPC</span>
+
+    <!-- SVNIT SURAT -->
+    <div class="edu-card">
+      <div class="edu-banner">
+        <img class="bg" src="/assets/svnitfront.jpg" alt="SVNIT Surat Campus">
+        <div class="banner-logos">
+          <a href="https://svnit.ac.in" target="_blank">
+            <img class="logo-svnit" src="/assets/nitlogo.png" alt="SVNIT Logo">
+          </a>
+        </div>
+      </div>
+
+      <div class="edu-content">
+        <h3>Integrated MSc - Physics</h3>
+        <div class="meta">SVNIT Surat &middot; 2014 – 2019</div>
+        <p>
+          Five-year integrated MSc in Physics with coursework in
+          <strong>mathematics, computing, astrophysics, and data analysis</strong>.
+          Final master thesis on the <strong>formation of dark matter halos in quintessence models</strong>.
+        </p>
       </div>
     </div>
-    <div class="skill-card">
-      <h3>Communication</h3>
-      <div class="chips">
-        <span class="chip">Clear documentation</span>
-        <span class="chip">Talks and posters</span>
-        <span class="chip">Mentoring and journal club</span>
-        <span class="chip">Collaboration in research teams</span>
-      </div>
-    </div>
+
   </div>
 </section>
 
 
-  <!-- Publications -->
-  <section class="cv-section">
-    <h2>Publications</h2>
-    <ul class="list">
-      <li>
-        Accepted: <span class="pub-title"><a class="link" href="https://arxiv.org/abs/2507.01707" target="_blank" rel="noopener">Generative Modeling of Convergence Maps Based on Predicted One Point Statistics</a></span>, <span class="venue">Astronomy and Astrophysics</span>
-      </li>
-      <li>
-        Accepted: <a class="link" href="https://www.aanda.org/component/article?access=doi&doi=10.1051/0004-6361/202450061" target="_blank" rel="noopener"><span class="pub-title">Theoretical wavelet ℓ1 norm from one point PDF prediction</span></a>, <span class="venue">Astronomy and Astrophysics</span>
-      </li>
-      <li>
-        In preparation: <span class="pub-title">Cosmological N body simulations with topological defects</span>, <span class="venue">JCAP</span>
-      </li>
-    </ul>
-  </section>
+<!-- =======================
+        RESEARCH EXPERIENCE
+======================= -->
+<section class="cv-section">
+  <h2>Research Experience</h2>
 
-  <!-- Conferences, Schools, and Talks -->
-  <section class="cv-section">
-    <h2>Conferences, Schools, and Talks</h2>
-    <ul class="list">
-      <li><a class="link" href="https://indico.in2p3.fr/event/27965/" target="_blank" rel="noopener">Euclid France Theory and Likelihood Workshop</a>, 28 Nov 2022, IAP Paris</li>
-      <li><a class="link" href="https://euclid-fr2022.sciencesconf.org/" target="_blank" rel="noopener">Euclid France Meeting 2022</a>, 30 Nov–2 Dec 2022, IAP Paris</li>
-      <li><a class="link" href="https://indico.physi.uni-heidelberg.de/event/728/" target="_blank" rel="noopener">XV Tonale Cosmology Winter School</a>, 4–10 Dec 2022, Passo del Tonale, Italy</li>
-      <li><a class="link" href="https://www.cpt.univ-mrs.fr/~cosmo/EC2023/index.php" target="_blank" rel="noopener">Future Cosmology</a>, 23–29 Apr 2023, IESC Cargese, France (Poster)</li>
-      <li><a class="link" href="https://ada10.cosmostat.org/" target="_blank" rel="noopener">ADA X Summer School</a>, 18–22 Sep 2023, Crete, Greece</li>
-      <li>Colloque national Action Dark Energy, 6–7 Nov 2023, Annecy, France (Talk)</li>
-      <li>TOSCA Reunion Meeting, 16–17 Nov 2023, Nice, France (Talk)</li>
-      <li>Euclid France Symposium 12, 24–26 Feb 2024, Lyon, France (Talk)</li>
-      <li>Cosmology and Statistics Days, 1–2 Feb 2024, CosmoStat, CEA Paris Saclay, France (Talk)</li>
-      <li>Euclid SWG WL Meeting, 19–21 Feb 2024, Innsbruck, Austria (Talk)</li>
-      <li>COSMO21, 21–24 Dec 2024, Chania, Greece (Talk)</li>
-      <li>Euclid Consortium Meeting, 17–21 Jun 2024, Rome, Italy</li>
-    </ul>
-  </section>
+  <div class="exp-grid">
 
-  <!-- Awards -->
-  <section class="cv-section">
-    <h2>Awards and Scholarships</h2>
-    <ul class="list">
-      <li>Excellence Master Fellowship, University of Geneva</li>
-    </ul>
-  </section>
+    <!-- PhD research: CosmoStat / Euclid -->
+    <div class="edu-card">
+      <div class="edu-banner">
+        <img class="bg" src="/assets/euclidbanner.jpg" alt="Euclid & Large-Scale Structure">
+        <div class="banner-logos">
+          <a href="https://www.cosmostat.org" target="_blank">
+            <img class="logo-cosmostat" src="/assets/CosmoStatDarkBK.png" alt="CosmoStat Logo">
+          </a>
+          <a href="https://www.esa.int/Science_Exploration/Space_Science/Euclid" target="_blank">
+            <img class="logo-cosmostat" src="/assets/euclid_logo.png" alt="CosmoStat Logo">
+          </a>
+        </div>
+      </div>
+
+      <div class="edu-content">
+        <h3>Likelihood-free Inference with Higher-Order Statistics</h3>
+        <div class="meta">PhD Research &middot; CosmoStat, CEA Paris-Saclay &middot; 2022–2025</div>
+        <p>
+          Developed a <strong>Large Deviation Theory</strong>-based framework predicting the
+          wavelet ℓ₁-norm for weak-lensing convergence maps, providing an analytical alternative
+          to heavy simulations. Built a <strong>likelihood-free cosmological inference</strong> pipeline
+          combining theoretical predictions, generative models, and HPC-scale map generation.
+        </p>
+      </div>
+    </div>
+
+    <!-- Master thesis: UNIGE, cosmic strings -->
+    <div class="edu-card">
+      <div class="edu-banner">
+        <img class="bg" src="/assets/defectsbanner.jpg" alt="Cosmic strings simulations">
+        <div class="banner-logos">
+          <a href="https://www.unige.ch" target="_blank">
+            <img class="logo-unige" src="/assets/unige_shortlogo.webp" alt="UNIGE Logo">
+          </a>
+        </div>
+      </div>
+
+      <div class="edu-content">
+        <h3>Simulations of Global Cosmic Strings</h3>
+        <div class="meta">Master Thesis &middot; University of Geneva &middot; 2020–2021</div>
+        <p>
+          Simulated the evolution of <strong>global topological defects</strong> and studied their impact
+          on large-scale structure. Combined <strong>LATField2</strong> and <strong>Gevolution</strong> in an
+          automated HPC workflow with batch submission, monitoring tools, and parallel
+          post-processing of scalar modes.
+        </p>
+      </div>
+    </div>
+
+    <!-- Hubble / optimal extraction -->
+    <div class="edu-card">
+      <div class="edu-banner">
+        <img class="bg" src="/assets/hstbanner.webp" alt="Hubble Space Telescope">
+        <div class="banner-logos">
+          <a href="https://www.unige.ch" target="_blank">
+            <img class="logo-unige" src="/assets/unige_shortlogo.webp" alt="UNIGE Logo">
+          </a>
+          <a href="https://science.nasa.gov/mission/hubble/" target="_blank">
+            <img class="logo-unige" src="/assets/hstlogo.gif" alt="UNIGE Logo">
+          </a>
+        </div>
+      </div>
+
+      <div class="edu-content">
+        <h3>Optimal Extraction of HST Spectra</h3>
+        <div class="meta">Astrophysics Lab II &middot; University of Geneva &middot; 2020</div>
+        <p>
+          Implemented the <strong>Horne (1986) optimal extraction algorithm</strong> in Python for HST
+          spectra, optimising vectorised operations. Built automated quality checks comparing
+          optimal vs. box-extracted spectra for robust pipeline validation.
+        </p>
+      </div>
+    </div>
+
+    <!-- INTEGRAL / GRB time series -->
+    <div class="edu-card">
+      <div class="edu-banner">
+        <img class="bg" src="/assets/integralbanner.jpg" alt="INTEGRAL satellite">
+        <div class="banner-logos">
+          <a href="https://www.unige.ch" target="_blank">
+            <img class="logo-unige" src="/assets/unige_shortlogo.webp" alt="UNIGE Logo">
+          </a>
+          <a href="https://www.cosmos.esa.int/web/integral" target="_blank">
+            <img class="logo-integral" src="/assets/integral.png" alt="INTEGRAL Logo">
+          </a>
+        </div>
+      </div>
+
+      <div class="edu-content">
+        <h3>GRB Search in INTEGRAL Time Series</h3>
+        <div class="meta">Astrophysics Lab I &middot; University of Geneva &middot; 2019</div>
+        <p>
+          Scripted data ingestion and pre-processing for <strong>SPI-ACS</strong> light curves from INTEGRAL.
+          Designed peak-detection algorithms to identify <strong>GRB candidates</strong>, using custom
+          Python analysis scripts for large time-series datasets.
+        </p>
+      </div>
+    </div>
+
+    <!-- Trieste / PINOCCHIO + INAF -->
+    <div class="edu-card">
+      <div class="edu-banner">
+        <img class="bg" src="/assets/lss.jpg" alt="Large-scale structure">
+        <div class="banner-logos">
+          <a href="https://www.units.it/" target="_blank">
+            <img class="logo-trieste" src="/assets/unitrieste_shortlogo.jpg" alt="University of Trieste Logo">
+          </a>
+          <a href="https://www.inaf.it/" target="_blank">
+            <img class="logo-inaf" src="/assets/inaflogo.png" alt="INAF Logo">
+          </a>
+          <a href="https://adlibitum.oats.inaf.it/monaco/HomePage/Pinocchio.html" target="_blank">
+            <img class="logo-pinocchio" src="/assets/triestebanner.png" alt="PINOCCHIO Logo">
+          </a>
+        </div>
+      </div>
+
+      <div class="edu-content">
+        <h3>Dark-Matter Halos in Quintessence Models</h3>
+        <div class="meta">Master Thesis-1 &middot; University of Trieste &middot; 2019</div>
+        <p>
+          Modified the <strong>PINOCCHIO</strong> code to explore dark-matter halo formation in
+          <strong>quintessence cosmologies</strong> with varying $w_0$ and $w_a$. Generated halo catalogues
+          and performed cluster cosmology validation using statistical analysis and
+          visualisation tools.
+        </p>
+      </div>
+    </div>
+
+    <!-- IISER MOHALI - RESEARCH INTERNSHIP -->
+    <div class="edu-card">
+      <div class="edu-banner">
+        <!-- Banner background -->
+        <img class="bg" src="/assets/iiserbanner.jpeg" alt="IISER Mohali Campus">
+
+        <!-- Logos on banner -->
+        <div class="banner-logos">
+          <a href="https://www.iisermohali.ac.in" target="_blank">
+            <img class="logo-iiser" src="/assets/iiserlogo.png" alt="IISER Mohali Logo">
+          </a>
+        </div>
+      </div>
+
+      <div class="edu-content">
+        <h3>Research Internship - IISER Mohali</h3>
+        <div class="meta">May 2017 - Supervisor: Prof. Jasjeet Singh Bagla</div>
+        <p>
+          Worked on <strong>cosmological simulations of Quintessence dark energy models</strong>, exploring 
+          how the scalar-field dynamics alter the <strong>expansion history</strong> and 
+          <strong>composition evolution</strong> of the Universe.  
+          Gained early exposure to <strong>cosmology, numerical methods, and large-scale structure</strong>.
+        </p>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+
+<!-- =======================
+        SKILLS
+======================= -->
+<section class="cv-section">
+  <h2>Skills</h2>
+
+  <div class="skills-grid">
+
+    <div class="skill-card">
+      <h3>Modeling & Inference</h3>
+      <span class="chip">Statistical modelling</span>
+      <span class="chip">Probabilistic inference</span>
+      <span class="chip">Simulation-based inference</span>
+      <span class="chip">Generative modelling</span>
+      <span class="chip">Uncertainty quantification</span>
+      <span class="chip">Wavelet-based features</span>
+    </div>
+
+    <div class="skill-card">
+      <h3>Data & Experimentation</h3>
+      <span class="chip">Exploratory analysis</span>
+      <span class="chip">Benchmarking</span>
+      <span class="chip">Reproducibility</span>
+      <span class="chip">Large simulations</span>
+      <span class="chip">Image-like data</span>
+    </div>
+
+    <div class="skill-card">
+      <h3>Programming</h3>
+      <span class="chip">Python</span>
+      <span class="chip">NumPy / SciPy</span>
+      <span class="chip">pandas</span>
+      <span class="chip">scikit-learn</span>
+      <span class="chip">JAX</span>
+      <span class="chip">PyTorch</span>
+      <span class="chip">Git / GitHub</span>
+      <span class="chip">Linux</span>
+      <span class="chip">SLURM / HPC</span>
+    </div>
+
+    <div class="skill-card">
+      <h3>Communication</h3>
+      <span class="chip">Documentation</span>
+      <span class="chip">Talks & posters</span>
+      <span class="chip">Mentoring</span>
+      <span class="chip">Collaboration</span>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =======================
+        PUBLICATIONS
+======================= -->
+<section class="cv-section">
+  <h2>Publications</h2>
+  <ul>
+    <li>
+      <a class="pub-title" href="https://www.aanda.org/component/article?access=doi&doi=10.1051/0004-6361/202450061" target="_blank">
+        Theoretical wavelet ℓ₁-norm from one-point probability density function prediction
+      </a>,
+      Vilasini Tinnaneri Sreekanth, A. Barthelemy, S. Codis, J.-L. Starck,
+      <span class="venue">Astronomy &amp; Astrophysics</span>, 2024.
+    </li>
+    <li>
+      <a class="pub-title" href="https://arxiv.org/abs/2507.01707" target="_blank">
+        Generative modeling of convergence maps based on predicted one-point statistics
+      </a>,
+      Vilasini Tinnaneri Sreekanth, J.-L. Starck, S. Codis,
+      <span class="venue">Astronomy &amp; Astrophysics</span>, accepted (2025).
+    </li>
+    <li>
+      <a class="pub-title" href="https://arxiv.org/abs/2510.04953" target="_blank">
+        Euclid preparation: Towards a DR1 application of higher-order weak lensing statistics
+      </a>,
+      Euclid Collaboration, S. Vinciguerra, F. Bouché, N. Martinet,
+      <em>et al.</em>, incl. Vilasini Tinnaneri Sreekanth,
+      <span class="venue">arXiv:2510.04953</span>, 2025.
+    </li>
+    <li>
+      <span class="pub-title">
+        Benchmarking Theoretical Wavelet ℓ₁-Norm Predictions Against Cosmological Simulations
+      </span>,
+      A. Tersenov, T. S. Vilasini, J.-L. Starck, S. Codis, M. Kilbinger,
+      <span class="venue">in preparation</span> for <span class="venue">Astronomy &amp; Astrophysics</span>.
+    </li>
+  </ul>
+</section>
+
+
+<!-- =======================
+        CONFERENCES
+======================= -->
+<section class="cv-section">
+  <h2>Conferences, Schools, and Talks</h2>
+  <ul>
+    <li>Euclid France Theory and Likelihood Workshop (IAP Paris, 2022)</li>
+    <li>Euclid France Meeting 2022 (IAP Paris)</li>
+    <li>XV Tonale Cosmology Winter School (Italy, 2022)</li>
+    <li>Future Cosmology - IESC Cargese (Poster, 2023)</li>
+    <li>ADA X Summer School (Crete, 2023)</li>
+    <li>Action Dark Energy Colloque (Talk, 2023)</li>
+    <li>TOSCA Reunion Meeting (Talk, 2023)</li>
+    <li>Euclid Symposium 12 (Talk, 2024)</li>
+    <li>Cosmology & Statistics Days (Talk, 2024)</li>
+    <li>Euclid SWG WL Meeting (Talk, 2024)</li>
+    <li>COSMO21 (Talk, 2024)</li>
+    <li>Euclid Consortium Meeting (Rome, 2024)</li>
+  </ul>
+</section>
+
+
+<!-- =======================
+        AWARDS
+======================= -->
+<section class="cv-section">
+  <h2>Awards &amp; Scholarships</h2>
+  <ul>
+    <li>Excellence Master Fellowship - University of Geneva</li>
+  </ul>
+</section>
 
 </div>
