@@ -2,8 +2,42 @@
 layout: travel
 title: Through my lens
 permalink: /travel.html/
+captions:
+  - title: "Old city lanes"
+    subtitle: "Morning light in a busy neighbourhood"
+  - title: "Waiting for departure"
+    subtitle: "Quiet moments on the platform"
+  - title: "Tram through old town Lisbon"
+    subtitle: "A yellow tram weaving through narrow streets"
+  - title: "Mountain calling"
+    subtitle: "Found this mossy forest while wandering through the Swiss hills"
+  - title: "Under the Arch"
+    subtitle: "A calm corner of Venice just after the rain"
+  - title: "Snowbound"
+    subtitle: "Stillness draped over stone posts in Tonale"
+  - title: "Venetian Stillness"
+    subtitle: "A canal shimmering under lantern light in the heart of Venice"
+  - title: "City of Lights"
+    subtitle: "A fleeting moment in Paris where motion and stillness meet"
+  - title: "Across the Dunes"
+    subtitle: "A quiet silhouette moving through the Jaisalmer sunset"
+  - title: "Caravan at Dusk"
+    subtitle: "Silhouettes drifting across the Jaisalmer sands as the sun melts into the horizon"
+  - title: "Desert Architecture"
+    subtitle: "Intricate balconies and sandstone walls lining the heart of Jaisalmer"
+  - title: "Blue City Views"
+    subtitle: "Walking through Jodhpur’s cool blue streets and colourful corners"
+  - title: "Lakefront Palace"
+    subtitle: "Morning calm along Udaipur’s ghats, where the city’s stories echo through old arches"
+  - title: "Gateway to the Bazaar"
+    subtitle: "A glimpse into Udaipur’s colourful chaos, framed perfectly by an old city arch"
+  - title: "Stone and Silence"
+    subtitle: "The quiet grandeur of Mehrangarh Fort, rising from the desert cliffs of Jodhpur"
+  
 ---
 
+
+  
 <style>
   /* Full width + site tokens */
   .page .page-content, .page .page-content .wrapper {
@@ -60,13 +94,42 @@ permalink: /travel.html/
   }
 
   /* Caption/overlay on hover */
+    /* Hover overlay like the Roshogolla card */
   .cap{
-    position:absolute; inset:auto 0 0 0; padding:10px 12px;
-    background:linear-gradient(180deg, transparent, rgba(0,0,0,.55));
-    color:#fff; font-size:.9rem; display:flex; justify-content:flex-start; align-items:flex-end;
-  }
-  .cap span:last-child { display: none; } /* hide the right-side filename */
+    position:absolute;
+    inset:0;                    /* cover full image */
+    padding:16px;
+    background:linear-gradient(
+      180deg,
+      rgba(0,0,0,.15),
+      rgba(0,0,0,.82)
+    );
+    color:#fff;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    gap:4px;
 
+    opacity:0;
+    transform:translateY(8px);
+    transition:opacity .18s ease, transform .18s ease;
+  }
+
+  .portfolio-item:hover .cap{
+    opacity:1;
+    transform:translateY(0);
+  }
+
+  .cap span:first-child{
+    font-weight:700;
+    font-size:1rem;
+  }
+
+  .cap span:last-child{
+    display:block;          /* show second line again */
+    font-size:.85rem;
+    opacity:.9;
+  }
 
   /* Lightbox */
   .lightbox{
@@ -127,28 +190,54 @@ permalink: /travel.html/
 
   <!-- Gallery -->
   <section id="gallery" class="gallery">
-    {% assign groups = "uncategorised,rajasthan,southfrance,crete,chicago,smokeys,baltic,romania,ny" | split: "," %}
-    {% for group in groups %}
-      {% for image in site.static_files %}
-        {% if image.path contains '/thumbs/' and image.path contains group and image.path contains '-400.webp' %}
-          {% assign full_size = image.path | replace: '/thumbs/', '/full/' | replace: '-400.webp', '.webp' %}
-          {% assign image_name = image.path | split: '/' | last | replace: '-400.webp', '' %}
-          <figure class="portfolio-item" data-group="{{ group }}">
-            <a class="image-link" href="{{ full_size }}" data-fullsize="{{ full_size }}" data-name="{{ image_name }}" data-group="{{ group }}">
-              <img
-                src="{{ image.path }}"
-                srcset="{{ image.path }} 400w, {{ image.path | replace: '-400.webp', '-800.webp' }} 800w"
-                sizes="(max-width: 520px) 100vw, (max-width: 1100px) 33vw, 25vw"
-                loading="lazy"
-                alt="{{ group | capitalize }} — {{ image_name }}"
-              >
-              <div class="cap"><span>{{ group | replace: 'southfrance','South France' | replace: 'smokeys','Smokeys' | replace: 'ny','New York' | capitalize }}</span><span>{{ image_name }}</span></div>
-            </a>
-          </figure>
+  {% assign groups = "uncategorised,rajasthan,southfrance,crete,chicago,smokeys,baltic,romania,ny" | split: "," %}
+  {% assign captions = page.captions %}
+  {% assign caption_index = 0 %}
+  {% assign captions_size = captions | size %}
+
+  {% for group in groups %}
+    {% for image in site.static_files %}
+      {% if image.path contains '/thumbs/' and image.path contains group and image.path contains '-400.webp' %}
+        {% assign full_size = image.path | replace: '/thumbs/', '/full/' | replace: '-400.webp', '.webp' %}
+        {% assign image_name = image.path | split: '/' | last | replace: '-400.webp', '' %}
+
+        {%- comment -%}
+        Pick caption #caption_index if available, otherwise fall back to group / filename
+        {%- endcomment -%}
+        {% if caption_index < captions_size %}
+          {% assign c = captions[caption_index] %}
+          {% assign cap_title = c.title %}
+          {% assign cap_sub   = c.subtitle %}
+        {% else %}
+          {% assign cap_title = group | replace: 'southfrance','South France' | replace: 'smokeys','Smokeys' | replace: 'ny','New York' | capitalize %}
+          {% assign cap_sub   = image_name %}
         {% endif %}
-      {% endfor %}
+
+        <figure class="portfolio-item" data-group="{{ group }}">
+          <a class="image-link"
+             href="{{ full_size }}"
+             data-fullsize="{{ full_size }}"
+             data-name="{{ image_name }}"
+             data-group="{{ group }}">
+            <img
+              src="{{ image.path }}"
+              srcset="{{ image.path }} 400w, {{ image.path | replace: '-400.webp', '-800.webp' }} 800w"
+              sizes="(max-width: 520px) 100vw, (max-width: 1100px) 33vw, 25vw"
+              loading="lazy"
+              alt="{{ cap_title }} — {{ cap_sub }}"
+            >
+            <div class="cap">
+              <span>{{ cap_title }}</span>
+              <span>{{ cap_sub }}</span>
+            </div>
+          </a>
+        </figure>
+
+        {% assign caption_index = caption_index | plus: 1 %}
+      {% endif %}
     {% endfor %}
-  </section>
+  {% endfor %}
+</section>
 </div>
 
 <!-- Lightbox -->

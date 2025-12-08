@@ -34,16 +34,52 @@ permalink: /softwares.html/
   @media (max-width: 1050px){ .sw-grid{ grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 640px){ .sw-grid{ grid-template-columns: 1fr; } }
 
+  /* Card with banner */
   .sw-card{
     background:var(--card);
     border:1px solid rgba(255,255,255,.10);
     border-radius:16px;
-    padding:18px;
     box-shadow:var(--shadow);
-    display:flex; flex-direction:column; gap:10px;
+    display:flex;
+    flex-direction:column;
+    overflow:hidden;
     transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
   }
-  .sw-card:hover{ transform:translateY(-2px); border-color:var(--ring); box-shadow:0 12px 26px rgba(0,0,0,.18); }
+  .sw-card:hover{
+    transform:translateY(-2px);
+    border-color:var(--ring);
+    box-shadow:0 12px 26px rgba(0,0,0,.18);
+  }
+
+  .sw-banner{
+    position:relative;
+    height:260px;
+    overflow:hidden;
+  }
+  .sw-banner img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+    filter:brightness(0.80);
+  }
+  .sw-banner::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(to bottom,
+      rgba(15,23,42,0.15),
+      rgba(15,23,42,0.6));
+    pointer-events:none;
+  }
+
+  .sw-body{
+    padding:16px 18px 18px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    height:100%;
+  }
 
   .sw-title{ display:flex; align-items:center; justify-content:space-between; gap:10px; }
   .sw-title h3{ margin:0; font-size:1.05rem; }
@@ -84,76 +120,96 @@ permalink: /softwares.html/
 
     <!-- WALE -->
     <article class="sw-card">
-      <div class="sw-title">
-        <h3>WALE</h3>
+      <div class="sw-banner">
+        <!-- replace with your actual WALE banner -->
+        <img src="/assets/wale.png" alt="WALE – Wavelet ℓ1-norm Estimator">
       </div>
-      <p class="sw-desc">
-        Theory based prediction of the wavelet l1 norm for weak lensing convergence under a given cosmology. Uses Large Deviation Theory with spherical collapse to produce fast one point predictions that support simulation light inference.
-      </p>
-      <div class="chips">
-        <span class="chip">Python</span>
-        <span class="chip">Large Deviation Theory</span>
-        <span class="chip">Wavelets</span>
-        <span class="chip">Weak lensing</span>
-      </div>
-      <div class="sw-actions">
-        <a class="btn primary" href="https://github.com/vilasinits/WALE" target="_blank" rel="noopener">
-          <!-- GitHub -->
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.42c.58.1.8-.25.8-.56v-2c-3.26.7-3.95-1.4-3.95-1.4-.53-1.37-1.3-1.73-1.3-1.73-1.06-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.05 1.8 2.75 1.28 3.42.98.1-.77.41-1.28.75-1.58-2.6-.3-5.33-1.3-5.33-5.78 0-1.28.46-2.32 1.2-3.14-.12-.3-.52-1.53.12-3.18 0 0 .98-.31 3.22 1.2a11.1 11.1 0 0 1 5.86 0c2.24-1.5 3.22-1.2 3.22-1.2.64 1.65.24 2.87.12 3.18.74.82 1.2 1.86 1.2 3.14 0 4.49-2.73 5.47-5.34 5.77.42.36.8 1.07.8 2.17v3.22c0 .31.2.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
-          <span>Repo</span>
-        </a>
-        <a class="btn" href="https://vilasinits.github.io/WALE/" target="_blank" rel="noopener">
-          <!-- External link -->
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3ZM5 5h6v2H7v10h10v-4h2v6H5V5Z"/></svg>
-          <span>Docs</span>
-        </a>
+      <div class="sw-body">
+        <div class="sw-title">
+          <h3>WALE</h3>
+        </div>
+        <p class="sw-desc">
+          Theory-based prediction of the wavelet ℓ₁-norm for weak-lensing convergence under a given cosmology.
+          Uses Large Deviation Theory with spherical collapse to produce fast one-point predictions that
+          support simulation-light inference.
+        </p>
+        <div class="chips">
+          <span class="chip">Python</span>
+          <span class="chip">Large Deviation Theory</span>
+          <span class="chip">Wavelets</span>
+          <span class="chip">Weak lensing</span>
+        </div>
+        <div class="sw-actions">
+          <a class="btn primary" href="https://github.com/vilasinits/WALE" target="_blank" rel="noopener">
+            <!-- GitHub -->
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.42c.58.1.8-.25.8-.56v-2c-3.26.7-3.95-1.4-3.95-1.4-.53-1.37-1.3-1.73-1.3-1.73-1.06-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.05 1.8 2.75 1.28 3.42.98.1-.77.41-1.28.75-1.58-2.6-.3-5.33-1.3-5.33-5.78 0-1.28.46-2.32 1.2-3.14-.12-.3-.52-1.53.12-3.18 0 0 .98-.31 3.22 1.2a11.1 11.1 0 0 1 5.86 0c2.24-1.5 3.22-1.2 3.22-1.2.64 1.65.24 2.87.12 3.18.74.82 1.2 1.86 1.2 3.14 0 4.49-2.73 5.47-5.34 5.77.42.36.8 1.07.8 2.17v3.22c0 .31.2.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+            <span>Repo</span>
+          </a>
+          <a class="btn" href="https://vilasinits.github.io/WALE/" target="_blank" rel="noopener">
+            <!-- External link -->
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3ZM5 5h6v2H7v10h10v-4h2v6H5V5Z"/></svg>
+            <span>Docs</span>
+          </a>
+        </div>
       </div>
     </article>
 
     <!-- GOLCONDA -->
     <article class="sw-card">
-      <div class="sw-title">
-        <h3>GOLCONDA</h3>
+      <div class="sw-banner">
+        <img src="/assets/golconda.png" alt="GOLCONDA emulator">
       </div>
-      <p class="sw-desc">
-        Emulator for weak lensing convergence maps from an input power spectrum and a target l1 norm across scales. Uses a generalized forward backward scheme to match one point and two point targets.
-      </p>
-      <div class="chips">
-        <span class="chip">Python</span>
-        <span class="chip">Emulation</span>
-        <span class="chip">Optimization</span>
-        <span class="chip">Weak lensing</span>
-      </div>
-      <div class="sw-actions">
-        <a class="btn primary" href="https://github.com/vilasinits/GOLCONDA" target="_blank" rel="noopener">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.42c.58.1.8-.25.8-.56v-2c-3.26.7-3.95-1.4-3.95-1.4-.53-1.37-1.3-1.73-1.3-1.73-1.06-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.05 1.8 2.75 1.28 3.42.98.1-.77.41-1.28.75-1.58-2.6-.3-5.33-1.3-5.33-5.78 0-1.28.46-2.32 1.2-3.14-.12-.3-.52-1.53.12-3.18 0 0 .98-.31 3.22 1.2a11.1 11.1 0 0 1 5.86 0c2.24-1.5 3.22-1.2 3.22-1.2.64 1.65.24 2.87.12 3.18.74.82 1.2 1.86 1.2 3.14 0 4.49-2.73 5.47-5.34 5.77.42.36.8 1.07.8 2.17v3.22c0 .31.2.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
-          <span>Repo</span>
-        </a>
-        <a class="btn" href="https://vilasinits.github.io/GOLCONDA/" target="_blank" rel="noopener">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3ZM5 5h6v2H7v10h10v-4h2v6H5V5Z"/></svg>
-          <span>Docs</span>
-        </a>
+      <div class="sw-body">
+        <div class="sw-title">
+          <h3>GOLCONDA</h3>
+        </div>
+        <p class="sw-desc">
+          Emulator for weak-lensing convergence maps from an input power spectrum and a target ℓ₁-norm across scales.
+          Uses a generalized forward–backward scheme to match one-point and two-point targets.
+        </p>
+        <div class="chips">
+          <span class="chip">Python</span>
+          <span class="chip">Emulation</span>
+          <span class="chip">Optimization</span>
+          <span class="chip">Weak lensing</span>
+        </div>
+        <div class="sw-actions">
+          <a class="btn primary" href="https://github.com/vilasinits/GOLCONDA" target="_blank" rel="noopener">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.42c.58.1.8-.25.8-.56v-2c-3.26.7-3.95-1.4-3.95-1.4-.53-1.37-1.3-1.73-1.3-1.73-1.06-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.05 1.8 2.75 1.28 3.42.98.1-.77.41-1.28.75-1.58-2.6-.3-5.33-1.3-5.33-5.78 0-1.28.46-2.32 1.2-3.14-.12-.3-.52-1.53.12-3.18 0 0 .98-.31 3.22 1.2a11.1 11.1 0 0 1 5.86 0c2.24-1.5 3.22-1.2 3.22-1.2.64 1.65.24 2.87.12 3.18.74.82 1.2 1.86 1.2 3.14 0 4.49-2.73 5.47-5.34 5.77.42.36.8 1.07.8 2.17v3.22c0 .31.2.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+            <span>Repo</span>
+          </a>
+          <a class="btn" href="https://vilasinits.github.io/GOLCONDA/" target="_blank" rel="noopener">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3ZM5 5h6v2H7v10h10v-4h2v6H5V5Z"/></svg>
+            <span>Docs</span>
+          </a>
+        </div>
       </div>
     </article>
 
     <!-- Global Defects -->
     <article class="sw-card">
-      <div class="sw-title">
-        <h3>Global Defects</h3>
+      <div class="sw-banner">
+        <img src="/assets/globaldefects.png" alt="Global defects simulations">
       </div>
-      <p class="sw-desc">
-        Simulation toolkit for global topological defects and their impact on structure formation. Includes network evolution and map based analysis utilities.
-      </p>
-      <div class="chips">
-        <span class="chip">Python</span>
-        <span class="chip">Relativistic dynamics</span>
-        <span class="chip">Large scale structure</span>
-      </div>
-      <div class="sw-actions">
-        <a class="btn primary" href="https://github.com/vilasinits/GlobalDefect" target="_blank" rel="noopener">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.42c.58.1.8-.25.8-.56v-2c-3.26.7-3.95-1.4-3.95-1.4-.53-1.37-1.3-1.73-1.3-1.73-1.06-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.05 1.8 2.75 1.28 3.42.98.1-.77.41-1.28.75-1.58-2.6-.3-5.33-1.3-5.33-5.78 0-1.28.46-2.32 1.2-3.14-.12-.3-.52-1.53.12-3.18 0 0 .98-.31 3.22 1.2a11.1 11.1 0 0 1 5.86 0c2.24-1.5 3.22-1.2 3.22-1.2.64 1.65.24 2.87.12 3.18.74.82 1.2 1.86 1.2 3.14 0 4.49-2.73 5.47-5.34 5.77.42.36.8 1.07.8 2.17v3.22c0 .31.2.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
-          <span>Repo</span>
-        </a>
+      <div class="sw-body">
+        <div class="sw-title">
+          <h3>Global Defects</h3>
+        </div>
+        <p class="sw-desc">
+          Simulation toolkit for global topological defects and their impact on structure formation.
+          Includes network evolution and map-based analysis utilities.
+        </p>
+        <div class="chips">
+          <span class="chip">Python</span>
+          <span class="chip">Relativistic dynamics</span>
+          <span class="chip">Large-scale structure</span>
+        </div>
+        <div class="sw-actions">
+          <a class="btn primary" href="https://github.com/vilasinits/GlobalDefect" target="_blank" rel="noopener">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.42c.58.1.8-.25.8-.56v-2c-3.26.7-3.95-1.4-3.95-1.4-.53-1.37-1.3-1.73-1.3-1.73-1.06-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.05 1.8 2.75 1.28 3.42.98.1-.77.41-1.28.75-1.58-2.6-.3-5.33-1.3-5.33-5.78 0-1.28.46-2.32 1.2-3.14-.12-.3-.52-1.53.12-3.18 0 0 .98-.31 3.22 1.2a11.1 11.1 0 0 1 5.86 0c2.24-1.5 3.22-1.2 3.22-1.2.64 1.65.24 2.87.12 3.18.74.82 1.2 1.86 1.2 3.14 0 4.49-2.73 5.47-5.34 5.77.42.36.8 1.07.8 2.17v3.22c0 .31.2.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+            <span>Repo</span>
+          </a>
+        </div>
       </div>
     </article>
 

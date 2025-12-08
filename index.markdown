@@ -128,13 +128,13 @@ layout: home
         I recently completed my doctorate in Astrophysics, where I studied how dark matter shapes the universe. My work sat at the meeting point of theory, large-scale simulations, and weak lensing. I built simple and reliable tools designed to learn as much as possible from data before resorting to heavy computation.
       </p>
       <p>
-        My research focused on higher-order statistics and wavelet methods — approaches that allowed me to perform parameter inference in a way that was light on simulations and heavy on understanding. In the later part of my PhD, I developed a theory-driven framework for likelihood-free inference so that results remained transparent and robust while storage and compute demands stayed reasonable.
+        My research focused on higher-order statistics and wavelet methods approaches that allowed me to perform parameter inference in a way that was light on simulations and heavy on understanding. In the later part of my PhD, I developed a theory-driven framework for likelihood-free inference so that results remained transparent and robust while storage and compute demands stayed reasonable.
       </p>
       <p>
-        I was part of the <strong>Euclid</strong> collaboration, where I worked on bridging careful theoretical modeling with practical application. At <strong>CosmoStat</strong>, I co-organized the Journal Club and thoroughly enjoyed the discussions — the questions, debates, and exchange of ideas that constantly pushed me to think deeper.
+        I was part of the <strong>Euclid</strong> collaboration, where I worked on bridging careful theoretical modeling with practical application. At <strong>CosmoStat</strong>, I co-organized the Journal Club and thoroughly enjoyed the discussions the questions, debates, and exchange of ideas that constantly pushed me to think deeper.
       </p>
       <p>
-        Beyond research, I loved spending time with my camera, reading, and planning my next trip. I travelled widely during my PhD — learning from new cultures, wandering through old ruins and museums, and collecting small stories along the way. You can find some of these experiences on my <a class="link" href="/blog.html">blog</a>.
+        Beyond research, I loved spending time with my camera, reading, and planning my next trip. I travelled widely during my PhD learning from new cultures, wandering through old ruins and museums, and collecting small stories along the way. You can find some of these experiences on my <a class="link" href="/blog.html">blog</a>.
       </p>
       <p>
         I’ve always believed in learning by doing. I enjoy picking up new tools, running small experiments with real data, and building little projects for everyday use. It keeps me curious — and close to what truly works.

@@ -306,6 +306,35 @@ body{
   color:var(--muted);
   font-size:.95rem;
 }
+.skill-card{
+  background:#111827;
+  border-radius:18px;
+  padding:18px 20px 20px;
+  box-shadow:0 6px 20px rgba(0,0,0,0.35);
+  border:1px solid rgba(255,255,255,0.07);
+}
+
+/* Light-mode variant */
+@media (prefers-color-scheme: light){
+  .skill-card{
+    background:#ffffff;
+    border-color:rgba(0,0,0,0.08);
+    box-shadow:0 4px 14px rgba(15,23,42,0.12);
+  }
+}
+
+.skill-card h3{
+  font-size:1.05rem;
+  margin:0 0 10px;
+}
+
+.chip{
+  display:inline-block;
+  margin:4px 10px 4px 0;
+  color:var(--muted);
+  font-size:.95rem;
+}
+
 
 /* Publications */
 .pub-title{ font-style:italic; }
@@ -319,7 +348,7 @@ body{
         HEADER
 ======================= -->
 <header class="cv-head">
-  <h1>Vilasini Tinnaneri Sreekanth</h1>
+  <!-- <h1>Vilasini Tinnaneri Sreekanth</h1> -->
   <div class="intro-card">
   <p>
     I am a data scientist and research engineer with a strong background in 
