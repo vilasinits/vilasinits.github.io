@@ -5,15 +5,7 @@ layout: home
 <style>
   /* Home full width */
   .home .page-content, .home .page-content .wrapper { max-width:100% !important; margin:0 !important; padding:0 !important; }
-
-  :root{
-    --bg:#0e1525; --ink:#e9eef5; --muted:#a7b3c5; --card:#0f1b2e; --brand:#4db8ff; --ring:rgba(77,184,255,.28);
-    --shadow:0 10px 30px rgba(0,0,0,.25); --gap:28px;
-  }
-  @media (prefers-color-scheme: light){
-    :root{ --bg:#f7fbff; --ink:#0f172a; --muted:#475569; --card:#ffffff; --shadow:0 8px 24px rgba(2,8,23,.06); }
-  }
-  body{ background: linear-gradient(180deg,#111827,var(--bg)); }
+  /* body bg handled by global custom-styles.scss */
 
   .container{ width:min(1100px,92vw); margin-inline:auto; padding:40px 0 70px; }
   .about-grid{ display:grid; grid-template-columns: 320px 1fr; gap: var(--gap); align-items:start; }
@@ -25,7 +17,7 @@ layout: home
   .avatar { width: min(42vw, 280px); }          /* never larger than 280px, ~40% of viewport on mobile */
 
   .card{
-    background:var(--card); color:var(--ink); border:1px solid rgba(255,255,255,.10);
+    background:var(--card); color:var(--ink); border:1px solid var(--divider);
     border-radius:16px; padding:16px; box-shadow:var(--shadow);
   }
   .affil h3{ margin:.2rem 0 .25rem 0; font-size:1.05rem; }
@@ -34,7 +26,7 @@ layout: home
   .links a{
     display:flex; align-items:center; gap:10px;
     padding:10px 12px; border-radius:12px; text-decoration:none; color:var(--ink);
-    border:1px solid rgba(255,255,255,.10);
+    border:1px solid var(--divider);
   }
   .links a:hover{ border-color:var(--ring); background:rgba(255,255,255,.05); }
   .links small{ color:var(--muted); }
@@ -45,7 +37,7 @@ layout: home
   .meta{ margin-top:8px; color:var(--muted); }
 
   .chips{ display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
-  .chip{ padding:.38rem .6rem; font-size:.9rem; border-radius:999px; border:1px solid rgba(255,255,255,.18); color:var(--muted); background:rgba(255,255,255,.06); }
+  .chip{ padding:.38rem .6rem; font-size:.9rem; border-radius:999px; border:1px solid var(--divider); color:var(--muted); background:rgba(255,255,255,.06); }
 
   .section{ margin-top:32px; }
   .section h2{ margin:0 0 10px 0; font-size:1.2rem; color:var(--ink); }
@@ -93,8 +85,8 @@ layout: home
       <img class="avatar" src="/assets/images/Profile_new.jpg" alt="T S Vilasini profile photo">
       <div class="card affil">
         <h3>Current Affiliation</h3>
-        <p>PhD, <a class="link" href="https://www.cosmostat.org/" target="_blank" rel="noopener">CosmoStat</a></p>
-        <p class="meta">CEA Paris Saclay • Université Paris Saclay</p>
+        <p>Research Engineer, <a class="link" href="https://www.ias.u-psud.fr/" target="_blank" rel="noopener">IAS</a></p>
+        <p class="meta">Institut d'Astrophysique Spatiale • Orsay, France</p>
       </div>
       <div class="card links" style="display:flex; flex-direction:column; gap:10px;">
       <a href="https://github.com/vilasinits" target="_blank" rel="noopener" aria-label="GitHub">
@@ -125,31 +117,35 @@ layout: home
     <main class="content">
       <h1>About Me</h1>
       <p>
-        I recently completed my doctorate in Astrophysics, where I studied how dark matter shapes the universe. My work sat at the meeting point of theory, large-scale simulations, and weak lensing. I built simple and reliable tools designed to learn as much as possible from data before resorting to heavy computation.
+        I am a Research Engineer at the <strong>Institut d'Astrophysique Spatiale (IAS)</strong> in Orsay, France, where I work on CMB cross correlations within the <strong>Euclid</strong> collaboration.
       </p>
       <p>
-        My research focused on higher-order statistics and wavelet methods approaches that allowed me to perform parameter inference in a way that was light on simulations and heavy on understanding. In the later part of my PhD, I developed a theory-driven framework for likelihood-free inference so that results remained transparent and robust while storage and compute demands stayed reasonable.
+        I recently completed my doctorate in Astrophysics, where I studied how dark matter shapes the universe. My work sat at the meeting point of theory, large scale simulations, and weak lensing. I built simple and reliable tools designed to learn as much as possible from data before resorting to heavy computation.
       </p>
       <p>
-        I was part of the <strong>Euclid</strong> collaboration, where I worked on bridging careful theoretical modeling with practical application. At <strong>CosmoStat</strong>, I co-organized the Journal Club and thoroughly enjoyed the discussions the questions, debates, and exchange of ideas that constantly pushed me to think deeper.
+        My research focused on higher order statistics and wavelet methods, approaches that allowed me to perform parameter inference in a way that was light on simulations and heavy on understanding. In the later part of my PhD, I developed a theory driven framework for likelihood free inference so that results remained transparent and robust while storage and compute demands stayed reasonable.
       </p>
       <p>
-        Beyond research, I loved spending time with my camera, reading, and planning my next trip. I travelled widely during my PhD learning from new cultures, wandering through old ruins and museums, and collecting small stories along the way. You can find some of these experiences on my <a class="link" href="/blog.html">blog</a>.
+        I was part of the <strong>Euclid</strong> collaboration, where I worked on bridging careful theoretical modelling with practical application. At <strong>CosmoStat</strong>, I co-organised the Journal Club and thoroughly enjoyed the discussions, the questions, debates, and exchange of ideas that constantly pushed me to think deeper.
       </p>
       <p>
-        I’ve always believed in learning by doing. I enjoy picking up new tools, running small experiments with real data, and building little projects for everyday use. It keeps me curious — and close to what truly works.
+        Beyond research, I love spending time with my camera, reading, and planning my next trip. I travelled widely during my PhD, learning from new cultures, wandering through old ruins and museums, and collecting small stories along the way. You can find some of these experiences on my <a class="link" href="/blog.html">blog</a>.
+      </p>
+      <p>
+        I have always believed in learning by doing. I enjoy picking up new tools, running small experiments with real data, and building little projects for everyday use. It keeps me curious and close to what truly works.
       </p>
       <div class="chips">
-        <span class="chip">Higher-order statistics</span>
+        <span class="chip">Higher order statistics</span>
         <span class="chip">Wavelets</span>
         <span class="chip">Simulations</span>
         <span class="chip">Euclid</span>
+        <span class="chip">CMB cross correlations</span>
       </div>
       <div class="section">
         <h2>During My PhD, I Worked On</h2>
         <ul class="bullets">
-          <li>Developing a theoretical model for the wavelet ℓ₁-norm and applying it to cosmological inference.</li>
-          <li>Generating synthetic convergence maps through an optimization-based scheme that preserves higher-order statistics while remaining fast and robust.</li>
+          <li>Developing a theoretical model for the wavelet ℓ₁ norm and applying it to cosmological inference.</li>
+          <li>Generating synthetic convergence maps through an optimisation based scheme that preserves higher order statistics while remaining fast and robust.</li>
           <li>Validating theoretical predictions on simulations and preparing the framework for real data analysis.</li>
         </ul>
       </div>

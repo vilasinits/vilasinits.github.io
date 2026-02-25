@@ -13,13 +13,28 @@
             <h2 class="about-title">Through the Lens</h2>
             <div class="about-text">
               <p class="lead">Capturing moments where light meets soul</p>
-              <p>I wander with my camera as my companion, especially when I’m in unfamiliar places, letting light, color, and architecture guide my thoughts. Each frame holds more than just a scene—it tries to capture the pulse beneath it: the rush of life, the quiet of reflection, the melancholy, and the peace. Through my lens, I try to preserve the fleeting moments that make a place unique—the raw beauty of its people, its spaces, its soul. Each shot is a letter from me to the world, an honest attempt to share what many might miss in the bustle of everyday life. </p>
+              <p>I wander with my camera as my companion, especially when I’m in unfamiliar places, letting light, color, and architecture guide my thoughts. Each frame holds more than just a scene, it tries to capture the pulse beneath it: the rush of life, the quiet of reflection, the melancholy, and the peace. Through my lens, I try to preserve the fleeting moments that make a place unique, the raw beauty of its people, its spaces, its soul. Each shot is a letter from me to the world, an honest attempt to share what many might miss in the bustle of everyday life. </p>
               <div class="signature">
                 <span>✧ Explore. Frame. Reveal. ✧</span>
               </div>
             </div>
           </div>
         </div>
+    </section>
+
+    <!-- Interactive Globe -->
+    <section class="globe-section">
+      <div class="globe-container">
+        <h2 class="globe-title">Places I've Wandered</h2>
+        <p class="globe-subtitle">21 countries, countless stories</p>
+        <div class="globe-wrap">
+          <canvas id="globeCanvas" width="700" height="700"></canvas>
+        </div>
+        <div class="globe-legend">
+          <span class="legend-item"><span class="legend-dot" style="background:var(--brand);"></span> Visited countries</span>
+          <span class="legend-item"><span class="legend-dot legend-pin"></span> Cities</span>
+        </div>
+      </div>
     </section>
 
     <meta charset="utf-8">
@@ -42,9 +57,7 @@
     {%- include footer.html -%}
 
     <style>
-      :root{
-        --bg:#0e1525; --ink:#e9eef5; --muted:#a7b3c5; --brand:#4db8ff;
-      }
+      /* colours now come from custom-variables.scss via data-theme */
         * {
           margin: 0;
           padding: 0;
@@ -52,8 +65,6 @@
         }
 
         body {
-          font-family: Arial, sans-serif;
-          color: #333;
           overflow-x: hidden;
         }
 
@@ -85,9 +96,8 @@
         .portfolio-item {
             position: relative;
             overflow: hidden;
-            border-radius: 5px;
-            aspect-ratio:1;
-            z-index: 100;
+            border-radius: 14px;
+            z-index: 1;
         }
       
         .portfolio-item img {
@@ -190,7 +200,7 @@
           /* same dark gradient vibe as the rest of the site */
           background:
             radial-gradient(1200px 600px at 10% -20%, rgba(255,255,255,.06), transparent),
-            linear-gradient(180deg, #111827, var(--bg));
+            linear-gradient(180deg, var(--card), var(--bg));
         }
       
         .about-section::before{
@@ -213,8 +223,8 @@
           max-width: 900px;
           margin: 0 auto;
           padding: 2rem 2.2rem;
-          background: rgba(15, 27, 46, 0.55);                 /* navy glass instead of grey */
-          border: 1px solid rgba(255,255,255,.12);
+          background: rgba(9, 9, 11, 0.65);
+          border: 1px solid var(--divider);
           border-radius: 16px;
           backdrop-filter: blur(6px);                          /* lighter blur than before */
           box-shadow: 0 12px 32px rgba(0,0,0,.35);
@@ -284,14 +294,87 @@
             margin: 0 1rem;
             padding: 1.5rem;
           }
-          
+
           .about-title {
             font-size: 2rem;
           }
-          
+
           .lead {
             font-size: 1.1rem;
           }
+        }
+
+        /* Globe section */
+        .globe-section {
+          padding: 2rem 0 3rem;
+          text-align: center;
+        }
+
+        .globe-container {
+          max-width: 800px;
+          margin: 0 auto;
+          padding: 0 1rem;
+        }
+
+        .globe-title {
+          font-family: 'Playfair Display', serif;
+          font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+          color: var(--ink);
+          margin-bottom: 0.4rem;
+          letter-spacing: 1.5px;
+        }
+
+        .globe-subtitle {
+          color: var(--muted);
+          font-size: 1.05rem;
+          margin-bottom: 1.5rem;
+          font-style: italic;
+        }
+
+        .globe-wrap {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        #globeCanvas {
+          max-width: 100%;
+          height: auto;
+          cursor: grab;
+        }
+        #globeCanvas:active {
+          cursor: grabbing;
+        }
+
+        .globe-legend {
+          display: flex;
+          justify-content: center;
+          gap: 24px;
+          margin-top: 1rem;
+          color: var(--muted);
+          font-size: 0.9rem;
+        }
+
+        .legend-item {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+        }
+
+        .legend-dot {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          display: inline-block;
+        }
+
+        .legend-pin {
+          background: #f59e0b;
+        }
+
+        @media (max-width: 600px) {
+          .globe-section { padding: 1.5rem 0 2rem; }
+          #globeCanvas { max-width: 95vw; }
         }
     </style>
 
@@ -363,6 +446,606 @@
             <img class="lightbox-image" id="lightboxImage" alt="Enlarged view">
         </div>
     </div>
+    <!-- D3 + TopoJSON for globe -->
+    <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
+    <script>
+    (function(){
+      var canvas = document.getElementById('globeCanvas');
+      if (!canvas) return;
+      var ctx = canvas.getContext('2d');
+
+      // Hi-DPI support
+      var dpr = window.devicePixelRatio || 1;
+      var cssSize = 700;
+      var width = cssSize * dpr;
+      var height = cssSize * dpr;
+      canvas.width = width;
+      canvas.height = height;
+      canvas.style.width = cssSize + 'px';
+      canvas.style.height = cssSize + 'px';
+      ctx.scale(dpr, dpr);
+
+      // Work in CSS pixel space
+      var W = cssSize, H = cssSize;
+      var baseScale = 310;
+      var currentScale = baseScale;
+      var minScale = 150;
+      var maxScale = 900;
+
+      var projection = d3.geoOrthographic()
+        .scale(currentScale)
+        .translate([W/2, H/2])
+        .clipAngle(90)
+        .rotate([-10, -30]);
+
+      var path = d3.geoPath(projection, ctx);
+
+      // // ISO 3166-1 numeric codes for visited countries
+      var visitedCodes = new Set([
+        840, // USA
+        250, // France
+        380, // Italy
+        756, // Switzerland
+        276, // Germany
+        528, // Netherlands
+        56,  // Belgium
+        705, // Slovenia
+        203, // Czechia (Czech Republic)
+        40,  // Austria
+        724, // Spain
+        620, // Portugal
+        348, // Hungary
+        616, // Poland
+        428, // Latvia
+        440, // Lithuania
+        642, // Romania
+        100, // Bulgaria
+        300, // Greece
+        124, // Canada
+        356, // India
+        492, // Monaco
+        336  // Vatican City
+      ]);
+
+      // Cities with [lng, lat]
+      var cities = [
+        // =======================
+        // USA
+        // =======================
+        {name:"San Francisco (SFO)", coords:[-122.3790, 37.6213]}, // SFO airport marker
+        {name:"San Francisco",       coords:[-122.4194, 37.7749]},
+        {name:"Boston",              coords:[-71.0589, 42.3601]},
+        {name:"New York City",        coords:[-74.0060, 40.7128]},
+        {name:"Chicago",             coords:[-87.6298, 41.8781]},
+        {name:"Indianapolis",        coords:[-86.1581, 39.7684]},
+        {name:"Columbus (Indiana)",  coords:[-85.9214, 39.2014]},
+        {name:"Cincinnati",          coords:[-84.5120, 39.1031]},
+        {name:"Nashville",           coords:[-86.7816, 36.1627]},
+        {name:"Atlanta",             coords:[-84.3880, 33.7490]},
+        {name:"Gatlinburg",          coords:[-83.5110, 35.7143]},
+        {name:"Savannah",            coords:[-81.0998, 32.0809]},
+        {name:"Detroit",             coords:[-83.0458, 42.3314]},
+        {name:"Ann Arbor",           coords:[-83.7430, 42.2808]},
+        {name:"Sheboygan",           coords:[-87.7145, 43.7508]},
+        {name:"Lake Geneva (WI)",    coords:[-88.4334, 42.5917]},
+        {name:"Upper Peninsula (Marquette)", coords:[-87.3954, 46.5436]},
+        {name:"Pensacola",           coords:[-87.2169, 30.4213]},
+
+        // =======================
+        // France
+        // =======================
+        {name:"Paris",               coords:[ 2.3522, 48.8566]},
+        {name:"Lyon",                coords:[ 4.8357, 45.7640]},
+        {name:"Tours",               coords:[ 0.6848, 47.3941]},
+        {name:"Nice (French Riviera)",coords:[ 7.2620, 43.7102]},
+        {name:"Cargèse",             coords:[ 8.5960, 42.1366]},
+        {name:"Mont-Saint-Michel",   coords:[-1.5115, 48.6360]},
+        {name:"Amboise",             coords:[ 0.9850, 47.4136]},
+        {name:"Blois",               coords:[ 1.3338, 47.5861]},
+        {name:"Annecy",              coords:[ 6.1296, 45.8992]},
+        {name:"Lille",               coords:[ 3.0573, 50.6292]},
+        {name:"Rouen",               coords:[ 1.0993, 49.4432]},
+        {name:"Orléans",             coords:[ 1.9093, 47.9029]},
+        {name:"Strasbourg",          coords:[7.7521, 48.5734]},
+
+        // =======================
+        // Italy
+        // =======================
+        {name:"Trieste",             coords:[13.7768, 45.6495]},
+        {name:"Venice",              coords:[12.3155, 45.4408]},
+        {name:"Passo del Tonale",    coords:[10.5899, 46.2586]},
+        {name:"Turin",               coords:[ 7.6869, 45.0703]},
+        {name:"Milan",               coords:[ 9.1900, 45.4642]},
+        {name:"Como",                coords:[ 9.0852, 45.8081]},
+        {name:"Cinque Terre",        coords:[ 9.7215, 44.1461]},
+        {name:"Florence",            coords:[11.2558, 43.7696]},
+        {name:"Bologna",             coords:[11.3426, 44.4949]},
+        {name:"Pisa",                coords:[10.4017, 43.7228]},
+        {name:"Rome",                coords:[12.4964, 41.9028]},
+        {name:"Naples",              coords:[14.2681, 40.8518]},
+        {name:"Amalfi",              coords:[14.6027, 40.6340]},
+
+        // =======================
+        // Switzerland
+        // =======================
+        {name:"Geneva",              coords:[ 6.1432, 46.2044]},
+        {name:"Lausanne",            coords:[ 6.6323, 46.5197]},
+        {name:"Zurich",              coords:[ 8.5417, 47.3769]},
+        {name:"Lucerne",             coords:[ 8.3093, 47.0502]},
+        {name:"Interlaken",          coords:[ 7.8632, 46.6863]},
+        {name:"Bern",                coords:[ 7.4474, 46.9480]},
+        {name:"Zermatt",             coords:[ 7.7491, 46.0207]},
+        {name:"Grindelwald",         coords:[ 8.0363, 46.6234]},
+        {name:"Wengen",              coords:[ 7.9210, 46.6056]},
+        {name:"Lauterbrunnen",       coords:[ 7.9096, 46.5935]},
+        {name:"Engelberg",           coords:[ 8.4108, 46.8211]},
+
+        // =======================
+        // Germany
+        // =======================
+        {name:"Munich",              coords:[11.5820, 48.1351]},
+        {name:"Cologne",             coords:[ 6.9603, 50.9375]},
+        {name:"Frankfurt",           coords:[ 8.6821, 50.1109]},
+        {name:"Kleve",               coords:[ 6.1416, 51.7886]},
+        
+
+        // =======================
+        // Netherlands
+        // =======================
+        {name:"Amsterdam",           coords:[ 4.9041, 52.3676]},
+        {name:"Rotterdam",           coords:[ 4.4777, 51.9244]},
+
+        // =======================
+        // Belgium
+        // =======================
+        {name:"Brussels",            coords:[ 4.3517, 50.8503]},
+
+        // =======================
+        // Slovenia
+        // =======================
+        {name:"Ljubljana",           coords:[14.5058, 46.0569]},
+
+        // =======================
+        // Czechia / Austria
+        // =======================
+        {name:"Prague",              coords:[14.4378, 50.0755]},
+        {name:"Vienna",              coords:[16.3738, 48.2082]},
+        {name:"Innsbruck",           coords:[11.4041, 47.2692]},
+
+        // =======================
+        // Spain / Portugal
+        // =======================
+        {name:"Barcelona",           coords:[ 2.1734, 41.3851]},
+        {name:"Madrid",              coords:[-3.7038, 40.4168]},
+        {name:"Lisbon",              coords:[-9.1393, 38.7223]},
+        {name:"Cascais",             coords:[-9.4223, 38.6979]},
+
+        // =======================
+        // Hungary
+        // =======================
+        {name:"Budapest",            coords:[19.0402, 47.4979]},
+
+        // =======================
+        // Poland / Latvia / Lithuania
+        // =======================
+        {name:"Krakow",              coords:[19.9450, 50.0647]},
+        {name:"Warsaw",              coords:[21.0122, 52.2297]},
+        {name:"Riga",                coords:[24.1052, 56.9496]},
+        {name:"Vilnius",             coords:[25.2797, 54.6872]},
+        {name:"Klaipėda",            coords:[21.1443, 55.7033]},
+
+        // =======================
+        // Romania
+        // =======================
+        {name:"Bucharest",           coords:[26.1025, 44.4268]},
+        {name:"Brașov",              coords:[25.6012, 45.6427]},
+        {name:"Cluj-Napoca",         coords:[23.5880, 46.7712]},
+        {name:"Turda",               coords:[23.7929, 46.5664]},
+        {name:"Sibiu",               coords:[24.1526, 45.7983]},
+
+        // =======================
+        // Bulgaria
+        // =======================
+        {name:"Sofia",               coords:[23.3219, 42.6977]},
+        {name:"Rila Monastery",      coords:[23.3400, 42.1336]},
+        {name:"Burgas",              coords:[27.4678, 42.5048]},
+        {name:"Plovdiv",             coords:[24.7453, 42.1354]},
+
+        // =======================
+        // Greece
+        // =======================
+        {name:"Athens",              coords:[23.7275, 37.9838]},
+        {name:"Santorini",           coords:[25.4615, 36.3932]},
+        {name:"Crete",               coords:[24.9028, 35.2401]},
+
+        // =======================
+        // Canada
+        // =======================
+        {name:"Toronto",             coords:[-79.3832, 43.6532]},
+        {name:"Waterloo",            coords:[-80.5204, 43.4643]},
+
+        // =======================
+        // Monaco (microstate)
+        // =======================
+        {name:"Monaco",     coords:[7.4246, 43.7384]},
+
+        // =======================
+        // Vatican City (microstate)
+        // =======================
+        {name:"Vatican City", coords:[12.4534, 41.9029]},
+
+        // =======================
+        // India
+        // =======================
+        {name:"Hyderabad",           coords:[78.4867, 17.3850]},
+        {name:"Delhi",               coords:[77.1025, 28.7041]},
+        {name:"Guwahati",            coords:[91.7362, 26.1445]},
+        {name:"Jaipur",              coords:[75.7873, 26.9124]},
+        {name:"Jodhpur",             coords:[73.0243, 26.2389]},
+        {name:"Jaisalmer",           coords:[70.9083, 26.9157]},
+        {name:"Udaipur",             coords:[73.7125, 24.5854]},
+        {name:"Bengaluru",           coords:[77.5946, 12.9716]},
+        {name:"Surat",               coords:[72.8311, 21.1702]},
+        {name:"Ahmedabad",           coords:[72.5714, 23.0225]},
+        {name:"Agra",                coords:[78.0081, 27.1767]},
+        {name:"Manali",              coords:[77.1892, 32.2396]},
+        {name:"Kasol",               coords:[77.3147, 32.0100]},
+        {name:"Jibhi",               coords:[77.3394, 31.6353]},
+        {name:"Nagpur",              coords:[79.0882, 21.1458]},
+        {name:"Ooty",                coords:[76.6950, 11.4102]},
+        {name:"Madurai",             coords:[78.1198,  9.9252]},
+        {name:"Rameswaram",          coords:[79.3129,  9.2876]},
+        {name:"Kanchipuram",         coords:[79.6914, 12.8342]},
+        {name:"Tiruchendur",         coords:[77.9548,  8.4972]},
+        {name:"Chandigarh",          coords:[76.7794, 30.7333]},
+        {name:"Mohali",              coords:[76.7179, 30.7046]},
+        {name:"Gokarna",             coords:[74.3188, 14.5479]},
+        {name:"Mumbai",              coords:[72.8777, 19.0760]},
+        {name:"Chennai",            coords:[80.2707, 13.0827]},
+        {name:"Vadodara (Baroda)",  coords:[73.1812, 22.3072]},
+      ];
+
+      var land, countries;
+      var dragging = false, dragMoved = false, lastX, lastY;
+      var autoRotate = true;
+      var resumeTimer = null;
+
+      // Currently shown label
+      var activeLabel = null;
+
+      // Theme colors
+      function getColors() {
+        var theme = document.documentElement.getAttribute('data-theme') || 'dark';
+        if (theme === 'light') {
+          return {
+            ocean: '#e0f2fe',
+            land: '#d4d4d8',
+            visited: '#059669',
+            border: '#a1a1aa',
+            graticule: 'rgba(0,0,0,0.06)',
+            pin: '#d97706',
+            pinStroke: '#ffffff',
+            pinGlow: 'rgba(217,119,6,0.3)',
+            glow: 'rgba(5,150,105,0.15)',
+            label: '#09090b',
+            labelBg: 'rgba(255,255,255,0.92)',
+            labelBorder: 'rgba(0,0,0,0.12)'
+          };
+        }
+        return {
+          ocean: '#0c1222',
+          land: '#27272a',
+          visited: '#34d399',
+          border: '#3f3f46',
+          graticule: 'rgba(255,255,255,0.04)',
+          pin: '#f59e0b',
+          pinStroke: '#09090b',
+          pinGlow: 'rgba(245,158,11,0.35)',
+          glow: 'rgba(52,211,153,0.12)',
+          label: '#fafafa',
+          labelBg: 'rgba(24,24,27,0.92)',
+          labelBorder: 'rgba(255,255,255,0.1)'
+        };
+      }
+
+      function draw() {
+        var c = getColors();
+        ctx.save();
+        ctx.clearRect(0, 0, W, H);
+
+        // Globe radius from projection scale
+        var globeR = projection.scale();
+
+        // Ocean with radial glow
+        ctx.beginPath();
+        path({type:'Sphere'});
+        var grad = ctx.createRadialGradient(W*0.42, H*0.38, 0, W/2, H/2, globeR);
+        grad.addColorStop(0, c.glow);
+        grad.addColorStop(1, c.ocean);
+        ctx.fillStyle = grad;
+        ctx.fill();
+        ctx.strokeStyle = c.border;
+        ctx.lineWidth = 0.5;
+        ctx.stroke();
+
+        // Graticule
+        var graticule = d3.geoGraticule10();
+        ctx.beginPath();
+        path(graticule);
+        ctx.strokeStyle = c.graticule;
+        ctx.lineWidth = 0.4;
+        ctx.stroke();
+
+        if (!countries) { ctx.restore(); return; }
+
+        // Draw countries
+        countries.forEach(function(f) {
+          ctx.beginPath();
+          path(f);
+          var id = +f.id;
+          if (visitedCodes.has(id)) {
+            ctx.fillStyle = c.visited;
+            ctx.globalAlpha = 0.55;
+          } else {
+            ctx.fillStyle = c.land;
+            ctx.globalAlpha = 1;
+          }
+          ctx.fill();
+          ctx.globalAlpha = 1;
+          ctx.strokeStyle = c.border;
+          ctx.lineWidth = 0.3;
+          ctx.stroke();
+        });
+
+        // Draw city pins
+        var rot = projection.rotate();
+        var pinR = Math.max(1.8, Math.min(4, currentScale / 120));
+        cities.forEach(function(city) {
+          var d = d3.geoDistance(city.coords, [-rot[0], -rot[1]]);
+          if (d > Math.PI / 2) return;
+          var p = projection(city.coords);
+          if (!p) return;
+
+          // Glow
+          ctx.beginPath();
+          ctx.arc(p[0], p[1], pinR + 2, 0, 2 * Math.PI);
+          ctx.fillStyle = c.pinGlow;
+          ctx.fill();
+
+          // Pin dot
+          ctx.beginPath();
+          ctx.arc(p[0], p[1], pinR, 0, 2 * Math.PI);
+          ctx.fillStyle = c.pin;
+          ctx.fill();
+          ctx.strokeStyle = c.pinStroke;
+          ctx.lineWidth = 0.6;
+          ctx.stroke();
+        });
+
+        // Draw active label
+        if (activeLabel) {
+          var d = d3.geoDistance(activeLabel.coords, [-rot[0], -rot[1]]);
+          if (d <= Math.PI / 2) {
+            var p = projection(activeLabel.coords);
+            if (p) {
+              var name = activeLabel.name;
+              ctx.font = '600 13px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+              var tw = ctx.measureText(name).width;
+              var px = p[0] + pinR + 8;
+              var py = p[1] - 8;
+              var padX = 8, padY = 5;
+              var bw = tw + padX * 2;
+              var bh = 22;
+
+              // Keep label inside canvas
+              if (px + bw > W - 10) px = p[0] - pinR - 8 - bw;
+              if (py - bh < 10) py = p[1] + 20;
+
+              // Background pill
+              ctx.fillStyle = c.labelBg;
+              ctx.strokeStyle = c.labelBorder;
+              ctx.lineWidth = 1;
+              ctx.beginPath();
+              var r = 6;
+              ctx.moveTo(px + r, py - bh + padY);
+              ctx.arcTo(px + bw, py - bh + padY, px + bw, py + padY, r);
+              ctx.arcTo(px + bw, py + padY, px, py + padY, r);
+              ctx.arcTo(px, py + padY, px, py - bh + padY, r);
+              ctx.arcTo(px, py - bh + padY, px + bw, py - bh + padY, r);
+              ctx.closePath();
+              ctx.fill();
+              ctx.stroke();
+
+              // Text
+              ctx.fillStyle = c.label;
+              ctx.textBaseline = 'middle';
+              ctx.fillText(name, px + padX, py - bh/2 + padY);
+            }
+          }
+        }
+
+        ctx.restore();
+      }
+
+      function animate() {
+        if (autoRotate) {
+          var r = projection.rotate();
+          projection.rotate([r[0] + 0.12, r[1]]);
+        }
+        draw();
+        requestAnimationFrame(animate);
+      }
+
+      function stopRotation() {
+        autoRotate = false;
+        if (resumeTimer) clearTimeout(resumeTimer);
+        resumeTimer = setTimeout(function(){ autoRotate = true; }, 4000);
+      }
+
+      // Find city near canvas CSS coords
+      function findCity(cx, cy) {
+        var rot = projection.rotate();
+        var found = null;
+        var minDist = Math.max(16, currentScale / 20);
+        cities.forEach(function(city) {
+          var d = d3.geoDistance(city.coords, [-rot[0], -rot[1]]);
+          if (d > Math.PI / 2) return;
+          var p = projection(city.coords);
+          if (!p) return;
+          var dist = Math.sqrt((p[0]-cx)*(p[0]-cx)+(p[1]-cy)*(p[1]-cy));
+          if (dist < minDist) { minDist = dist; found = city; }
+        });
+        return found;
+      }
+
+      // Convert event to canvas CSS coords
+      function eventToCanvas(e) {
+        var rect = canvas.getBoundingClientRect();
+        return [
+          (e.clientX - rect.left) * (W / rect.width),
+          (e.clientY - rect.top) * (H / rect.height)
+        ];
+      }
+
+      // Mouse drag
+      canvas.addEventListener('mousedown', function(e) {
+        dragging = true;
+        dragMoved = false;
+        stopRotation();
+        lastX = e.clientX;
+        lastY = e.clientY;
+      });
+
+      window.addEventListener('mousemove', function(e) {
+        if (!dragging) return;
+        var dx = e.clientX - lastX;
+        var dy = e.clientY - lastY;
+        if (Math.abs(dx) > 2 || Math.abs(dy) > 2) dragMoved = true;
+        var r = projection.rotate();
+        var sens = 0.4 * (baseScale / currentScale);
+        projection.rotate([r[0] + dx * sens, Math.max(-80, Math.min(80, r[1] - dy * sens))]);
+        lastX = e.clientX;
+        lastY = e.clientY;
+      });
+
+      window.addEventListener('mouseup', function() {
+        if (dragging) {
+          dragging = false;
+        }
+      });
+
+      // Click to show/hide city label
+      canvas.addEventListener('click', function(e) {
+        if (dragMoved) return;
+        var pt = eventToCanvas(e);
+        var city = findCity(pt[0], pt[1]);
+        if (city) {
+          activeLabel = (activeLabel === city) ? null : city;
+          stopRotation();
+        } else {
+          activeLabel = null;
+        }
+      });
+
+      // Cursor style on hover
+      canvas.addEventListener('mousemove', function(e) {
+        if (dragging) return;
+        var pt = eventToCanvas(e);
+        var city = findCity(pt[0], pt[1]);
+        canvas.style.cursor = city ? 'pointer' : 'grab';
+      });
+
+      // Scroll to zoom
+      canvas.addEventListener('wheel', function(e) {
+        e.preventDefault();
+        stopRotation();
+        var delta = -e.deltaY;
+        var factor = delta > 0 ? 1.08 : 0.93;
+        currentScale = Math.max(minScale, Math.min(maxScale, currentScale * factor));
+        projection.scale(currentScale);
+      }, {passive:false});
+
+      // Touch: drag + pinch zoom
+      var lastTouchDist = 0;
+      canvas.addEventListener('touchstart', function(e) {
+        if (e.touches.length === 1) {
+          dragging = true;
+          dragMoved = false;
+          stopRotation();
+          lastX = e.touches[0].clientX;
+          lastY = e.touches[0].clientY;
+          e.preventDefault();
+        } else if (e.touches.length === 2) {
+          dragging = false;
+          lastTouchDist = Math.hypot(
+            e.touches[1].clientX - e.touches[0].clientX,
+            e.touches[1].clientY - e.touches[0].clientY
+          );
+          e.preventDefault();
+        }
+      }, {passive:false});
+
+      canvas.addEventListener('touchmove', function(e) {
+        if (e.touches.length === 1 && dragging) {
+          var dx = e.touches[0].clientX - lastX;
+          var dy = e.touches[0].clientY - lastY;
+          if (Math.abs(dx) > 2 || Math.abs(dy) > 2) dragMoved = true;
+          var r = projection.rotate();
+          var sens = 0.4 * (baseScale / currentScale);
+          projection.rotate([r[0] + dx * sens, Math.max(-80, Math.min(80, r[1] - dy * sens))]);
+          lastX = e.touches[0].clientX;
+          lastY = e.touches[0].clientY;
+          e.preventDefault();
+        } else if (e.touches.length === 2) {
+          var dist = Math.hypot(
+            e.touches[1].clientX - e.touches[0].clientX,
+            e.touches[1].clientY - e.touches[0].clientY
+          );
+          if (lastTouchDist > 0) {
+            var factor = dist / lastTouchDist;
+            currentScale = Math.max(minScale, Math.min(maxScale, currentScale * factor));
+            projection.scale(currentScale);
+          }
+          lastTouchDist = dist;
+          stopRotation();
+          e.preventDefault();
+        }
+      }, {passive:false});
+
+      canvas.addEventListener('touchend', function(e) {
+        if (e.touches.length === 0) {
+          if (!dragMoved && dragging) {
+            // Treat as tap/click
+            var rect = canvas.getBoundingClientRect();
+            var cx = (lastX - rect.left) * (W / rect.width);
+            var cy = (lastY - rect.top) * (H / rect.height);
+            var city = findCity(cx, cy);
+            if (city) {
+              activeLabel = (activeLabel === city) ? null : city;
+              stopRotation();
+            } else {
+              activeLabel = null;
+            }
+          }
+          dragging = false;
+          lastTouchDist = 0;
+        }
+      });
+
+      // Load world data (higher resolution)
+      d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json').then(function(world) {
+        land = topojson.feature(world, world.objects.land);
+        countries = topojson.feature(world, world.objects.countries).features;
+        animate();
+      });
+
+      // Theme changes
+      var obs = new MutationObserver(function(){ draw(); });
+      obs.observe(document.documentElement, {attributes:true, attributeFilter:['data-theme']});
+    })();
+    </script>
+
     <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
     <!-- Default Statcounter code for my website https://vilasinits.github.io/ -->
     <script type="text/javascript">

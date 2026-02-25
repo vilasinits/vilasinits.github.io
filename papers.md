@@ -10,15 +10,6 @@ permalink: /papers.html/
     max-width: 100% !important; margin: 0 !important; padding: 0 !important;
   }
 
-  /* Design tokens aligned with the rest of the site */
-  :root{
-    --bg:#0e1525; --ink:#e9eef5; --muted:#a7b3c5; --brand:#4db8ff; --brand-2:#8a7dff;
-    --card:#0f1b2e; --ring:rgba(77,184,255,.28); --shadow:0 10px 30px rgba(0,0,0,.25);
-  }
-  @media (prefers-color-scheme: light){
-    :root{ --bg:#f7fbff; --ink:#0f172a; --muted:#475569; --card:#ffffff; --shadow:0 8px 24px rgba(2,8,23,.06); }
-  }
-  body{ background: linear-gradient(180deg,#111827,var(--bg)); }
 
   .papers-wrap{ width:min(1100px,92vw); margin-inline:auto; padding:40px 0 70px; color:var(--ink); }
   .papers-head{ display:flex; align-items:end; justify-content:space-between; gap:16px; margin-bottom:18px; }
@@ -94,7 +85,7 @@ permalink: /papers.html/
         <span class="status">Accepted</span>
         <h3 class="title">
           <a href="https://arxiv.org/abs/2507.01707" target="_blank" rel="noopener">
-            Generative modeling of convergence maps based on predicted one-point statistics
+            Generative modeling of convergence maps based on predicted one point statistics
           </a>
         </h3>
       </div>
@@ -116,7 +107,7 @@ permalink: /papers.html/
       <details>
         <summary>Show abstract</summary>
         <p>
-          Weak gravitational lensing is a key probe, but classic power spectrum analyses miss non Gaussian features. We introduce an emulator that generates convergence maps directly from an input power spectrum and a target wavelet l1 norm. By tuning wavelet coefficients to match target marginal distributions and inter scale correlations, the method reproduces the input spectrum and captures higher order structure with far less simulation cost.
+          Weak gravitational lensing is a key probe, but classic power spectrum analyses miss non Gaussian features. We introduce an emulator that generates convergence maps directly from an input power spectrum and a target wavelet l1 norm. By tuning wavelet coefficients to match target marginal distributions and interscale correlations, the method reproduces the input spectrum and captures higher order structure with far less simulation cost.
         </p>
       </details>
     </li>
@@ -126,7 +117,7 @@ permalink: /papers.html/
         <span class="status">Accepted</span>
         <h3 class="title">
           <a href="https://www.aanda.org/component/article?access=doi&doi=10.1051/0004-6361/202450061" target="_blank" rel="noopener">
-            Theoretical wavelet ℓ1-norm from one-point probability density function prediction
+            Theoretical wavelet ℓ1 norm from one point probability density function prediction
           </a>
         </h3>
       </div>
@@ -148,7 +139,7 @@ permalink: /papers.html/
       <details>
         <summary>Show abstract</summary>
         <p>
-          We derive a theory prediction for the wavelet l1 norm of convergence maps from a theory prediction of the one point distribution using Large Deviation Theory. The result agrees with simulations in the weakly non linear regime and tracks cosmological dependence, enabling an efficient path for parameter inference.
+          We derive a theoretical prediction for the wavelet l1 norm of convergence maps from a theoretical prediction of the one point distribution using Large Deviation Theory. The result agrees with simulations in the weakly nonlinear regime and tracks cosmological dependence, enabling an efficient path for parameter inference.
         </p>
       </details>
     </li>
@@ -157,7 +148,7 @@ permalink: /papers.html/
       <div class="row-top">
         <span class="status">In preparation</span>
         <h3 class="title">
-          Cosmological N-body simulations with topological defects
+          Cosmological N body simulations with topological defects
         </h3>
       </div>
       <div class="meta">
@@ -166,7 +157,7 @@ permalink: /papers.html/
       <details>
         <summary>Show abstract</summary>
         <p>
-          We couple the evolution of global defects to a relativistic N body code through the stress energy source in the metric sector and study the impact on structure formation. The framework is general, validated with controlled tests, and shows measurable signatures in density and velocity fields.
+          We couple the evolution of global defects to a relativistic N body code through the stress energy source in the metric sector and study its impact on structure formation. The framework is general, validated with controlled tests, and shows measurable signatures in density and velocity fields.
         </p>
       </details>
     </li>

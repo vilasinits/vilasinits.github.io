@@ -9,28 +9,6 @@ permalink: /cv.html/
    DARK/LIGHT THEME + MODERN RESPONSIVE CV LAYOUT
 ============================================================ */
 
-:root{
-  --bg:#0e1525;
-  --ink:#e9eef5;
-  --muted:#a7b3c5;
-  --accent:#4db8ff;
-  --divider:rgba(255,255,255,.18);
-}
-
-@media (prefers-color-scheme: light){
-  :root{
-    --bg:#f8fafc;
-    --ink:#0f172a;
-    --muted:#475569;
-    --divider:rgba(0,0,0,.15);
-  }
-}
-
-body{
-  background:var(--bg);
-  color:var(--ink);
-}
-
 /* Main CV wrapper */
 .cv-wrap{
   width:min(1100px,92vw);
@@ -123,19 +101,11 @@ body{
   width:100%;
   border-radius:18px;
   overflow:hidden;
-  background:#111827;
-  box-shadow:0 6px 20px rgba(0,0,0,0.40);
-  border:1px solid rgba(255,255,255,0.07);
+  background:var(--card);
+  box-shadow:var(--shadow);
+  border:1px solid var(--divider);
   display:flex;
   flex-direction:column;
-}
-
-@media (prefers-color-scheme: light) {
-  .edu-card{
-    background:#ffffff;
-    border-color:rgba(0,0,0,0.1);
-    box-shadow:0 6px 16px rgba(0,0,0,0.12);
-  }
 }
 
 /* Banner */
@@ -278,7 +248,7 @@ body{
 }
 .edu-content .meta{
   font-size:0.9rem;
-  color:#9ca3af;
+  color:var(--muted);
   margin-bottom:10px;
 }
 .edu-content p{
@@ -307,20 +277,11 @@ body{
   font-size:.95rem;
 }
 .skill-card{
-  background:#111827;
+  background:var(--card);
   border-radius:18px;
   padding:18px 20px 20px;
-  box-shadow:0 6px 20px rgba(0,0,0,0.35);
-  border:1px solid rgba(255,255,255,0.07);
-}
-
-/* Light-mode variant */
-@media (prefers-color-scheme: light){
-  .skill-card{
-    background:#ffffff;
-    border-color:rgba(0,0,0,0.08);
-    box-shadow:0 4px 14px rgba(15,23,42,0.12);
-  }
+  box-shadow:var(--shadow);
+  border:1px solid var(--divider);
 }
 
 .skill-card h3{
@@ -351,14 +312,14 @@ body{
   <!-- <h1>Vilasini Tinnaneri Sreekanth</h1> -->
   <div class="intro-card">
   <p>
-    I am a data scientist and research engineer with a strong background in 
-    <strong>machine learning, probabilistic modelling, scientific computing, and high-performance Python</strong>.
-    I enjoy turning complex problems into clean, well-engineered solutions whether it involves building data pipelines, designing modelling frameworks, or developing scalable inference systems.
+    I am a Research Engineer at the <strong>Institut d'Astrophysique Spatiale (IAS)</strong>, Orsay, France, working on CMB cross correlations within the <strong>Euclid</strong> collaboration. I have a strong background in
+    <strong>machine learning, probabilistic modelling, scientific computing, and high performance Python</strong>.
+    I enjoy turning complex problems into clean, well engineered solutions, whether it involves building data pipelines, designing modelling frameworks, or developing scalable inference systems.
     <br><br>
-    I thrive in roles where I can combine analytical thinking with hands-on engineering, 
-    and I am motivated by opportunities that blend 
-    <strong>ML, simulation-free modelling, numerical optimisation, and real-world data</strong>.
-    I’m particularly excited about teams that value clarity, reproducibility, and 
+    I thrive in roles where I can combine analytical thinking with hands on engineering,
+    and I am motivated by opportunities that blend
+    <strong>ML, simulation free modelling, numerical optimisation, and real world data</strong>.
+    I am particularly excited about teams that value clarity, reproducibility, and
     technically rigorous product development.
   </p>
 </div>
@@ -395,12 +356,12 @@ body{
       </div>
 
       <div class="edu-content">
-        <h3>Doctorate of Philosophy - Physics</h3>
-        <div class="meta">Université Paris-Saclay &middot; 2022 – 2025 [Expected]</div>
+        <h3>Doctorate of Philosophy, Physics</h3>
+        <div class="meta">Université Paris-Saclay &middot; 2022 – 2025</div>
         <p>
           PhD at Université Paris-Saclay with the CosmoStat Laboratory, CEA.
-          Working on <strong>simulation-free cosmological inference</strong> using
-          wavelet-based higher-order statistics, PDF modelling, and generative models for weak lensing.
+          Worked on <strong>simulation free cosmological inference</strong> using
+          wavelet based higher order statistics, PDF modelling, and generative models for weak lensing.
         </p>
       </div>
     </div>
@@ -417,11 +378,11 @@ body{
       </div>
 
       <div class="edu-content">
-        <h3>Master of Science - Astrophysics</h3>
+        <h3>Master of Science, Astrophysics</h3>
         <div class="meta">University of Geneva &middot; 2019 – 2021</div>
         <p>
-          MSc in Astrophysics with a thesis on <strong>relativistic N-body simulations</strong> of global
-          cosmic strings using <strong>Gevolution</strong>, focusing on defect signatures in large-scale structure.
+          MSc in Astrophysics with a thesis on <strong>relativistic N body simulations</strong> of global
+          cosmic strings using <strong>Gevolution</strong>, focusing on defect signatures in large scale structure.
         </p>
       </div>
     </div>
@@ -438,7 +399,7 @@ body{
       </div>
 
       <div class="edu-content">
-        <h3>Integrated MSc - Physics</h3>
+        <h3>Integrated MSc, Physics</h3>
         <div class="meta">SVNIT Surat &middot; 2014 – 2019</div>
         <p>
           Five-year integrated MSc in Physics with coursework in
@@ -475,13 +436,13 @@ body{
       </div>
 
       <div class="edu-content">
-        <h3>Likelihood-free Inference with Higher-Order Statistics</h3>
-        <div class="meta">PhD Research &middot; CosmoStat, CEA Paris-Saclay &middot; 2022–2025</div>
+        <h3>Likelihood Free Inference with Higher Order Statistics</h3>
+        <div class="meta">PhD Research &middot; CosmoStat, CEA Paris Saclay &middot; 2022–2025</div>
         <p>
-          Developed a <strong>Large Deviation Theory</strong>-based framework predicting the
-          wavelet ℓ₁-norm for weak-lensing convergence maps, providing an analytical alternative
-          to heavy simulations. Built a <strong>likelihood-free cosmological inference</strong> pipeline
-          combining theoretical predictions, generative models, and HPC-scale map generation.
+          Developed a <strong>Large Deviation Theory</strong> based framework predicting the
+          wavelet ℓ₁ norm for weak lensing convergence maps, providing an analytical alternative
+          to heavy simulations. Built a <strong>likelihood free cosmological inference</strong> pipeline
+          combining theoretical predictions, generative models, and HPC scale map generation.
         </p>
       </div>
     </div>
@@ -502,9 +463,9 @@ body{
         <div class="meta">Master Thesis &middot; University of Geneva &middot; 2020–2021</div>
         <p>
           Simulated the evolution of <strong>global topological defects</strong> and studied their impact
-          on large-scale structure. Combined <strong>LATField2</strong> and <strong>Gevolution</strong> in an
+          on large scale structure. Combined <strong>LATField2</strong> and <strong>Gevolution</strong> in an
           automated HPC workflow with batch submission, monitoring tools, and parallel
-          post-processing of scalar modes.
+          post processing of scalar modes.
         </p>
       </div>
     </div>
@@ -529,7 +490,7 @@ body{
         <p>
           Implemented the <strong>Horne (1986) optimal extraction algorithm</strong> in Python for HST
           spectra, optimising vectorised operations. Built automated quality checks comparing
-          optimal vs. box-extracted spectra for robust pipeline validation.
+          optimal versus box extracted spectra for robust pipeline validation.
         </p>
       </div>
     </div>
@@ -552,9 +513,9 @@ body{
         <h3>GRB Search in INTEGRAL Time Series</h3>
         <div class="meta">Astrophysics Lab I &middot; University of Geneva &middot; 2019</div>
         <p>
-          Scripted data ingestion and pre-processing for <strong>SPI-ACS</strong> light curves from INTEGRAL.
-          Designed peak-detection algorithms to identify <strong>GRB candidates</strong>, using custom
-          Python analysis scripts for large time-series datasets.
+          Scripted data ingestion and preprocessing for <strong>SPI ACS</strong> light curves from INTEGRAL.
+          Designed peak detection algorithms to identify <strong>GRB candidates</strong>, using custom
+          Python analysis scripts for large time series datasets.
         </p>
       </div>
     </div>
@@ -577,10 +538,10 @@ body{
       </div>
 
       <div class="edu-content">
-        <h3>Dark-Matter Halos in Quintessence Models</h3>
-        <div class="meta">Master Thesis-1 &middot; University of Trieste &middot; 2019</div>
+        <h3>Dark Matter Halos in Quintessence Models</h3>
+        <div class="meta">Master Thesis 1 &middot; University of Trieste &middot; 2019</div>
         <p>
-          Modified the <strong>PINOCCHIO</strong> code to explore dark-matter halo formation in
+          Modified the <strong>PINOCCHIO</strong> code to explore dark matter halo formation in
           <strong>quintessence cosmologies</strong> with varying $w_0$ and $w_a$. Generated halo catalogues
           and performed cluster cosmology validation using statistical analysis and
           visualisation tools.
@@ -603,13 +564,13 @@ body{
       </div>
 
       <div class="edu-content">
-        <h3>Research Internship - IISER Mohali</h3>
-        <div class="meta">May 2017 - Supervisor: Prof. Jasjeet Singh Bagla</div>
+        <h3>Research Internship, IISER Mohali</h3>
+        <div class="meta">May 2017 &middot; Supervisor: Prof. Jasjeet Singh Bagla</div>
         <p>
-          Worked on <strong>cosmological simulations of Quintessence dark energy models</strong>, exploring 
-          how the scalar-field dynamics alter the <strong>expansion history</strong> and 
-          <strong>composition evolution</strong> of the Universe.  
-          Gained early exposure to <strong>cosmology, numerical methods, and large-scale structure</strong>.
+          Worked on <strong>cosmological simulations of quintessence dark energy models</strong>, exploring
+          how the scalar field dynamics alter the <strong>expansion history</strong> and
+          <strong>composition evolution</strong> of the Universe.
+          Gained early exposure to <strong>cosmology, numerical methods, and large scale structure</strong>.
         </p>
       </div>
     </div>
@@ -631,10 +592,10 @@ body{
       <h3>Modeling & Inference</h3>
       <span class="chip">Statistical modelling</span>
       <span class="chip">Probabilistic inference</span>
-      <span class="chip">Simulation-based inference</span>
+      <span class="chip">Simulation based inference</span>
       <span class="chip">Generative modelling</span>
       <span class="chip">Uncertainty quantification</span>
-      <span class="chip">Wavelet-based features</span>
+      <span class="chip">Wavelet based features</span>
     </div>
 
     <div class="skill-card">
@@ -643,7 +604,7 @@ body{
       <span class="chip">Benchmarking</span>
       <span class="chip">Reproducibility</span>
       <span class="chip">Large simulations</span>
-      <span class="chip">Image-like data</span>
+      <span class="chip">Image like data</span>
     </div>
 
     <div class="skill-card">
@@ -679,21 +640,21 @@ body{
   <ul>
     <li>
       <a class="pub-title" href="https://www.aanda.org/component/article?access=doi&doi=10.1051/0004-6361/202450061" target="_blank">
-        Theoretical wavelet ℓ₁-norm from one-point probability density function prediction
+        Theoretical wavelet ℓ₁ norm from one point probability density function prediction
       </a>,
       Vilasini Tinnaneri Sreekanth, A. Barthelemy, S. Codis, J.-L. Starck,
       <span class="venue">Astronomy &amp; Astrophysics</span>, 2024.
     </li>
     <li>
       <a class="pub-title" href="https://arxiv.org/abs/2507.01707" target="_blank">
-        Generative modeling of convergence maps based on predicted one-point statistics
+        Generative modeling of convergence maps based on predicted one point statistics
       </a>,
       Vilasini Tinnaneri Sreekanth, J.-L. Starck, S. Codis,
       <span class="venue">Astronomy &amp; Astrophysics</span>, accepted (2025).
     </li>
     <li>
       <a class="pub-title" href="https://arxiv.org/abs/2510.04953" target="_blank">
-        Euclid preparation: Towards a DR1 application of higher-order weak lensing statistics
+        Euclid preparation: Towards a DR1 application of higher order weak lensing statistics
       </a>,
       Euclid Collaboration, S. Vinciguerra, F. Bouché, N. Martinet,
       <em>et al.</em>, incl. Vilasini Tinnaneri Sreekanth,
@@ -701,7 +662,7 @@ body{
     </li>
     <li>
       <span class="pub-title">
-        Benchmarking Theoretical Wavelet ℓ₁-Norm Predictions Against Cosmological Simulations
+        Benchmarking Theoretical Wavelet ℓ₁ Norm Predictions Against Cosmological Simulations
       </span>,
       A. Tersenov, T. S. Vilasini, J.-L. Starck, S. Codis, M. Kilbinger,
       <span class="venue">in preparation</span> for <span class="venue">Astronomy &amp; Astrophysics</span>.

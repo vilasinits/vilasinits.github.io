@@ -1,1 +1,35 @@
-// Placeholder to allow overriding predefined variables smoothly.
+// Shared CSS custom properties for dark/light theme system.
+// Dark is default; light is activated via [data-theme="light"] on <html>.
+// Palette: near-black zinc base + emerald accent (modern, techy, fast).
+
+:root, [data-theme="dark"] {
+  --bg: #09090b;
+  --ink: #fafafa;
+  --muted: #a1a1aa;
+  --card: #18181b;
+  --brand: #34d399;
+  --accent: #34d399;
+  --ring: rgba(52,211,153,.25);
+  --divider: rgba(255,255,255,.08);
+  --shadow: 0 8px 30px rgba(0,0,0,.5);
+  --code-bg: #1c1c1f;
+  --bar: #0a0a0c;
+  --bar-border: rgba(255,255,255,.06);
+  --gap: 28px;
+}
+
+[data-theme="light"] {
+  --bg: #fafafa;
+  --ink: #09090b;
+  --muted: #52525b;
+  --card: #ffffff;
+  --brand: #059669;
+  --accent: #059669;
+  --ring: rgba(5,150,105,.18);
+  --divider: rgba(0,0,0,.08);
+  --shadow: 0 4px 20px rgba(0,0,0,.06);
+  --code-bg: #f4f4f5;
+  --bar: #ffffff;
+  --bar-border: rgba(0,0,0,.08);
+  --gap: 28px;
+}

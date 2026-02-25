@@ -2,19 +2,6 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
   {%- include head.html -%}
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    <!-- <style>
-      body {
-        background-image: url('{{ site.baseurl }}/assets/bkgrnd.jpeg');
-        background-size: contain;/* Add any additional background properties you want here, e.g., background-size, background-repeat, etc. */
-      }
-    </style> -->
-
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  </head>
 
   <body class="{% if page.title == 'z2C:Workshop' %}z2c{% endif %}">
     {%- include header.html -%}
@@ -24,7 +11,7 @@
         {{ content }}
       </div>
     </main>
-    
+
     {%- include footer.html -%}
 
     <script>
@@ -32,32 +19,30 @@
       const imageOverlay = document.getElementById('image-overlay');
       const largeImage = document.getElementById('large-image');
       const closeButton = document.getElementById('close-button');
-    
-      imageLinks.forEach((link) => {
-        link.addEventListener('click', (e) => {
-          e.preventDefault();
-          const largeImagePath = link.getAttribute('href');
-          largeImage.setAttribute('src', largeImagePath);
-          imageOverlay.style.display = 'block';
-    
-          // Increase the size of the displayed image
-          largeImage.style.maxWidth = '100%'; // Adjust the size as needed
-          largeImage.style.maxHeight = '100%'; // Adjust the size as needed
+
+      if (imageLinks && imageOverlay && largeImage && closeButton) {
+        imageLinks.forEach((link) => {
+          link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const largeImagePath = link.getAttribute('href');
+            largeImage.setAttribute('src', largeImagePath);
+            imageOverlay.style.display = 'block';
+            largeImage.style.maxWidth = '100%';
+            largeImage.style.maxHeight = '100%';
+          });
         });
-      });
-    
-      closeButton.addEventListener('click', () => {
-        imageOverlay.style.display = 'none';
-      });
-    
-      // Add an event listener to close the overlay when clicking outside
-      imageOverlay.addEventListener('click', (event) => {
-        if (event.target === imageOverlay) {
+
+        closeButton.addEventListener('click', () => {
           imageOverlay.style.display = 'none';
-        }
-      });
+        });
+
+        imageOverlay.addEventListener('click', (event) => {
+          if (event.target === imageOverlay) {
+            imageOverlay.style.display = 'none';
+          }
+        });
+      }
     </script>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script>
       window.MathJax = {
         tex: {
@@ -66,15 +51,15 @@
           packages: {'[+]': ['ams']},
         },
         loader: {load: ['[tex]/ams']},
-        chtml: {font: 'TeX'}  /* or 'STIX', 'Asana Math', etc. */
+        chtml: {font: 'TeX'}
       };
     </script>
     <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
     <!-- Default Statcounter code for my website https://vilasinits.github.io/ -->
     <script type="text/javascript">
-      var sc_project=13093804; 
-      var sc_invisible=1; 
-      var sc_security="263c7895"; 
+      var sc_project=13093804;
+      var sc_invisible=1;
+      var sc_security="263c7895";
       </script>
       <script type="text/javascript"
       src="https://www.statcounter.com/counter/counter.js" async></script>

@@ -1,27 +1,48 @@
-// Placeholder to allow defining custom styles that override everything else.
-// (Use `_sass/minima/custom-variables.scss` to override variable defaults)
-.content-container {
-  max-width: 1200px; /* Adjust the maximum width as needed */
-  margin: 0 auto;   /* Center the container horizontally */
-  padding: 0px;    /* Add some padding to the content */
-  background-color: #f5f5f5; /* Set a background color */
+// Global styles using shared theme variables from custom-variables.scss
+
+/* Subtle vine-leaf SVG tile (dark on dark) */
+$leaf-pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%23ffffff' stroke-width='0.5' opacity='0.04'%3E%3Cpath d='M20 10 Q30 25 20 40 Q10 25 20 10Z'/%3E%3Cpath d='M20 10 Q25 5 30 10'/%3E%3Cpath d='M60 50 Q70 65 60 80 Q50 65 60 50Z'/%3E%3Cpath d='M60 50 Q65 45 70 50'/%3E%3Cpath d='M5 55 Q12 65 5 75 Q-2 65 5 55Z'/%3E%3Cpath d='M45 15 Q52 25 45 35 Q38 25 45 15Z'/%3E%3Cpath d='M45 15 Q50 10 55 15'/%3E%3Cpath d='M20 10 C25 20 35 20 40 25' stroke-dasharray='2 3'/%3E%3Cpath d='M60 50 C55 60 45 58 40 65' stroke-dasharray='2 3'/%3E%3C/g%3E%3C/svg%3E");
+
+/* Smooth theme transitions */
+body {
+  color: var(--ink);
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  background:
+    /* top glow: emerald hint */
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(52,211,153,.06), transparent),
+    /* second glow: subtle side accent */
+    radial-gradient(ellipse 60% 60% at 100% 50%, rgba(52,211,153,.03), transparent),
+    /* vine leaf repeating tile */
+    $leaf-pattern,
+    /* base colour */
+    var(--bg);
 }
 
-// // Widen layout
-// .wrapper,
-// .page-content,
-// .main,
-// .container {
-//   max-width: 1000px;
-//   width: 150%;
-//   margin: 0 auto;
-//   padding-left: 2rem;
-//   padding-right: 2rem;
-// }
+/* Light mode: softer glow, darker leaf outlines */
+[data-theme="light"] body {
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(5,150,105,.04), transparent),
+    radial-gradient(ellipse 60% 60% at 100% 50%, rgba(5,150,105,.02), transparent),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%23000000' stroke-width='0.5' opacity='0.03'%3E%3Cpath d='M20 10 Q30 25 20 40 Q10 25 20 10Z'/%3E%3Cpath d='M20 10 Q25 5 30 10'/%3E%3Cpath d='M60 50 Q70 65 60 80 Q50 65 60 50Z'/%3E%3Cpath d='M60 50 Q65 45 70 50'/%3E%3Cpath d='M5 55 Q12 65 5 75 Q-2 65 5 55Z'/%3E%3Cpath d='M45 15 Q52 25 45 35 Q38 25 45 15Z'/%3E%3Cpath d='M45 15 Q50 10 55 15'/%3E%3Cpath d='M20 10 C25 20 35 20 40 25' stroke-dasharray='2 3'/%3E%3Cpath d='M60 50 C55 60 45 58 40 65' stroke-dasharray='2 3'/%3E%3C/g%3E%3C/svg%3E"),
+    var(--bg);
+}
 
-/* Force bright headings on the dark background */
-:root { --ink: #e9eef5; }
+/* Scroll padding for sticky header + anchor links */
+html {
+  scroll-padding-top: 100px;
+  scroll-behavior: smooth;
+}
 
+/* Content container uses theme card color */
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px;
+  background-color: var(--card);
+}
+
+/* Bright headings across all themes */
 .page-content h1,
 .page-content h2,
 .page-content h3,
@@ -33,12 +54,21 @@
 .page-heading,
 .home .post-list-heading {
   color: var(--ink) !important;
-  -webkit-text-fill-color: var(--ink); /* fixes Safari dimming */
+  -webkit-text-fill-color: var(--ink);
 }
 
-/* If your landing page renders the H1 inside .home or .wrapper, cover those too */
 .home h1,
-.wrapper h1 { 
-  color: var(--ink) !important; 
+.wrapper h1 {
+  color: var(--ink) !important;
   -webkit-text-fill-color: var(--ink);
+}
+
+/* Links use brand color */
+.page-content a {
+  color: var(--brand);
+}
+
+/* Code blocks */
+code, pre {
+  background-color: var(--code-bg);
 }

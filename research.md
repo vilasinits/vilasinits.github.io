@@ -25,15 +25,6 @@ permalink: /research.html/
     max-width: 100% !important; margin: 0 !important; padding: 0 !important;
   }
 
-  /* Design tokens (aligned with landing page) */
-  :root{
-    --bg:#0e1525; --ink:#e9eef5; --muted:#a7b3c5; --brand:#4db8ff; --ring:rgba(77,184,255,.28);
-    --card:#0f1b2e; --shadow:0 10px 30px rgba(0,0,0,.25);
-  }
-  @media (prefers-color-scheme: light){
-    :root{ --bg:#f7fbff; --ink:#0f172a; --muted:#475569; --card:#ffffff; --shadow:0 8px 24px rgba(2,8,23,.06); }
-  }
-  body{ background: linear-gradient(180deg,#111827,var(--bg)); }
 
   /* Main container */
   .rs-container{
@@ -69,10 +60,26 @@ permalink: /research.html/
       grid-template-columns:1fr;
     }
     .rs-sidebar{
-      position:static;
+      position:static !important;
       margin-bottom:10px;
       order:-1;
+      border-radius:14px;
+      padding:12px;
     }
+    /* Horizontal scrollable TOC on mobile */
+    .toc{
+      flex-direction:row !important;
+      overflow-x:auto;
+      gap:6px !important;
+      padding-bottom:4px;
+      -webkit-overflow-scrolling:touch;
+    }
+    .toc a{
+      white-space:nowrap;
+      font-size:0.85rem;
+      padding:6px 12px;
+    }
+    .rs-sidebar-sub{ display:none; }
   }
   /* Fix text overflowing the card */
   .media {
@@ -98,12 +105,12 @@ permalink: /research.html/
     top:90px;
     align-self:flex-start;
 
-    background: radial-gradient(circle at 0 0, rgba(148,163,184,.28), rgba(15,23,42,.98));
+    background: var(--card);
     border-radius:22px;
     padding:16px 16px 20px;
 
-    border:1px solid rgba(148,163,184,.45);
-    box-shadow:0 18px 45px rgba(15,23,42,.75);
+    border:1px solid var(--divider);
+    box-shadow:var(--shadow);
     backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(18px);
 
@@ -150,10 +157,10 @@ permalink: /research.html/
     font-size:0.9rem;
     color:var(--ink);
 
-    background:rgba(15,23,42,.75);
-    border:1px solid rgba(148,163,184,.35);
+    background:var(--bg);
+    border:1px solid var(--divider);
 
-    box-shadow:0 6px 16px rgba(15,23,42,.75);
+    box-shadow:none;
     transition:
       background .16s ease,
       border-color .16s ease,
@@ -170,16 +177,15 @@ permalink: /research.html/
 
   /* Hover / focus */
   .toc a:hover{
-    background:rgba(37,99,235,.16);
-    border-color:rgba(56,189,248,.75);
+    background:var(--ring);
+    border-color:var(--brand);
     transform:translateX(3px);
-    box-shadow:0 10px 24px rgba(15,23,42,.9);
+    box-shadow:none;
   }
 
-  /* Optional “active” state you can add via class in HTML/JS */
   .toc a.is-active{
-    background:rgba(56,189,248,.22);
-    border-color:rgba(56,189,248,.95);
+    background:var(--ring);
+    border-color:var(--brand);
   }
 
 
@@ -191,11 +197,11 @@ permalink: /research.html/
 
   /* Section card */
   .rs-card{
-    background:var(--card); border:1px solid rgba(255,255,255,.10);
+    background:var(--card); border:1px solid var(--divider);
     border-radius:18px; padding:22px; box-shadow:var(--shadow);
   }
   .rs-card h2{
-    margin:0 0 10px 0; font-size:1.25rem; border-left:3px solid var(--ring); padding-left:10px;
+    margin:0 0 10px 0; font-size:1.25rem; border-left:3px solid var(--brand); padding-left:10px;
   }
   .rs-card p{ margin:0 0 12px 0; line-height:1.75; text-align:justify; }
 
@@ -207,7 +213,7 @@ permalink: /research.html/
 
   .media img{
     width:100%; height:auto; display:block; border-radius:14px;
-    border:1px solid rgba(255,255,255,.10); box-shadow:var(--shadow);
+    border:1px solid var(--divider); box-shadow:var(--shadow);
   }
 
   /* Inline figures if you still want float-like behavior */

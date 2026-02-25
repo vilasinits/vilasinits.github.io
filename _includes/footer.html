@@ -1,34 +1,19 @@
-<footer class="site-footer h-card">
+<footer class="site-footer h-card" style="background:var(--bar); color:var(--ink); border-top:1px solid var(--bar-border); padding:28px 0; transition:background 0.3s ease, color 0.3s ease;">
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
-  <div class="wrapper">
+  <div style="width:min(1100px,92vw); margin-inline:auto; text-align:center;">
+    {%- if site.author %}
+      {% if site.author.name -%}
+        <p style="margin:0 0 6px; font-weight:600; font-size:1.05rem;">{{ site.author.name | escape }}</p>
+      {% endif -%}
+    {%- endif %}
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col">
-      {%- if site.author %}
-        <ul class="contact-list">
-          {% if site.author.name -%}
-            <li class="p-name">{{ site.author.name | escape }}</li>
-          {% endif -%}
-          <!-- {% if site.author.email -%}
-            <li><a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
-          {%- endif %} -->
-        </ul>
-      {%- endif %}
-      </div>
-      <div class="footer-col">
-        <p>{{ site.description | escape }}</p>
-      </div>
-    </div>
+    <p style="margin:0 0 14px; color:var(--muted); font-size:0.92rem; max-width:500px; margin-inline:auto;">{{ site.description | escape }}</p>
 
-    <div class="social-links">
+    <div class="social-links" style="margin-bottom:12px;">
       {%- include social.html -%}
-      &nbsp;&nbsp;
-      Copyright © Vilasini</p>
     </div>
 
-    
+    <p style="margin:0; color:var(--muted); font-size:0.85rem;">Copyright &copy; Vilasini</p>
   </div>
-
 </footer>
-

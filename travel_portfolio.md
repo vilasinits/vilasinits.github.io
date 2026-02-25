@@ -33,7 +33,81 @@ captions:
     subtitle: "A glimpse into Udaipur’s colourful chaos, framed perfectly by an old city arch"
   - title: "Stone and Silence"
     subtitle: "The quiet grandeur of Mehrangarh Fort, rising from the desert cliffs of Jodhpur"
-  
+  - title: "Rocky Shoreline"
+    subtitle: "Turquoise waters crashing against sun warmed rocks on the Corsican coast"
+  - title: "Through the Grotto"
+    subtitle: "A boat slipping through a sea cave into a sliver of open sky"
+  - title: "Hillside Retreat"
+    subtitle: "A golden villa nestled among olive groves as evening settles over the hills"
+  - title: "Colour and Cobblestone"
+    subtitle: "Warm reds and yellows crowding a narrow lane somewhere in the south of France"
+  - title: "Promenade View"
+    subtitle: "The sweep of the Baie des Anges from above, Nice glittering in full sun"
+  - title: "Cathedrals of Stone"
+    subtitle: "Ancient rock spires rising from the water, glowing amber in the late afternoon light"
+  - title: "Foam on Sand"
+    subtitle: "Waves curling onto a quiet beach under a sky heavy with clouds"
+  - title: "After the Rain"
+    subtitle: "Wet cobblestones reflecting the painted facades of a quiet Nice evening"
+  - title: "Minoan Echoes"
+    subtitle: "Red columns and a painted olive tree standing guard at the palace of Knossos"
+  - title: "Mossy Breakwater"
+    subtitle: "Algae covered stones meeting the Cretan sea on a bright, still morning"
+  - title: "Harbour at Dusk"
+    subtitle: "Golden light pouring through an old stone archway toward the moored boats beyond"
+  - title: "Downtown Pulse"
+    subtitle: "A street festival buzzing between Chicago's grand facades and summer flowers"
+  - title: "Steel and Elevated"
+    subtitle: "Looking up through the L tracks at towers that scrape a hazy midwestern sky"
+  - title: "Keeper of Time"
+    subtitle: "An ornate street clock holding its ground among the glass and steel of the Loop"
+  - title: "River Canyon"
+    subtitle: "A lone boat tracing the emerald Chicago River, skyscrapers lining both banks"
+  - title: "Nightline"
+    subtitle: "The city exhaling after dark, its skyline mirrored in the quiet lakefront water"
+  - title: "Lakeside Sparks"
+    subtitle: "Fireworks blooming over the water while silhouettes gather along the shore"
+  - title: "Layered Sunset"
+    subtitle: "The sun melting behind ridge after misty ridge in the Great Smoky Mountains"
+  - title: "Lone Sentinel"
+    subtitle: "A single fir catching the last light as the Smokies disappear into haze"
+  - title: "Blue on Blue"
+    subtitle: "Endless mountain ridges fading into soft morning mist like watercolour washes"
+  - title: "Castle in the Snow"
+    subtitle: "A Baltic fortress half hidden behind bare branches and falling snow"
+  - title: "Cobbled and Quiet"
+    subtitle: "A narrow lane of pastel walls and uneven stones, midday sun the only company"
+  - title: "Courtyard Filigree"
+    subtitle: "Ornate carvings framing a Renaissance courtyard under a perfect blue sky"
+  - title: "Island Fortress"
+    subtitle: "Trakai Castle floating on the lake, its red turrets doubled in the still water"
+  - title: "Tall Ship at Rest"
+    subtitle: "A grand sailing vessel moored along a quiet Baltic river, sails furled in the sun"
+  - title: "Old Town Facade"
+    subtitle: "Baroque gables and red rooftops catching the warm afternoon light"
+  - title: "Three Brothers"
+    subtitle: "Medieval merchant houses standing shoulder to shoulder on a Riga street"
+  - title: "Forest Camp"
+    subtitle: "A wooden tent and a cook fire in the bare winter woods, something ancient and still"
+  - title: "Murmuration"
+    subtitle: "A swarm of starlings sweeping past a crumbling Romanian tower at twilight"
+  - title: "Lantern and Lace"
+    subtitle: "An old kerosene lamp and a lace curtained window telling stories of simpler days"
+  - title: "Toward the Windmill"
+    subtitle: "Two figures walking a quiet path through golden reeds to a weathered wooden mill"
+  - title: "Golden Cobbles"
+    subtitle: "Sunset flooding a narrow lane, a church spire glowing at the end of the road"
+  - title: "Painted Sanctuary"
+    subtitle: "Every surface alive with frescoes inside the courtyard of Rila Monastery"
+  - title: "Bridge and Tramway"
+    subtitle: "The Queensboro Bridge arching over Roosevelt Island under a moody grey sky"
+  - title: "Steam and Signal"
+    subtitle: "A Manhattan crosswalk breathing steam into the cold air between glass towers"
+  - title: "Framed in Leaves"
+    subtitle: "The CN Tower glimpsed through a canopy of maple leaves in black and white"
+  - title: "DUMBO Framed"
+    subtitle: "The Manhattan Bridge perfectly caught between two red brick warehouse walls"
+
 ---
 
 
@@ -43,14 +117,6 @@ captions:
   .page .page-content, .page .page-content .wrapper {
     max-width: 100% !important; margin: 0 !important; padding: 0 !important;
   }
-  :root{
-    --bg:#0e1525; --ink:#e9eef5; --muted:#a7b3c5; --brand:#4db8ff; --brand-2:#8a7dff;
-    --card:#0f1b2e; --ring:rgba(77,184,255,.28); --shadow:0 10px 30px rgba(0,0,0,.25);
-  }
-  @media (prefers-color-scheme: light){
-    :root{ --bg:#f7fbff; --ink:#0f172a; --muted:#475569; --card:#ffffff; --shadow:0 8px 24px rgba(2,8,23,.06); }
-  }
-  body{ background: linear-gradient(180deg,#111827,var(--bg)); }
 
   .trav-wrap{ width:min(1200px,92vw); margin-inline:auto; padding:40px 0 80px; color:var(--ink); }
 
@@ -62,35 +128,38 @@ captions:
   /* Filters */
   .filters{ display:flex; gap:8px; flex-wrap:wrap; margin-top:8px; }
   .filter-btn{
-    padding:8px 12px; border-radius:12px; border:1px solid rgba(255,255,255,.12);
-    background:rgba(255,255,255,.05); color:var(--ink); font-weight:600; cursor:pointer;
+    padding:8px 12px; border-radius:12px; border:1px solid var(--divider);
+    background:transparent; color:var(--ink); font-weight:600; cursor:pointer;
+    transition: background 0.2s, border-color 0.2s, color 0.2s;
   }
-  .filter-btn:hover{ border-color:var(--ring); background:rgba(255,255,255,.08); }
-  .filter-btn.active{ background: linear-gradient(180deg, var(--brand), var(--brand-2)); border-color:transparent; color:#fff; }
+  .filter-btn:hover{ border-color:var(--brand); background:var(--ring); }
+  .filter-btn.active{ background:var(--brand); border-color:var(--brand); color:#fff; }
 
-  /* Gallery grid */
+  /* Masonry gallery using CSS columns */
   .gallery{
-    display:grid; gap:12px; margin-top:18px;
-    grid-template-columns: repeat(4, 1fr);
+    columns: 4;
+    column-gap: 12px;
+    margin-top:18px;
   }
-  @media (max-width: 1100px){ .gallery{ grid-template-columns: repeat(3, 1fr); } }
-  @media (max-width: 800px){ .gallery{ grid-template-columns: repeat(2, 1fr); } }
-  @media (max-width: 520px){ .gallery{ grid-template-columns: 1fr; } }
+  @media (max-width: 1100px){ .gallery{ columns: 3; } }
+  @media (max-width: 800px){ .gallery{ columns: 2; } }
+  @media (max-width: 520px){ .gallery{ columns: 1; } }
 
   .portfolio-item{
+    break-inside: avoid;
+    margin-bottom: 12px;
     background:var(--card);
-    border:1px solid rgba(255,255,255,.10);
+    border:1px solid var(--divider);
     border-radius:14px;
     overflow:hidden; box-shadow:var(--shadow);
-    transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+    transition: transform .22s ease, border-color .22s ease, box-shadow .22s ease;
     position:relative;
   }
-  .portfolio-item:hover{ transform:translateY(-2px); border-color:var(--ring); box-shadow:0 12px 26px rgba(0,0,0,.18); }
+  .portfolio-item:hover{ transform:translateY(-3px); border-color:var(--brand); box-shadow:0 16px 40px rgba(0,0,0,.25); }
 
   .image-link{ display:block; }
   .image-link img{
-    width:100%; height:100%; display:block; object-fit:cover;
-    aspect-ratio: 4/3; /* consistent tile look while thumbs load */
+    width:100%; height:auto; display:block; object-fit:cover;
   }
 
   /* Caption/overlay on hover */
@@ -133,47 +202,41 @@ captions:
 
   /* Lightbox */
   .lightbox{
-    position:fixed; inset:0; background:rgba(0,0,0,.88); display:none;
-    align-items:center; justify-content:center; z-index: 9999;
+    position:fixed; inset:0;
+    background:rgba(0,0,0,.92);
+    backdrop-filter: blur(12px);
+    display:none;
+    align-items:center; justify-content:center;
+    z-index: 9999;
   }
   .lightbox.open{ display:flex; }
   .lb-img{
-    max-width: min(92vw, 1400px); max-height: 86vh; border-radius:12px;
-    border:1px solid rgba(255,255,255,.2); box-shadow:0 30px 80px rgba(0,0,0,.6);
+    max-width: min(92vw, 1400px); max-height: 86vh; border-radius:10px;
+    box-shadow:0 30px 80px rgba(0,0,0,.6);
+    transition: opacity 0.2s ease;
   }
   .lb-ui{
     position:absolute; inset:0; display:flex; align-items:center; justify-content:space-between; pointer-events:none;
+    padding: 0 12px;
   }
   .lb-btn{
     pointer-events:auto; cursor:pointer; border:1px solid rgba(255,255,255,.18);
-    background:rgba(255,255,255,.06); color:#fff; border-radius:999px; width:42px; height:42px;
-    display:grid; place-items:center; margin:0 10px;
+    background:rgba(255,255,255,.08); color:#fff; border-radius:999px; width:48px; height:48px;
+    display:grid; place-items:center; font-size:1.4rem;
+    transition: background 0.2s, border-color 0.2s;
   }
-  .lb-btn:hover{ background:rgba(255,255,255,.14); }
+  .lb-btn:hover{ background:rgba(255,255,255,.18); border-color:rgba(255,255,255,.3); }
   .lb-close{
-    position:absolute; top:18px; right:18px;
+    position:absolute; top:18px; right:18px; font-size:1.1rem;
   }
-  /* .lb-close { display: none; } */
 
   .lb-caption{
     position:absolute; left:18px; bottom:16px; right:18px; color:#ddd;
-    text-shadow:0 1px 2px rgba(0,0,0,.8); font-size:.95rem;
+    text-shadow:0 1px 4px rgba(0,0,0,.9); font-size:.95rem;
   }
-  /* Hide the old lightbox UI completely */
-  .lightbox,
-  .lb-ui,
-  .lb-btn,
-  .lb-close,
-  .lb-caption { display: none !important; }
 
   /* Keep the header always on top */
-  .site-header { z-index: 1000; }
-
-  /* Gallery tiles should not stack above the header */
-  .portfolio-item { z-index: 1; }          /* or simply remove the z-index rule */
-
-  /* (optional) ensure the gallery grid itself sits below normal stacking */
-  .gallery { z-index: 0; position: relative; }
+  .site-header { z-index: 1100; }
 
 </style>
 

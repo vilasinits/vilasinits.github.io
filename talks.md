@@ -10,15 +10,6 @@ permalink: /talks.html/
     max-width: 100% !important; margin: 0 !important; padding: 0 !important;
   }
 
-  /* Design tokens aligned with the rest of the site */
-  :root{
-    --bg:#0e1525; --ink:#e9eef5; --muted:#a7b3c5; --brand:#4db8ff; --brand-2:#8a7dff;
-    --card:#0f1b2e; --ring:rgba(77,184,255,.28); --shadow:0 10px 30px rgba(0,0,0,.25);
-  }
-  @media (prefers-color-scheme: light){
-    :root{ --bg:#f7fbff; --ink:#0f172a; --muted:#475569; --card:#ffffff; --shadow:0 8px 24px rgba(2,8,23,.06); }
-  }
-  body{ background: linear-gradient(180deg,#111827,var(--bg)); }
 
   .talks-wrap{ width:min(1100px,92vw); margin-inline:auto; padding:40px 0 70px; color:var(--ink); }
 

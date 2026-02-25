@@ -10,15 +10,6 @@ permalink: /softwares.html/
     max-width: 100% !important; margin: 0 !important; padding: 0 !important;
   }
 
-  /* Design tokens aligned with your site */
-  :root{
-    --bg:#0e1525; --ink:#e9eef5; --muted:#a7b3c5; --brand:#4db8ff; --brand-2:#8a7dff;
-    --card:#0f1b2e; --ring:rgba(77,184,255,.28); --shadow:0 10px 30px rgba(0,0,0,.25);
-  }
-  @media (prefers-color-scheme: light){
-    :root{ --bg:#f7fbff; --ink:#0f172a; --muted:#475569; --card:#ffffff; --shadow:0 8px 24px rgba(2,8,23,.06); }
-  }
-  body{ background: linear-gradient(180deg,#111827,var(--bg)); }
 
   /* Page wrap */
   .sw-wrap{ width:min(1100px,92vw); margin-inline:auto; padding:40px 0 70px; color:var(--ink); }
@@ -122,16 +113,16 @@ permalink: /softwares.html/
     <article class="sw-card">
       <div class="sw-banner">
         <!-- replace with your actual WALE banner -->
-        <img src="/assets/wale.png" alt="WALE – Wavelet ℓ1-norm Estimator">
+        <img src="/assets/wale.png" alt="WALE – Wavelet ℓ1 norm Estimator">
       </div>
       <div class="sw-body">
         <div class="sw-title">
           <h3>WALE</h3>
         </div>
         <p class="sw-desc">
-          Theory-based prediction of the wavelet ℓ₁-norm for weak-lensing convergence under a given cosmology.
-          Uses Large Deviation Theory with spherical collapse to produce fast one-point predictions that
-          support simulation-light inference.
+          Theory based prediction of the wavelet ℓ₁ norm for weak lensing convergence under a given cosmology.
+          Uses Large Deviation Theory with spherical collapse to produce fast one point predictions that
+          support simulation light inference.
         </p>
         <div class="chips">
           <span class="chip">Python</span>
@@ -164,8 +155,8 @@ permalink: /softwares.html/
           <h3>GOLCONDA</h3>
         </div>
         <p class="sw-desc">
-          Emulator for weak-lensing convergence maps from an input power spectrum and a target ℓ₁-norm across scales.
-          Uses a generalized forward–backward scheme to match one-point and two-point targets.
+          Emulator for weak lensing convergence maps from an input power spectrum and a target ℓ₁ norm across scales.
+          Uses a generalized forward–backward scheme to match one point and two point targets.
         </p>
         <div class="chips">
           <span class="chip">Python</span>
@@ -197,12 +188,12 @@ permalink: /softwares.html/
         </div>
         <p class="sw-desc">
           Simulation toolkit for global topological defects and their impact on structure formation.
-          Includes network evolution and map-based analysis utilities.
+          Includes network evolution and map based analysis utilities.
         </p>
         <div class="chips">
           <span class="chip">Python</span>
           <span class="chip">Relativistic dynamics</span>
-          <span class="chip">Large-scale structure</span>
+          <span class="chip">Large scale structure</span>
         </div>
         <div class="sw-actions">
           <a class="btn primary" href="https://github.com/vilasinits/GlobalDefect" target="_blank" rel="noopener">
