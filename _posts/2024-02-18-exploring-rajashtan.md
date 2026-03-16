@@ -11,7 +11,7 @@ image: /assets/camel1.JPG
   </div>
 </header>
 
-<p style="text-align: justify;">Rajasthan is a land of vibrant culture, royal heritage, and breathtaking landscapes, and I had the privilege of exploring three of its most iconic cities—Jaisalmer, Jodhpur, and Udaipur—with my parents. Each city had its unique charm, from the golden sands of Jaisalmer to the blue streets of Jodhpur and the serene lakes of Udaipur. Here's a glimpse into our family adventure through this magnificent state.</p>
+<p style="text-align: justify;">Rajasthan is a land of vibrant culture, royal heritage, and breathtaking landscapes, and I had the privilege of exploring three of its most iconic cities-Jaisalmer, Jodhpur, and Udaipur-with my parents. Each city had its unique charm, from the golden sands of Jaisalmer to the blue streets of Jodhpur and the serene lakes of Udaipur. Here's a glimpse into our family adventure through this magnificent state.</p>
 
 <h2>Jodhpur: The Blue City</h2>
 
@@ -30,7 +30,7 @@ image: /assets/camel1.JPG
 </figure>
 
 <p style="text-align: justify;">
-The construction of the <strong>Mehrangarh Fort</strong> began in 1459 under the orders of Rao Jodha, the founder of Jodhpur. Situated on a strategic hilltop known as <strong>Bhakurcheeria</strong>, or the "Mountain of Birds," the fort was initially built to serve as a protective stronghold for the kingdom of Marwar. Over the centuries, successive rulers of Jodhpur contributed to its expansion, making it not just a military bastion but also a symbol of royal grandeur and architectural brilliance. What is interesting is to see the mix of architectural styles that reflect the different periods of its construction. In its earliest phase, Mehrangarh was built primarily for defense, with thick, towering walls and heavy fortifications that were designed to withstand sieges. The fort’s massive gates, like the famous <strong>Jayapol</strong> (Gate of Victory) and <strong>Fatehpol</strong> (Gate of Victory over Bikaner), were built to commemorate significant victories of the kingdom. These gates are fortified with spikes to deter enemy elephants during attacks—a feature typical of early Rajput military architecture. I think it is safe to say that this fort is now on the list of my most favourite forts!
+The construction of the <strong>Mehrangarh Fort</strong> began in 1459 under the orders of Rao Jodha, the founder of Jodhpur. Situated on a strategic hilltop known as <strong>Bhakurcheeria</strong>, or the "Mountain of Birds," the fort was initially built to serve as a protective stronghold for the kingdom of Marwar. Over the centuries, successive rulers of Jodhpur contributed to its expansion, making it not just a military bastion but also a symbol of royal grandeur and architectural brilliance. What is interesting is to see the mix of architectural styles that reflect the different periods of its construction. In its earliest phase, Mehrangarh was built primarily for defense, with thick, towering walls and heavy fortifications that were designed to withstand sieges. The fort’s massive gates, like the famous <strong>Jayapol</strong> (Gate of Victory) and <strong>Fatehpol</strong> (Gate of Victory over Bikaner), were built to commemorate significant victories of the kingdom. These gates are fortified with spikes to deter enemy elephants during attacks-a feature typical of early Rajput military architecture. I think it is safe to say that this fort is now on the list of my most favourite forts!
 </p>
 
 
@@ -50,7 +50,7 @@ The construction of the <strong>Mehrangarh Fort</strong> began in 1459 under the
   <figcaption>Rajasthani traditional house</figcaption>
 </figure>
 <p style="text-align: justify;">
-    But this isn’t just for looks—there’s more to the blue than meets the eye. The color reflects the intense desert heat, keeping homes cooler, and some believe it even repels pesky insects. Wandering through the old quarters beneath the fort, the endless sea of blue feels like stepping into a dream, especially against the golden desert backdrop. The contrast between the bright blue and the earthy tones of Rajasthan makes Jodhpur truly unforgettable.
+    But this isn’t just for looks-there’s more to the blue than meets the eye. The color reflects the intense desert heat, keeping homes cooler, and some believe it even repels pesky insects. Wandering through the old quarters beneath the fort, the endless sea of blue feels like stepping into a dream, especially against the golden desert backdrop. The contrast between the bright blue and the earthy tones of Rajasthan makes Jodhpur truly unforgettable.
 </p>
 
 <p style="text-align: justify;">
@@ -58,7 +58,7 @@ The construction of the <strong>Mehrangarh Fort</strong> began in 1459 under the
 </p>
 
 <p style="text-align: justify;">
-    Our journey through Jodhpur took a charming detour to the nearby <strong>Bishnoi Village</strong>, where time seemed to slow down in the embrace of tradition. The simple yet beautiful mud homes, with their thatched roofs and hand-painted walls, offered a glimpse into the rural life of Rajasthan. We were warmly welcomed by the locals, who shared stories of their centuries-old connection to nature and their commitment to protecting wildlife. The highlight, though, was the home-cooked meal—rich with the flavors of Rajasthan. Freshly made bajra rotis, dal, and homegrown vegetables cooked with love made it a feast for both the stomach and the soul. It was a heartwarming experience that connected us to the roots of Rajasthani culture.
+    Our journey through Jodhpur took a charming detour to the nearby <strong>Bishnoi Village</strong>, where time seemed to slow down in the embrace of tradition. The simple yet beautiful mud homes, with their thatched roofs and hand-painted walls, offered a glimpse into the rural life of Rajasthan. We were warmly welcomed by the locals, who shared stories of their centuries-old connection to nature and their commitment to protecting wildlife. The highlight, though, was the home-cooked meal-rich with the flavors of Rajasthan. Freshly made bajra rotis, dal, and homegrown vegetables cooked with love made it a feast for both the stomach and the soul. It was a heartwarming experience that connected us to the roots of Rajasthani culture.
 </p>
 
 
@@ -78,13 +78,13 @@ The construction of the <strong>Mehrangarh Fort</strong> began in 1459 under the
 </figure>
 
 <p style="text-align: justify;">
-<strong>Jaisalmer Fort</strong>, or "Sonar Quila," isn’t just a golden beauty—it’s a living, breathing wonder! It is one of the largest fully preserved fortified cities in the world. Rising from the Thar Desert like a sandy mirage, this fort has been home to thousands since 1156. Its honey-hued walls glow at sunset, making it feel like a scene straight from a fairytale.
+<strong>Jaisalmer Fort</strong>, or "Sonar Quila," isn’t just a golden beauty-it’s a living, breathing wonder! It is one of the largest fully preserved fortified cities in the world. Rising from the Thar Desert like a sandy mirage, this fort has been home to thousands since 1156. Its honey-hued walls glow at sunset, making it feel like a scene straight from a fairytale.
 
-Step inside, and you’re in a bustling maze of life. Vibrant shops selling embroidered textiles, glimmering jewelry, and leather goods line the narrow streets. It’s a sensory overload—in the best way! Pinks, blues, and yellows burst from every corner, while the scent of spices fills the air. You’re not just shopping, you’re time-traveling through Rajasthan’s rich culture.
+Step inside, and you’re in a bustling maze of life. Vibrant shops selling embroidered textiles, glimmering jewelry, and leather goods line the narrow streets. It’s a sensory overload-in the best way! Pinks, blues, and yellows burst from every corner, while the scent of spices fills the air. You’re not just shopping, you’re time-traveling through Rajasthan’s rich culture.
 </p>
 
 <p style="text-align: justify;">
-But here’s the kicker—Jaisalmer Fort isn’t a relic. It’s alive! Over 4,000 residents call it home, keeping the fort’s spirit vibrant. Families run colorful stalls, artisans work their craft, and children play in the alleys, making this place a true fusion of ancient and modern life. 
+But here’s the kicker-Jaisalmer Fort isn’t a relic. It’s alive! Over 4,000 residents call it home, keeping the fort’s spirit vibrant. Families run colorful stalls, artisans work their craft, and children play in the alleys, making this place a true fusion of ancient and modern life. 
 </p>
 
 
@@ -94,7 +94,7 @@ But here’s the kicker—Jaisalmer Fort isn’t a relic. It’s alive! Over 4,0
 </figure>
 
 <p style="text-align: justify;">
-Every corner reveals a new treasure, every street hums with life. Jaisalmer Fort isn’t just a site—it’s an experience, a slice of Rajasthan where history and everyday life dance together in golden harmony.
+Every corner reveals a new treasure, every street hums with life. Jaisalmer Fort isn’t just a site-it’s an experience, a slice of Rajasthan where history and everyday life dance together in golden harmony.
 </p>
 
 <figure style="width:50%; float:right; margin-left:20px; margin-bottom:10px;">
@@ -109,7 +109,7 @@ As the evening unfolded, the camp turned into a vibrant celebration of Rajasthan
 </p>
 
 <p style="text-align: justify;">
-And then came the ultimate treat—the <strong>star-studded sky</strong>. As an astrophysicist, I couldn’t resist gazing upwards. Far from the city lights, the desert sky was pristine, a canvas of shimmering stars that stretched infinitely above. It was a celestial spectacle, with constellations standing out in their full glory. For me, this remote desert was the perfect spot to get lost in the beauty of the universe, a magical blend of earth and sky.
+And then came the ultimate treat-the <strong>star-studded sky</strong>. As an astrophysicist, I couldn’t resist gazing upwards. Far from the city lights, the desert sky was pristine, a canvas of shimmering stars that stretched infinitely above. It was a celestial spectacle, with constellations standing out in their full glory. For me, this remote desert was the perfect spot to get lost in the beauty of the universe, a magical blend of earth and sky.
 </p>
 
 
@@ -130,7 +130,7 @@ And then came the ultimate treat—the <strong>star-studded sky</strong>. As an 
 <p style="text-align: justify;">We spent time exploring the grand City Palace, which overlooks the beautiful Lake Pichola. The palace is an architectural marvel, with its courtyards, balconies, and intricate mosaic work. A boat ride on Lake Pichola gave us stunning views of the Lake Palace and the surrounding hills.</p>
 
 <p style="text-align: justify;">
-The <strong>City Palace of Udaipur</strong> is like stepping into a Rajasthani fairytale. Perched on the edge of Lake Pichola, this palace is a sprawling maze of courtyards, balconies, and marble corridors that practically whisper royal secrets. Every turn reveals something dazzling—mosaics, mirror-work, and views that make you feel like you’re floating on the lake itself. It’s the kind of place where you half expect a Maharaja to waltz by at any moment. And don’t even get me started on the sunset views—they're pure magic, turning the palace and lake into a golden dreamscape.
+The <strong>City Palace of Udaipur</strong> is like stepping into a Rajasthani fairytale. Perched on the edge of Lake Pichola, this palace is a sprawling maze of courtyards, balconies, and marble corridors that practically whisper royal secrets. Every turn reveals something dazzling-mosaics, mirror-work, and views that make you feel like you’re floating on the lake itself. It’s the kind of place where you half expect a Maharaja to waltz by at any moment. And don’t even get me started on the sunset views-they're pure magic, turning the palace and lake into a golden dreamscape.
 </p>
 
 <figure style="width:30%; float:left; margin-right:20px; margin-bottom:10px;">
@@ -139,7 +139,7 @@ The <strong>City Palace of Udaipur</strong> is like stepping into a Rajasthani f
 </figure>
 
 <p style="text-align: justify;">
-The <strong>City Palace of Udaipur</strong> feels like stepping into a Rajasthani fairytale. Perched on the edge of Lake Pichola, this palace is a sprawling maze of courtyards, balconies, and marble corridors that seem to whisper royal secrets. Every corner dazzles with mosaics, mirror-work, and awe-inspiring views that make you feel like you’re floating on the lake itself. Exploring deeper, I marveled at the contrast between the <strong>King’s Palace</strong> and the <strong>Queen’s Palace</strong>, each a unique reflection of regal splendor. What stood out most was the contrast between the two palaces. As was common in those times, the <strong>King’s Palace</strong> was grand and expansive, with large rooms and wide-open windows that allowed in plenty of light and air. In stark contrast, the <strong>Queen’s chambers</strong> were more intimate, with smaller rooms and intricately carved windows designed to maintain privacy. The windows weren’t open to the outside, but rather shielded by beautiful latticework, ensuring that the queen could observe the world without being seen—a striking reminder of the roles and traditions of the era. The sunsets here are pure magic, transforming the palace and lake into a golden dreamscape where you half expect a Maharaja to waltz by at any moment.
+The <strong>City Palace of Udaipur</strong> feels like stepping into a Rajasthani fairytale. Perched on the edge of Lake Pichola, this palace is a sprawling maze of courtyards, balconies, and marble corridors that seem to whisper royal secrets. Every corner dazzles with mosaics, mirror-work, and awe-inspiring views that make you feel like you’re floating on the lake itself. Exploring deeper, I marveled at the contrast between the <strong>King’s Palace</strong> and the <strong>Queen’s Palace</strong>, each a unique reflection of regal splendor. What stood out most was the contrast between the two palaces. As was common in those times, the <strong>King’s Palace</strong> was grand and expansive, with large rooms and wide-open windows that allowed in plenty of light and air. In stark contrast, the <strong>Queen’s chambers</strong> were more intimate, with smaller rooms and intricately carved windows designed to maintain privacy. The windows weren’t open to the outside, but rather shielded by beautiful latticework, ensuring that the queen could observe the world without being seen-a striking reminder of the roles and traditions of the era. The sunsets here are pure magic, transforming the palace and lake into a golden dreamscape where you half expect a Maharaja to waltz by at any moment.
 </p>
 
 <p style="text-align: justify;">We also visited Jag Mandir, another palace located on an island in Lake Pichola, where we spent a peaceful afternoon soaking in the beauty of Udaipur. The serene atmosphere and stunning views made Udaipur a city we’ll always remember.</p>
@@ -149,7 +149,7 @@ The <strong>City Palace of Udaipur</strong> feels like stepping into a Rajasthan
   <figcaption>Window on the Jag Mandir Palace</figcaption>
 </figure>
 <p style="text-align: justify;">
-  As I wandered through the streets of Udaipur, it felt as though the city was draped in a cloak of intricate designs, each thread woven with centuries of stories and styles. The architecture, with its delicate jharokhas and ornate carvings, seemed to tell tales of eras long past. Every alleyway, every palace, was a canvas where time had painted its evolution—a fusion of Rajput grandeur and Mughal elegance. It was as if the city itself was alive, wearing its history like a rich tapestry, inviting you to trace its patterns and lose yourself in its beauty.
+  As I wandered through the streets of Udaipur, it felt as though the city was draped in a cloak of intricate designs, each thread woven with centuries of stories and styles. The architecture, with its delicate jharokhas and ornate carvings, seemed to tell tales of eras long past. Every alleyway, every palace, was a canvas where time had painted its evolution-a fusion of Rajput grandeur and Mughal elegance. It was as if the city itself was alive, wearing its history like a rich tapestry, inviting you to trace its patterns and lose yourself in its beauty.
 </p>
 
 

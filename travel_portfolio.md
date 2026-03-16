@@ -287,7 +287,7 @@ captions:
               srcset="{{ image.path }} 400w, {{ image.path | replace: '-400.webp', '-800.webp' }} 800w"
               sizes="(max-width: 520px) 100vw, (max-width: 1100px) 33vw, 25vw"
               loading="lazy"
-              alt="{{ cap_title }} — {{ cap_sub }}"
+              alt="{{ cap_title }} - {{ cap_sub }}"
             >
             <div class="cap">
               <span>{{ cap_title }}</span>
@@ -384,7 +384,7 @@ captions:
       const group = a.dataset.group || '';
       img.src = url;
       img.alt = name ? name : 'photo';
-      cap.textContent = (group ? group.replace(/southfrance/i,'South France').replace(/^ny$/i,'New York') : '') + (name ? ' — ' + name : '');
+      cap.textContent = (group ? group.replace(/southfrance/i,'South France').replace(/^ny$/i,'New York') : '') + (name ? ' - ' + name : '');
       lb.classList.add('open');
       document.body.style.overflow = 'hidden';
     }

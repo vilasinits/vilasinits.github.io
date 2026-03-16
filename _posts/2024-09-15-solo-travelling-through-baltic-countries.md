@@ -13,7 +13,7 @@ image: /assets/warsaw5.jpg
 
 <img src="{{ '/assets/solo-map-route.png' | relative_url }}" alt="Solo Baltic Adventure" style="width:50%; height:auto; float:left; margin-right:20px; margin-bottom:10px;">
 
-<p style="text-align: justify;">After two week in North America and a cross-Atlantic flight, a sane person would want to rest. I on the other hand had other ideas. I had always dreamed of travelling solo— not just for work, but for myself, and as disconnected as possible from the internet and laptop-free. Traveling solo offers an unparalleled freedom, and my recent trip through Eastern Europe was the epitome of that liberty. With just a flight to Krakow and a return ticket from Vilnius, and plenty of coffee to fight the jet-lag, I embarked on an adventure that took me to Krakow, Warsaw, Riga, Klaipeda, and Vilnius—cities rich in history, culture, and beauty. I had no set itinerary; I booked dormitories in each city and relied on free walking tours to immerse myself in the local culture, letting the spontaneity guide me through an unforgettable journey.</p>
+<p style="text-align: justify;">After two week in North America and a cross-Atlantic flight, a sane person would want to rest. I on the other hand had other ideas. I had always dreamed of travelling solo- not just for work, but for myself, and as disconnected as possible from the internet and laptop-free. Traveling solo offers an unparalleled freedom, and my recent trip through Eastern Europe was the epitome of that liberty. With just a flight to Krakow and a return ticket from Vilnius, and plenty of coffee to fight the jet-lag, I embarked on an adventure that took me to Krakow, Warsaw, Riga, Klaipeda, and Vilnius-cities rich in history, culture, and beauty. I had no set itinerary; I booked dormitories in each city and relied on free walking tours to immerse myself in the local culture, letting the spontaneity guide me through an unforgettable journey.</p>
 
 <h2>Krakow: The Medieval Heart of Poland</h2>
 
@@ -96,7 +96,7 @@ image: /assets/warsaw5.jpg
   <figcaption>The stunning dunes of the Curonian Spit, a UNESCO World Heritage site.</figcaption>
 </figure>
 
-<p style="text-align: justify;">But the true magic awaited across the water—the Curonian Spit. I took a ferry and spent the day hiking along the towering sand dunes and through dense pine forests. I must have walked around 6km here, with plenty of detours to enjoy views, before returning back to Klaipeda. The Curonian Spit, a UNESCO World Heritage Site, is a natural wonder, and walking through its serene landscapes felt otherworldly.</p>
+<p style="text-align: justify;">But the true magic awaited across the water-the Curonian Spit. I took a ferry and spent the day hiking along the towering sand dunes and through dense pine forests. I must have walked around 6km here, with plenty of detours to enjoy views, before returning back to Klaipeda. The Curonian Spit, a UNESCO World Heritage Site, is a natural wonder, and walking through its serene landscapes felt otherworldly.</p>
 
 <p style="text-align: justify;">However, I ended up missing the last bus back to Vilnius. With no other option, I spent the night in Klaipeda, waiting for the morning. Stranded but calm, I found myself by the Baltic Sea, letting the waves and the quiet stillness of the night become part of the journey. It was a gentle reminder that the road often offers detours, and those unexpected moments can be the most profound. I did find a place to sleep just a bit before the next day begins, but at the last moment.</p>
 
@@ -107,7 +107,7 @@ image: /assets/warsaw5.jpg
   <figcaption>Gediminas Tower in Vilnius, a symbol of Lithuania’s resilience and strength.</figcaption>
 </figure>
 
-<p style="text-align: justify;">Finally, I arrived in Vilnius, where the last leg of my adventure awaited. Staying in a dormitory close to the Old Town, I joined one final free walking tour. Vilnius felt different—its baroque architecture gave the city a unique atmosphere. We wandered through the labyrinthine streets, exploring its hidden courtyards and artistic corners.</p>
+<p style="text-align: justify;">Finally, I arrived in Vilnius, where the last leg of my adventure awaited. Staying in a dormitory close to the Old Town, I joined one final free walking tour. Vilnius felt different-its baroque architecture gave the city a unique atmosphere. We wandered through the labyrinthine streets, exploring its hidden courtyards and artistic corners.</p>
 
 <p style="text-align: justify;">One of the most striking moments was visiting the Gates of Dawn, an important religious site that has drawn pilgrims for centuries. The guide spoke of the spiritual significance of the place, and I could feel a sense of peace and reverence wash over me.</p>
 
@@ -133,9 +133,9 @@ image: /assets/warsaw5.jpg
 <h2> A Striking Shared History, NATO's Presence, and Echoes of Paganism </h2>
 
 <p style="text-align: justify"> 
-As I traveled through Krakow, Warsaw, Riga, Klaipeda, and Vilnius, one of the most striking realizations was how intertwined the histories of these countries are. From medieval struggles against invaders to the more recent fight for independence from Soviet rule, Poland and the Baltic countries—Latvia and Lithuania—share a deeply connected past. These regions were once powerful kingdoms involved in complex alliances like the Polish-Lithuanian Commonwealth, and later endured the hardships of occupations that altered their national identities.</p>
+As I traveled through Krakow, Warsaw, Riga, Klaipeda, and Vilnius, one of the most striking realizations was how intertwined the histories of these countries are. From medieval struggles against invaders to the more recent fight for independence from Soviet rule, Poland and the Baltic countries-Latvia and Lithuania-share a deeply connected past. These regions were once powerful kingdoms involved in complex alliances like the Polish-Lithuanian Commonwealth, and later endured the hardships of occupations that altered their national identities.</p>
 
-<p style="text-align: justify"> What makes this shared history even more fascinating is the region's ancient ties to paganism. In contrast to much of Europe, Lithuania was the last pagan country in Europe, officially converting to Christianity only in the late 14th century. The echoes of this pagan past are still felt today, particularly in Lithuania, where festivals, symbols, and even folklore reveal deep-rooted connections to nature-based spiritual practices. As I walked through Vilnius, I could feel the layered history beneath the baroque architecture—the traces of old pagan beliefs mixed with Christianity and later, Soviet atheism. These influences still shape the cultural identity of the region.</p>
+<p style="text-align: justify"> What makes this shared history even more fascinating is the region's ancient ties to paganism. In contrast to much of Europe, Lithuania was the last pagan country in Europe, officially converting to Christianity only in the late 14th century. The echoes of this pagan past are still felt today, particularly in Lithuania, where festivals, symbols, and even folklore reveal deep-rooted connections to nature-based spiritual practices. As I walked through Vilnius, I could feel the layered history beneath the baroque architecture-the traces of old pagan beliefs mixed with Christianity and later, Soviet atheism. These influences still shape the cultural identity of the region.</p>
 
 <figure style="width:50%; float:left; margin-right:20px; margin-bottom:10px;">
   <img src="{{ '/assets/nato.jpeg' | relative_url }}" alt="NATO" style="width:100%; height:auto;">
@@ -155,6 +155,6 @@ As I traveled through Krakow, Warsaw, Riga, Klaipeda, and Vilnius, one of the mo
 
 <p style="text-align: justify;">From the missed bus in Klaipeda to the chance encounters on walking tours, these moments of unpredictability became the highlights of the trip. Traveling without a fixed plan allowed me to embrace the spontaneous nature of the journey, and in doing so, I learned to trust the road, knowing it would lead me exactly where I needed to go.</p>
 
-<p style="text-align: justify;">As I left Vilnius, I realized that this wasn’t just a collection of cities I’d visited—it was a series of experiences that had forever changed the way I see the world, and now I am looking forward for more such solo trips!</p>
+<p style="text-align: justify;">As I left Vilnius, I realized that this wasn’t just a collection of cities I’d visited-it was a series of experiences that had forever changed the way I see the world, and now I am looking forward for more such solo trips!</p>
 
-<p style="text-align: justify">P.S: Don’t forget your trusty walking shoes, because trust me—you’ll be racking up those steps while soaking in all the goodness these places have to offer!</p>
+<p style="text-align: justify">P.S: Don’t forget your trusty walking shoes, because trust me-you’ll be racking up those steps while soaking in all the goodness these places have to offer!</p>

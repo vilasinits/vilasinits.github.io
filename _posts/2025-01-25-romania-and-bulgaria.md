@@ -12,7 +12,7 @@ image: /assets/romania_title.JPEG
 
 <h1>Romania</h1>
 
-<p style="text-align: justify;">This winter, we had the chance to visit Romania, a country that left me unexpectedly enchanted. Our journey began in <strong>Bucharest</strong>, where we immersed ourselves in the city’s vibrant culture through walking tours. One of the highlights was visiting the famous <strong>Cărturești bookstore</strong>—a stunning space filled with books and unique gifts. On the top floor, we discovered a cozy café, which unfortunately was closed by the time we got there—we got distracted by the book collection!</p>
+<p style="text-align: justify;">This winter, we had the chance to visit Romania, a country that left me unexpectedly enchanted. Our journey began in <strong>Bucharest</strong>, where we immersed ourselves in the city’s vibrant culture through walking tours. One of the highlights was visiting the famous <strong>Cărturești bookstore</strong>-a stunning space filled with books and unique gifts. On the top floor, we discovered a cozy café, which unfortunately was closed by the time we got there-we got distracted by the book collection!</p>
 
 <h2>Exploring Brașov</h2>
 
@@ -61,21 +61,21 @@ image: /assets/romania_title.JPEG
   <figcaption>Plovdiv at night</figcaption>
 </figure>
 
-<p style="text-align: justify;">After Romania, we boarded a night bus to <strong>Sofia</strong>. We spent a bit of time exploring the city before renting a car and driving to <strong>Plovdiv</strong>, the European Culture Capital of 2024. Plovdiv completely captivated me—there was something about this town that felt magical and almost otherworldly. The beautiful mix of architectural styles, from Roman ruins to Ottoman and Bulgarian Revival buildings, created a unique charm that seemed to reflect its rich history.</p>
+<p style="text-align: justify;">After Romania, we boarded a night bus to <strong>Sofia</strong>. We spent a bit of time exploring the city before renting a car and driving to <strong>Plovdiv</strong>, the European Culture Capital of 2024. Plovdiv completely captivated me-there was something about this town that felt magical and almost otherworldly. The beautiful mix of architectural styles, from Roman ruins to Ottoman and Bulgarian Revival buildings, created a unique charm that seemed to reflect its rich history.</p>
 
 <figure style="width:55%; float:left; margin-right:20px; margin-bottom:10px;">
   <img src="{{ '/assets/teppe_view.jpg' | relative_url }}" alt="The view from nebet teppe in Plovdiv" style="width:100%; height:auto;">
   <figcaption>The view from Nebet Tepe in Plovdiv</figcaption>
 </figure>
     
-<p style="text-align: justify;">One of the highlights was visiting <strong>Nebet Tepe</strong> at night. Standing atop the hill, we gazed out over the city lights, which sparkled like stars against the dark sky. The view was absolutely enchanting, and for a moment, it felt like time had stopped. There was a warmth and serenity in the air, perhaps because of the lingering holiday spirit or the cozy atmosphere of the town. We almost didn’t want to leave Plovdiv—it felt like the place was holding on to me, wrapping me in its charm and beauty.</p>
+<p style="text-align: justify;">One of the highlights was visiting <strong>Nebet Tepe</strong> at night. Standing atop the hill, we gazed out over the city lights, which sparkled like stars against the dark sky. The view was absolutely enchanting, and for a moment, it felt like time had stopped. There was a warmth and serenity in the air, perhaps because of the lingering holiday spirit or the cozy atmosphere of the town. We almost didn’t want to leave Plovdiv-it felt like the place was holding on to me, wrapping me in its charm and beauty.</p>
 
 <figure style="width:35%; float:right; margin-left:20px; margin-bottom:10px; margin-top:10px;">
   <img src="{{ '/assets/sozopol.jpg' | relative_url }}" alt="Street in Sozopol" style="width:100%; height:auto;">
   <figcaption>Street in Sozopol</figcaption>
 </figure>
 
-<p style="text-align: justify;">Plovdiv’s streets, with their blend of cobblestone paths and modern touches, were a joy to wander. The artistic energy of the town was palpable, with galleries, cafés, and small artisan shops scattered throughout. It felt like every corner had its own story to tell. Leaving Plovdiv was difficult, as it left a lasting impression on me—one **I** know I’ll carry with me for a long time.</p>
+<p style="text-align: justify;">Plovdiv’s streets, with their blend of cobblestone paths and modern touches, were a joy to wander. The artistic energy of the town was palpable, with galleries, cafés, and small artisan shops scattered throughout. It felt like every corner had its own story to tell. Leaving Plovdiv was difficult, as it left a lasting impression on me-one **I** know I’ll carry with me for a long time.</p>
 
 <p style="text-align: justify;">From Plovdiv, we headed to <strong>Sozopol</strong>, where we rested for the night. We hadn’t accounted for the fact that Sozopol is very quiet during the winter months, but this turned out to be a blessing in disguise. The tranquil streets and unique architecture gave me a different perspective on the town, showcasing a side of it that felt untouched by the usual crowds of summer tourists. After soaking in the peaceful ambiance, we explored central Burgas, enjoying its relaxed vibe and charm.</p>
     
@@ -89,4 +89,4 @@ image: /assets/romania_title.JPEG
 
 <p style="text-align: justify;">The next day, we explored more of Sofia’s landmarks, including its stunning <strong>cathedrals</strong>. The mix of historical and modern elements in the city made for a fascinating experience. As our time in Bulgaria came to an end, we felt grateful for the blend of planned adventures and unexpected moments that made the trip so memorable.</p>
 
-<p style="text-align: justify;">As my journey through Romania and Bulgaria came to an end, I couldn’t help but feel grateful for the incredible memories—snowy castles, mesmerizing traditions, breathtaking landscapes, and charming towns. The trip was made even more delightful by the countless stray cats we encountered, whose charm often derailed our plans as we stopped to pet every friendly feline that crossed our path. Yet, I know there’s still so much left to explore in these beautiful countries, and I hope to return someday to uncover even more of their hidden treasures.</p>
+<p style="text-align: justify;">As my journey through Romania and Bulgaria came to an end, I couldn’t help but feel grateful for the incredible memories-snowy castles, mesmerizing traditions, breathtaking landscapes, and charming towns. The trip was made even more delightful by the countless stray cats we encountered, whose charm often derailed our plans as we stopped to pet every friendly feline that crossed our path. Yet, I know there’s still so much left to explore in these beautiful countries, and I hope to return someday to uncover even more of their hidden treasures.</p>
