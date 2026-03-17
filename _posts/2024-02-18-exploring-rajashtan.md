@@ -2,7 +2,7 @@
 layout: custompost
 title: "Exploring the Royal Cities: Jodhpur, Jaisalmer, and Udaipur"
 categories: misc
-image: /assets/camel1.JPG
+image: /assets/camel1.webp
 ---
 <header class="z2csite-header">
   <div class="z2cdynamic-title">
@@ -21,11 +21,11 @@ image: /assets/camel1.JPG
 </p>
 
 <figure style="width:50%; float:left; margin-right:20px; margin-bottom:10px;">
-  <img src="{{ '/assets/meharangarhfort1.JPG' | relative_url }}" alt="Meharangarh Fort" style="width:100%; height:auto;">
+  <img src="{{ '/assets/meharangarhfort1.webp' | relative_url }}" alt="Meharangarh Fort" style="width:100%; height:auto;">
   <figcaption>Meharangarh Fort.</figcaption>
 </figure>
 <figure style="width:50%; float:left; margin-right:20px; margin-bottom:10px;">
-  <img src="{{ '/assets/meharangarhfort-sheshmahal.JPG' | relative_url }}" alt="Shesh Mahal in Meharangarh Fort" style="width:100%; height:auto;">
+  <img src="{{ '/assets/meharangarhfort-sheshmahal.webp' | relative_url }}" alt="Shesh Mahal in Meharangarh Fort" style="width:100%; height:auto;">
   <figcaption>Meharangarh Fort.</figcaption>
 </figure>
 
@@ -41,12 +41,12 @@ The construction of the <strong>Mehrangarh Fort</strong> began in 1459 under the
 </p>
 
 <figure style="width:50%; float:right; margin-left:20px; margin-bottom:10px;">
-  <img src="{{ '/assets/bluecity-jodhpur.JPG' | relative_url }}" alt="Blue buildings" style="width:100%; height:auto;">
+  <img src="{{ '/assets/bluecity-jodhpur.webp' | relative_url }}" alt="Blue buildings" style="width:100%; height:auto;">
   <figcaption>Bird's eye view of the blue buildings.</figcaption>
 </figure>
 
 <figure style="width:50%; float:right; margin-left:20px; margin-bottom:10px;">
-  <img src="{{ '/assets/jodhpur-traditional.JPG' | relative_url }}" alt="Blue buildings" style="width:100%; height:auto;">
+  <img src="{{ '/assets/jodhpur-traditional.webp' | relative_url }}" alt="Blue buildings" style="width:100%; height:auto;">
   <figcaption>Rajasthani traditional house</figcaption>
 </figure>
 <p style="text-align: justify;">
@@ -66,14 +66,14 @@ The construction of the <strong>Mehrangarh Fort</strong> began in 1459 under the
 <h2>Jaisalmer: The Golden City</h2>
 
 <figure style="width:50%; float:left; margin-right:20px; margin-bottom:10px;">
-  <img src="{{ '/assets/jaisalmer-katputli.JPG' | relative_url }}" alt="Krakow Market Square" style="width:100%; height:auto;">
+  <img src="{{ '/assets/jaisalmer-katputli.webp' | relative_url }}" alt="Krakow Market Square" style="width:100%; height:auto;">
   <figcaption>Katputli (puppets) at a store inside the Jaisalmer Fort</figcaption>
 </figure>
 
 <p style="text-align: justify;">Next we headed to Jaisalmer, the "Golden City," named after its golden-hued sandstone architecture. We were immediately struck by the ethereal beauty of the city, with its sprawling desert and ancient fortifications.</p>
 
 <figure style="width:50%; float:left; margin-right:20px; margin-bottom:10px;">
-  <img src="{{ '/assets/jaisalmerfort2.JPG' | relative_url }}" alt="Krakow Market Square" style="width:100%; height:auto;">
+  <img src="{{ '/assets/jaisalmerfort2.webp' | relative_url }}" alt="Krakow Market Square" style="width:100%; height:auto;">
   <figcaption>Street near Kothari's Patwon ki Haveli</figcaption>
 </figure>
 
@@ -89,7 +89,7 @@ But here’s the kicker-Jaisalmer Fort isn’t a relic. It’s alive! Over 4,000
 
 
 <figure style="width:50%; float:right; margin-left:20px; margin-bottom:10px;">
-  <img src="{{ '/assets/camel2.JPG' | relative_url }}" alt="Krakow Market Square" style="width:100%; height:auto;">
+  <img src="{{ '/assets/camel2.webp' | relative_url }}" alt="Krakow Market Square" style="width:100%; height:auto;">
   <figcaption>Camel riding at Thar desert</figcaption>
 </figure>
 
@@ -98,7 +98,7 @@ Every corner reveals a new treasure, every street hums with life. Jaisalmer Fort
 </p>
 
 <figure style="width:50%; float:right; margin-left:20px; margin-bottom:10px;">
-  <img src="{{ '/assets/jaisalmer-sunset.JPG' | relative_url }}" alt="Krakow Market Square" style="width:100%; height:auto;">
+  <img src="{{ '/assets/jaisalmer-sunset.webp' | relative_url }}" alt="Krakow Market Square" style="width:100%; height:auto;">
   <figcaption>Sunset at Thar desert</figcaption>
 </figure>
 
@@ -117,13 +117,13 @@ And then came the ultimate treat-the <strong>star-studded sky</strong>. As an as
 
 
 <figure style="width:50%; float:right; margin-left:20px; margin-bottom:10px;">
-  <img src="{{ '/assets/udaipur3.JPG' | relative_url }}" alt="Krakow Market Square" style="width:100%; height:auto;">
+  <img src="{{ '/assets/udaipur3.webp' | relative_url }}" alt="Krakow Market Square" style="width:100%; height:auto;">
   <figcaption>Entrance to the City Palace</figcaption>
 </figure>
 <p style="text-align: justify;">Our final stop was Udaipur, the "City of Lakes" and arguably the most romantic city in Rajasthan. The city's tranquil ambiance and picturesque lakes provided a perfect ending to our journey.</p>
 
 <figure style="width:50%; float:right; margin-left:20px; margin-bottom:10px;">
-  <img src="{{ '/assets/udaipur2.JPG' | relative_url }}" alt="Krakow Market Square" style="width:100%; height:auto;">
+  <img src="{{ '/assets/udaipur2.webp' | relative_url }}" alt="Krakow Market Square" style="width:100%; height:auto;">
   <figcaption>One of the rooms inside the city palace</figcaption>
 </figure>
 
@@ -134,7 +134,7 @@ The <strong>City Palace of Udaipur</strong> is like stepping into a Rajasthani f
 </p>
 
 <figure style="width:30%; float:left; margin-right:20px; margin-bottom:10px;">
-  <img src="{{ '/assets/queenschamber-udaipur.jpeg' | relative_url }}" alt="Krakow Market Square" style="width:100%; height:auto;">
+  <img src="{{ '/assets/queenschamber-udaipur.webp' | relative_url }}" alt="Krakow Market Square" style="width:100%; height:auto;">
   <figcaption>Lattice work on one of the windows of the Queens chamber</figcaption>
 </figure>
 
@@ -145,7 +145,7 @@ The <strong>City Palace of Udaipur</strong> feels like stepping into a Rajasthan
 <p style="text-align: justify;">We also visited Jag Mandir, another palace located on an island in Lake Pichola, where we spent a peaceful afternoon soaking in the beauty of Udaipur. The serene atmosphere and stunning views made Udaipur a city we’ll always remember.</p>
 
 <figure style="width:50%; float:left; margin-right:20px; margin-bottom:10px;">
-  <img src="{{ '/assets/udaipur1.JPG' | relative_url }}" alt="Krakow Market Square" style="width:100%; height:auto;">
+  <img src="{{ '/assets/udaipur1.webp' | relative_url }}" alt="Krakow Market Square" style="width:100%; height:auto;">
   <figcaption>Window on the Jag Mandir Palace</figcaption>
 </figure>
 <p style="text-align: justify;">
@@ -156,7 +156,7 @@ The <strong>City Palace of Udaipur</strong> feels like stepping into a Rajasthan
 <h2>Final Thoughts</h2>
 
 <figure style="width:30%; float:left; margin-right:20px; margin-bottom:10px;">
-  <img src="{{ '/assets/dal-bhatti.jpeg' | relative_url }}" alt="Krakow Market Square" style="width:100%; height:auto;">
+  <img src="{{ '/assets/dal-bhatti.webp' | relative_url }}" alt="Krakow Market Square" style="width:100%; height:auto;">
   <figcaption>Dal Bhatti: One of the traditional food in Rajasthan</figcaption>
 </figure>
 

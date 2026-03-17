@@ -2,7 +2,7 @@
 layout: custompost
 title: "Solo travelling through Baltic countries"
 categories: misc
-image: /assets/warsaw5.jpg
+image: /assets/warsaw5.webp
 ---
 <header class="z2csite-header">
   <div class="z2cdynamic-title">
@@ -11,21 +11,21 @@ image: /assets/warsaw5.jpg
   </div>
 </header>
 
-<img src="{{ '/assets/solo-map-route.png' | relative_url }}" alt="Solo Baltic Adventure" style="width:50%; height:auto; float:left; margin-right:20px; margin-bottom:10px;">
+<img src="{{ '/assets/solo-map-route.webp' | relative_url }}" alt="Solo Baltic Adventure" style="width:50%; height:auto; float:left; margin-right:20px; margin-bottom:10px;">
 
 <p style="text-align: justify;">After two week in North America and a cross-Atlantic flight, a sane person would want to rest. I on the other hand had other ideas. I had always dreamed of travelling solo- not just for work, but for myself, and as disconnected as possible from the internet and laptop-free. Traveling solo offers an unparalleled freedom, and my recent trip through Eastern Europe was the epitome of that liberty. With just a flight to Krakow and a return ticket from Vilnius, and plenty of coffee to fight the jet-lag, I embarked on an adventure that took me to Krakow, Warsaw, Riga, Klaipeda, and Vilnius-cities rich in history, culture, and beauty. I had no set itinerary; I booked dormitories in each city and relied on free walking tours to immerse myself in the local culture, letting the spontaneity guide me through an unforgettable journey.</p>
 
 <h2>Krakow: The Medieval Heart of Poland</h2>
 
 <figure style="width:50%; float:left; margin-right:20px; margin-bottom:10px;">
-  <img src="{{ '/assets/krakow-market-square.jpg' | relative_url }}" alt="Krakow Market Square" style="width:100%; height:auto;">
+  <img src="{{ '/assets/krakow-market-square.webp' | relative_url }}" alt="Krakow Market Square" style="width:100%; height:auto;">
   <figcaption>Krakow's stunning Rynek Główny, the largest medieval market square in Europe.</figcaption>
 </figure>
 
 <p style="text-align: justify;">I began in Krakow, a city that wears its history proudly. Staying in a dormitory nestled in the Old Town, I quickly joined a free walking tour that explored the heart of this medieval wonder. The Rynek Główny, one of the largest market squares in Europe, was the perfect starting point. As we walked through the cobblestone streets, our guide led us to St. Mary’s Basilica, where the beautiful Gothic altarpiece by Veit Stoss left everyone in awe.</p>
 
 <figure style="width:40%; float:right; margin-left:20px; margin-bottom:10px;">
-  <img src="{{ '/assets/krakow.jpeg' | relative_url }}" alt="Krakow" style="width:100%; height:auto;">
+  <img src="{{ '/assets/krakow.webp' | relative_url }}" alt="Krakow" style="width:100%; height:auto;">
   <figcaption>View of Wawel Castle.</figcaption>
 </figure>
 
@@ -36,13 +36,13 @@ image: /assets/warsaw5.jpg
 <h2>Warsaw: A City Reborn</h2>
 
 <figure style="width:40%; float:right; margin-left:20px; margin-bottom:10px;">
-  <img src="{{ '/assets/warsawnicolas-copernicus.jpg' | relative_url }}" alt="Statue of Nicolaus Copernicus in Warsaw" style="width:100%; height:auto;">
+  <img src="{{ '/assets/warsawnicolas-copernicus.webp' | relative_url }}" alt="Statue of Nicolaus Copernicus in Warsaw" style="width:100%; height:auto;">
   <figcaption>Statue of Nicolaus Copernicus in Warsaw, honoring the famous astronomer.</figcaption>
 </figure>
 <p style="text-align: justify;">From Krakow, I hopped on a bus to Warsaw, Poland's capital. Warsaw’s story is one of resilience and rebirth. I first got down at the west Warsaw station, and as I got down the first thing I noticed was the starck contrast to the town of Krakow- those huge buildings and modern architecture just says so much story about the city's past and I immediately found myself intrigued by the juxtaposition of modern skyscrapers against the carefully reconstructed Old Town. The free walking tour here emphasized just how much the city has overcome.</p>
 
 <figure style="width:40%; float:right; margin-left:20px; margin-bottom:10px;">
-  <img src="{{ '/assets/warsaw3.jpg' | relative_url }}" alt="Warsaw" style="width:100%; height:auto;">
+  <img src="{{ '/assets/warsaw3.webp' | relative_url }}" alt="Warsaw" style="width:100%; height:auto;">
   <figcaption>The rebuilt Old Town of Warsaw, a UNESCO World Heritage site.</figcaption>
 </figure>
 <p style="text-align: justify;">The guide recounted Warsaw's near-total destruction during World War II and the incredible effort to rebuild it from the ashes. The Royal Castle, with its imposing presence, and the colorful Old Town Square, are symbols of the city’s strength. I wasn't sure of how I would feel about Warsaw, but I must say I find it amazing how much even those reconstructed buildings have got to say of all that the city had to withstand. </p>
@@ -51,7 +51,7 @@ image: /assets/warsaw5.jpg
 <h2>Riga: A City of Art and Architecture</h2>
 
 <figure style="width:40%; float:left; margin-right:20px; margin-bottom:10px;">
-  <img src="{{ '/assets/riga.jpeg' | relative_url }}" alt="Riga City" style="width:100%; height:auto;">
+  <img src="{{ '/assets/riga.webp' | relative_url }}" alt="Riga City" style="width:100%; height:auto;">
   <figcaption>The house of the Blackheads, in the background.</figcaption>
 </figure>
 <p style="text-align: justify;">Next on my route was Riga, Latvia’s vibrant capital. Staying in a dormitory near the Old Town, I joined another free walking tour that explored the rich tapestry of Gothic spires and Art Nouveau buildings that Riga is famous for. The guide walked us through the narrow medieval streets, bringing to life the stories of merchants, knights, and guilds that shaped the city’s history.</p>
@@ -59,13 +59,13 @@ image: /assets/warsaw5.jpg
 <p style="text-align: justify;">We also visited the House of the Blackheads, a stunning building that served as the guild house for unmarried merchants. This part of the trip introduced me to the wealth and influence that the Baltic ports once wielded.</p>
 
 <figure style="width:40%; float:right; margin-left:20px; margin-bottom:10px;">
-  <img src="{{ '/assets/three-brothers-riga.jpeg' | relative_url }}" alt="Three Brothers Riga" style="width:100%; height:auto;">
+  <img src="{{ '/assets/three-brothers-riga.webp' | relative_url }}" alt="Three Brothers Riga" style="width:100%; height:auto;">
   <figcaption>The Three Brothers in Riga, a trio of historic medieval buildings.</figcaption>
 </figure>
 <p style="text-align: justify;">The walking tour continued through iconic sites such as the Three Brothers, the oldest complex of dwelling houses in Riga. These buildings perfectly encapsulate the architectural evolution from medieval times to the Baroque era, highlighting the city's rich historical tapestry.</p>
 
 <figure style="width:40%; float:left; margin-right:20px; margin-bottom:10px;">
-  <img src="{{ '/assets/beetroot-soup.jpeg' | relative_url }}" alt="Beetroot Soup" style="width:100%; height:auto;">
+  <img src="{{ '/assets/beetroot-soup.webp' | relative_url }}" alt="Beetroot Soup" style="width:100%; height:auto;">
   <figcaption>A refreshing bowl of traditional beetroot soup, a Baltic favorite.</figcaption>
 </figure>
 
@@ -77,12 +77,12 @@ image: /assets/warsaw5.jpg
 <h2>Klaipeda and the Curonian Spit: A Night of Serendipity</h2>
 
 <figure style="width:30%; float:left; margin-right:20px; margin-bottom:10px;">
-  <img src="{{ '/assets/klaipeda-cat.jpg' | relative_url }}" alt="Klaipeda Cat" style="width:100%; height:auto;">
+  <img src="{{ '/assets/klaipeda-cat.webp' | relative_url }}" alt="Klaipeda Cat" style="width:100%; height:auto;">
   <figcaption>The playful Klaipeda Cat statue, a hidden gem of the city.</figcaption>
 </figure>
 
 <figure style="width:30%; float:left; margin-right:20px; margin-bottom:10px;">
-  <img src="{{ '/assets/klaipeda-rat.jpg' | relative_url }}" alt="Klaipeda Rat" style="width:100%; height:auto;">
+  <img src="{{ '/assets/klaipeda-rat.webp' | relative_url }}" alt="Klaipeda Rat" style="width:100%; height:auto;">
   <figcaption>The Klaipeda Rat statue, a symbol of the city’s quirky charm.</figcaption>
 </figure>
 
@@ -90,9 +90,9 @@ image: /assets/warsaw5.jpg
 <p style="text-align: justify;">Leaving Riga behind, I took a bus to Kaunas, rested for the night and then took a bus to Klaipeda, a coastal town in Lithuania with a strong Germanic influence. Here, the free walking tour explored the city's maritime history. The German-style architecture stood as a reminder of Klaipeda's time under Prussian rule, and the guide's stories of seafaring adventures brought the port's history to life.</p>
 
 
-<!-- <img src="{{ '/assets/klaipeda-ship.jpg' | relative_url }}" alt="Krakow" style="width:40%; height:auto; float:right; margin-left:20px; margin-bottom:10px;"> -->
+<!-- <img src="{{ '/assets/klaipeda-ship.webp' | relative_url }}" alt="Krakow" style="width:40%; height:auto; float:right; margin-left:20px; margin-bottom:10px;"> -->
 <figure style="width:40%; float:right; margin-left:20px; margin-bottom:10px;">
-  <img src="{{ '/assets/coronian-spit.jpeg' | relative_url }}" alt="Curonian Spit" style="width:100%; height:auto;">
+  <img src="{{ '/assets/coronian-spit.webp' | relative_url }}" alt="Curonian Spit" style="width:100%; height:auto;">
   <figcaption>The stunning dunes of the Curonian Spit, a UNESCO World Heritage site.</figcaption>
 </figure>
 
@@ -103,7 +103,7 @@ image: /assets/warsaw5.jpg
 <h2>Vilnius: Finale</h2>
 
 <figure style="width:50%; float:left; margin-right:20px; margin-bottom:10px;">
-  <img src="{{ '/assets/gedminas-tower.jpeg' | relative_url }}" alt="Gediminas Tower" style="width:100%; height:auto;">
+  <img src="{{ '/assets/gedminas-tower.webp' | relative_url }}" alt="Gediminas Tower" style="width:100%; height:auto;">
   <figcaption>Gediminas Tower in Vilnius, a symbol of Lithuania’s resilience and strength.</figcaption>
 </figure>
 
@@ -112,7 +112,7 @@ image: /assets/warsaw5.jpg
 <p style="text-align: justify;">One of the most striking moments was visiting the Gates of Dawn, an important religious site that has drawn pilgrims for centuries. The guide spoke of the spiritual significance of the place, and I could feel a sense of peace and reverence wash over me.</p>
 
 <figure style="width:35%; float:right; margin-left:20px; margin-bottom:10px;">
-  <img src="{{ '/assets/uzopia.jpeg' | relative_url }}" alt="Užupis District" style="width:100%; height:auto;">
+  <img src="{{ '/assets/uzopia.webp' | relative_url }}" alt="Užupis District" style="width:100%; height:auto;">
   <figcaption>The Užupis Res Publica board, marking the entrance to the self-declared Republic of Užupis.</figcaption>
 </figure>
 
@@ -122,7 +122,7 @@ image: /assets/warsaw5.jpg
 <p style="text-align: justify;">I also visited the Republic of Užupis in Vilnius, which is famous for having its own quirky constitution.</p>
 
 <figure style="width:50%; float:left; margin-right:20px; margin-bottom:10px;">
-  <img src="{{ '/assets/traki-castle.jpeg' | relative_url }}" alt="Trakai Castle" style="width:100%; height:auto;">
+  <img src="{{ '/assets/traki-castle.webp' | relative_url }}" alt="Trakai Castle" style="width:100%; height:auto;">
   <figcaption>The picturesque Trakai Island Castle, surrounded by the lakes of Lithuania.</figcaption>
 </figure>
 
@@ -138,7 +138,7 @@ As I traveled through Krakow, Warsaw, Riga, Klaipeda, and Vilnius, one of the mo
 <p style="text-align: justify"> What makes this shared history even more fascinating is the region's ancient ties to paganism. In contrast to much of Europe, Lithuania was the last pagan country in Europe, officially converting to Christianity only in the late 14th century. The echoes of this pagan past are still felt today, particularly in Lithuania, where festivals, symbols, and even folklore reveal deep-rooted connections to nature-based spiritual practices. As I walked through Vilnius, I could feel the layered history beneath the baroque architecture-the traces of old pagan beliefs mixed with Christianity and later, Soviet atheism. These influences still shape the cultural identity of the region.</p>
 
 <figure style="width:50%; float:left; margin-right:20px; margin-bottom:10px;">
-  <img src="{{ '/assets/nato.jpeg' | relative_url }}" alt="NATO" style="width:100%; height:auto;">
+  <img src="{{ '/assets/nato.webp' | relative_url }}" alt="NATO" style="width:100%; height:auto;">
   <figcaption>The NATO symbol placed prominently in front of the Presidential House in Vilnius, Lithuania.</figcaption>
 </figure>
 

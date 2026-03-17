@@ -110,7 +110,7 @@ header_pages:
 #   # The following options are for individual galleries.
 #   # galleries:
 #     greece:
-#       best_image: _DSC0398.jpg  # The image to show on the gallery index page. Defaults to the last image.
+#       best_image: _DSC0398.webp  # The image to show on the gallery index page. Defaults to the last image.
 
 # collections:
 #   photos:

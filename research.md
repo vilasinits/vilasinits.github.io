@@ -250,7 +250,7 @@ permalink: /research.html/
     <main class="rs-main">
       <section id="weak-lensing" class="rs-card">
         <h2>Weak Lensing</h2>
-          <img src="/assets/images/weaklensing.jpeg" alt="Illustration of weak lensing and background galaxy distortions" class="figure-left">
+          <img src="/assets/images/weaklensing.webp" alt="Illustration of weak lensing and background galaxy distortions" class="figure-left">
             <p>
               Weak gravitational lensing is the small and coherent change in galaxy shapes caused by matter along the line of sight. From many galaxies we estimate the reduced shear \( g = \gamma/(1-\kappa) \) and reconstruct a convergence map \( \kappa(\theta) \), a projected view of the matter field. The convergence is a weighted line of sight integral of the density contrast \( \delta \):
             </p>
@@ -282,7 +282,7 @@ permalink: /research.html/
       </section>
       <section id="topological-defects" class="rs-card">
         <h2>Topological Defects</h2>
-          <img src="/assets/images/defectnetwork.png" alt="Network of cosmic strings in a simulation" class="figure-left">
+          <img src="/assets/images/defectnetwork.webp" alt="Network of cosmic strings in a simulation" class="figure-left">
             <p>
               Phase transitions in the early universe can create field configurations that cannot relax away. These are topological defects such as strings, walls, and monopoles. They act as <em>active</em> sources of perturbations: their stress energy keeps sourcing the metric at late times, so the resulting density and velocity fields do not follow the passive evolution of simple initial conditions.
             </p>

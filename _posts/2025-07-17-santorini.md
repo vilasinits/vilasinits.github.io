@@ -2,7 +2,7 @@
 layout: custompost
 title: "Trip to Santorini"
 categories: misc
-image: /assets/santorini/IMG_4138.JPG
+image: /assets/santorini/IMG_4138.webp
 ---
 
 <header class="z2csite-header">
@@ -26,7 +26,7 @@ image: /assets/santorini/IMG_4138.JPG
 <p style="text-align: justify;">The archaeological site of Akrotiri is often called the “Pompeii of the Aegean,” but to me, it felt even more haunting. This was a thriving Bronze Age Minoan settlement, buried under layers of volcanic ash after the massive eruption of Thera around 1600 BCE. The ash preserved everything with eerie precision: multi-storey buildings with painted walls, intricate drainage systems, pottery still patterned with marine motifs. You could almost sense how advanced this civilization was-how gracefully they lived, how abruptly it all ended.</p>
 
 <figure style="width:50%; float:right; margin-left:20px; margin-bottom:10px;">
-  <img src="{{ '/assets/santorini/IMG_3507.JPG' | relative_url }}" alt="Akrotiri excavation site" style="width:100%; height:auto;">
+  <img src="{{ '/assets/santorini/IMG_3507.webp' | relative_url }}" alt="Akrotiri excavation site" style="width:100%; height:auto;">
   <figcaption>Akrotiri excavation site</figcaption>
 </figure>
 
@@ -40,7 +40,7 @@ image: /assets/santorini/IMG_4138.JPG
 <p style="text-align: justify;">I found a quiet spot along the promenade, away from the crowd, and watched the sun set the sky ablaze-orange, pink, lavender melting into the Aegean. Of course, I took photos (how could I not?), but nothing really captures the feeling of that moment.</p>
 
 <figure style="width:30%; float:left; margin-right:20px; margin-bottom:10px;">
-  <img src="{{ '/assets/santorini/IMG_3829.JPG' | relative_url }}" alt="The view of the Caldera at night" style="width:100%; height:auto;">
+  <img src="{{ '/assets/santorini/IMG_3829.webp' | relative_url }}" alt="The view of the Caldera at night" style="width:100%; height:auto;">
   <figcaption>The view of the Caldera at night</figcaption>
 </figure>
 
@@ -49,14 +49,14 @@ image: /assets/santorini/IMG_4138.JPG
 <p style="text-align: justify;">Naturally, I got the “are you here alone?” question more times than I could count-from waiters, shopkeepers, even the ice cream vendor. Santorini’s clearly a favourite for couples, families, and friend groups. Still, I found myself a spot at a cosy restaurant with caldera views-budget-friendly, yes-and ended the night full and content.
 
 <figure style="width:50%; float:right; margin-left:20px; margin-bottom:10px;">
-  <img src="{{ '/assets/santorini/IMG_4056.JPG' | relative_url }}" alt="Sulphur rich hot springsr" style="width:100%; height:auto;">
+  <img src="{{ '/assets/santorini/IMG_4056.webp' | relative_url }}" alt="Sulphur rich hot springsr" style="width:100%; height:auto;">
   <figcaption>Sulphur rich hot springs</figcaption>
 </figure>
 
 <p style="text-align: justify;">The next morning, I set off early for a boat tour to Nea Kameni and Palea Kameni. We hiked up to the volcanic crater and passed by the hot springs. I didn’t swim (still haven’t learned how!), but happily munched on snacks while soaking in the surreal views of the islands and caldera. It was during this cruise that I learned Santorini is actually a cluster of five islands-the remnants of a much larger island, once circular, called Strombolis. The dramatic caldera we admire today was shaped by ancient volcanic eruptions and earthquakes.</p>
 
 <figure style="width:50%; float:right; margin-left:20px; margin-bottom:10px;">
-  <img src="{{ '/assets/santorini/IMG_3968.JPG' | relative_url }}" alt="Hiking to the volcanic crater" style="width:100%; height:auto;">
+  <img src="{{ '/assets/santorini/IMG_3968.webp' | relative_url }}" alt="Hiking to the volcanic crater" style="width:100%; height:auto;">
   <figcaption>Hiking to the volcanic crater</figcaption>
 </figure>
 
@@ -65,7 +65,7 @@ image: /assets/santorini/IMG_4138.JPG
 <p style="text-align: justify;">As I reached Oia, the golden hour had already begun to settle in. The town was buzzing-but not in a chaotic way. It felt like everyone had collectively decided to pause, slow down, and head toward the same destination: the sunset. I made my way to the old castle ruins, one of the most iconic viewpoints, and found a cozy spot wedged between fellow sunset-chasers. The energy here was different-so much anticipation, cameras at the ready, people whispering as if in a theatre before the lights dim.</p>
 
 <figure style="width:30%; float:left; margin-right:20px; margin-bottom:10px;">
-  <img src="{{ '/assets/santorini/IMG_4520.JPG' | relative_url }}" alt="Blue domes" style="width:100%; height:auto;">
+  <img src="{{ '/assets/santorini/IMG_4520.webp' | relative_url }}" alt="Blue domes" style="width:100%; height:auto;">
   <figcaption>Blue domes</figcaption>
 </figure>
 
@@ -78,7 +78,7 @@ image: /assets/santorini/IMG_4138.JPG
 <p style="text-align: justify;">What really amused me, though, were the long queues that had quietly formed along narrow alleyways-people waiting patiently for their turn to get that perfect Instagram shot with the blue domes in the background. The way everyone was coordinating poses, fixing flowy dresses, and scouting for that "just right" frame was almost a performance in itself. I found it oddly endearing-this collective dedication to beauty.</p>
 
 <figure style="width:50%; float:right; margin-left:20px; margin-bottom:10px;">
-  <img src="{{ '/assets/santorini/IMG_4431.JPG' | relative_url }}" alt="The sunset from Oia" style="width:100%; height:auto;">
+  <img src="{{ '/assets/santorini/IMG_4431.webp' | relative_url }}" alt="The sunset from Oia" style="width:100%; height:auto;">
   <figcaption>The sunset from Oia</figcaption>
 </figure>
 
@@ -93,7 +93,7 @@ image: /assets/santorini/IMG_4138.JPG
 <p style="text-align: justify;">Imerovigli, on the other hand, was back to Santorini in full cinematic mode-absolutely stunning, perched high with panoramic caldera views. But it also came with its own kind of theatre. I saw at least three women in flowy dresses doing elaborate twirls for photographers, determined to capture that perfect sun-drenched frame. It was a different kind of beauty, curated but still breathtaking.</p>
 
 <figure style="width:25%; float:left; margin-right:10px; margin-bottom:10px;">
-  <img src="{{ '/assets/santorini/IMG_4619.JPG' | relative_url }}" alt="Imerovigili" style="width:100%; height:auto;">
+  <img src="{{ '/assets/santorini/IMG_4619.webp' | relative_url }}" alt="Imerovigili" style="width:100%; height:auto;">
   <figcaption>Imerovigili</figcaption>
 </figure>
 

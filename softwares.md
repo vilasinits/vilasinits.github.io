@@ -113,7 +113,7 @@ permalink: /softwares.html/
     <article class="sw-card">
       <div class="sw-banner">
         <!-- replace with your actual WALE banner -->
-        <img src="/assets/wale.png" alt="WALE – Wavelet ℓ1 norm Estimator">
+        <img src="/assets/wale.webp" alt="WALE – Wavelet ℓ1 norm Estimator">
       </div>
       <div class="sw-body">
         <div class="sw-title">
@@ -148,7 +148,7 @@ permalink: /softwares.html/
     <!-- GOLCONDA -->
     <article class="sw-card">
       <div class="sw-banner">
-        <img src="/assets/golconda.png" alt="GOLCONDA emulator">
+        <img src="/assets/golconda.webp" alt="GOLCONDA emulator">
       </div>
       <div class="sw-body">
         <div class="sw-title">
@@ -180,7 +180,7 @@ permalink: /softwares.html/
     <!-- Global Defects -->
     <article class="sw-card">
       <div class="sw-banner">
-        <img src="/assets/globaldefects.png" alt="Global defects simulations">
+        <img src="/assets/globaldefects.webp" alt="Global defects simulations">
       </div>
       <div class="sw-body">
         <div class="sw-title">

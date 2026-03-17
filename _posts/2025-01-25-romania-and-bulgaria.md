@@ -2,7 +2,7 @@
 layout: custompost
 title: "Visiting Romania and Bulgaria"
 categories: misc
-image: /assets/romania_title.JPEG
+image: /assets/romania_title.webp
 ---
 <header class="z2csite-header">
   <div class="z2cdynamic-title">
@@ -17,7 +17,7 @@ image: /assets/romania_title.JPEG
 <h2>Exploring Brașov</h2>
 
 <figure style="width:50%; float:right; margin-left:20px; margin-bottom:10px;">
-  <img src="{{ '/assets/bran_castle.JPG' | relative_url }}" alt="Bran Castle (Dracula castle)" style="width:100%; height:auto;">
+  <img src="{{ '/assets/bran_castle.webp' | relative_url }}" alt="Bran Castle (Dracula castle)" style="width:100%; height:auto;">
   <figcaption>Bran castle</figcaption>
 </figure>
 
@@ -26,7 +26,7 @@ image: /assets/romania_title.JPEG
 <p style="text-align: justify;">While in Brașov, we tried <strong>cozonac</strong>, a traditional Romanian cake. Its rich, slightly sweet flavor and soft texture were perfect for the cold winter day. The experience was made even better by the cozy atmosphere at the bistro aptly called Couchette, traveller’s bistro, which was popular among visitors due to its proximity to the train station, and which had absolutely friendly staff, who helped me figure out the logistics.</p>
 
 <figure style="width:30%; float:left; margin-right:20px; margin-bottom:10px;">
-  <img src="{{ '/assets/cozonac.jpg' | relative_url }}" alt="Cozonac" style="width:100%; height:auto;">
+  <img src="{{ '/assets/cozonac.webp' | relative_url }}" alt="Cozonac" style="width:100%; height:auto;">
   <figcaption>Traditional Romanian cake</figcaption>
 </figure>
 
@@ -36,7 +36,7 @@ image: /assets/romania_title.JPEG
 <h2>Wandering Cluj and Sibiu</h2>
 
 <figure style="width:40%; float:right; margin-left:20px; margin-bottom:10px;">
-  <img src="{{ '/assets/cluj_street.JPG' | relative_url }}" alt="A random street in Cluj" style="width:100%; height:auto;">
+  <img src="{{ '/assets/cluj_street.webp' | relative_url }}" alt="A random street in Cluj" style="width:100%; height:auto;">
   <figcaption>A random street in Cluj</figcaption>
 </figure>
 
@@ -45,7 +45,7 @@ image: /assets/romania_title.JPEG
 <p style="text-align: justify;">My journey continued to <strong>Sibiu</strong>, where Christmas lights and decorations adorned the streets. The <strong>ASTRA Museum</strong>, an open-air showcase of traditional Romanian life, was a highlight of my visit. The museum featured an impressive collection of model houses from various regions across Romania, each uniquely crafted to reflect the lifestyle, culture, and occupation of its original inhabitants. It was fascinating to see how the design of a house varied depending on whether it belonged to farmers, craftsmen, or fishermen, and how the architectural styles were influenced by the towns or regions they came from. Strolling among the old wooden houses and traditional windmills, we felt as though we had stepped back in time, walking through centuries of Romanian history.</p>
 
 <figure style="width:25%; float:left; margin-right:20px; margin-bottom:10px;">
-  <img src="{{ '/assets/traditional_romanian_pottery.jpg' | relative_url }}" alt="Traditional Romanian pottery" style="width:100%; height:auto;">
+  <img src="{{ '/assets/traditional_romanian_pottery.webp' | relative_url }}" alt="Traditional Romanian pottery" style="width:100%; height:auto;">
   <figcaption>Traditional Romanian pottery</figcaption>
 </figure>
 
@@ -57,21 +57,21 @@ image: /assets/romania_title.JPEG
 <h2>Exploring Bulgaria: Sofia, Plovdiv, and Beyond</h2>
 
 <figure style="width:35%; float:right; margin-left:20px; margin-bottom:10px;">
-  <img src="{{ '/assets/plovdiv_view.JPG' | relative_url }}" alt="Plovdiv at night" style="width:100%; height:auto;">
+  <img src="{{ '/assets/plovdiv_view.webp' | relative_url }}" alt="Plovdiv at night" style="width:100%; height:auto;">
   <figcaption>Plovdiv at night</figcaption>
 </figure>
 
 <p style="text-align: justify;">After Romania, we boarded a night bus to <strong>Sofia</strong>. We spent a bit of time exploring the city before renting a car and driving to <strong>Plovdiv</strong>, the European Culture Capital of 2024. Plovdiv completely captivated me-there was something about this town that felt magical and almost otherworldly. The beautiful mix of architectural styles, from Roman ruins to Ottoman and Bulgarian Revival buildings, created a unique charm that seemed to reflect its rich history.</p>
 
 <figure style="width:55%; float:left; margin-right:20px; margin-bottom:10px;">
-  <img src="{{ '/assets/teppe_view.jpg' | relative_url }}" alt="The view from nebet teppe in Plovdiv" style="width:100%; height:auto;">
+  <img src="{{ '/assets/teppe_view.webp' | relative_url }}" alt="The view from nebet teppe in Plovdiv" style="width:100%; height:auto;">
   <figcaption>The view from Nebet Tepe in Plovdiv</figcaption>
 </figure>
     
 <p style="text-align: justify;">One of the highlights was visiting <strong>Nebet Tepe</strong> at night. Standing atop the hill, we gazed out over the city lights, which sparkled like stars against the dark sky. The view was absolutely enchanting, and for a moment, it felt like time had stopped. There was a warmth and serenity in the air, perhaps because of the lingering holiday spirit or the cozy atmosphere of the town. We almost didn’t want to leave Plovdiv-it felt like the place was holding on to me, wrapping me in its charm and beauty.</p>
 
 <figure style="width:35%; float:right; margin-left:20px; margin-bottom:10px; margin-top:10px;">
-  <img src="{{ '/assets/sozopol.jpg' | relative_url }}" alt="Street in Sozopol" style="width:100%; height:auto;">
+  <img src="{{ '/assets/sozopol.webp' | relative_url }}" alt="Street in Sozopol" style="width:100%; height:auto;">
   <figcaption>Street in Sozopol</figcaption>
 </figure>
 
@@ -80,7 +80,7 @@ image: /assets/romania_title.JPEG
 <p style="text-align: justify;">From Plovdiv, we headed to <strong>Sozopol</strong>, where we rested for the night. We hadn’t accounted for the fact that Sozopol is very quiet during the winter months, but this turned out to be a blessing in disguise. The tranquil streets and unique architecture gave me a different perspective on the town, showcasing a side of it that felt untouched by the usual crowds of summer tourists. After soaking in the peaceful ambiance, we explored central Burgas, enjoying its relaxed vibe and charm.</p>
     
 <figure style="width:45%; float:left; margin-right:20px; margin-bottom:10px;">
-  <img src="{{ '/assets/rila.jpg' | relative_url }}" alt="Rila Monastery" style="width:100%; height:auto;">
+  <img src="{{ '/assets/rila.webp' | relative_url }}" alt="Rila Monastery" style="width:100%; height:auto;">
   <figcaption>Rila Monastery</figcaption>
 </figure>
 
