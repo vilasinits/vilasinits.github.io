@@ -78,7 +78,9 @@ permalink: /blog.html/
   </header>
 
   <section class="blog-grid">
+    {% assign tat_categories = "cosmology,resources,life" | split: "," %}
     {% for post in site.posts %}
+    {% unless tat_categories contains post.category %}
       <article class="blog-card">
         {% if post.image %}
           <div class="thumb">
@@ -114,6 +116,7 @@ permalink: /blog.html/
         <!-- Make the whole card clickable while keeping semantic links -->
         <a class="stretched" href="{{ post.url | relative_url }}" aria-label="Open {{ post.title | escape }}"></a>
       </article>
+    {% endunless %}
     {% endfor %}
   </section>
 </div>
