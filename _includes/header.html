@@ -55,12 +55,6 @@
     }
     .page-link:hover{ color: var(--brand) !important; text-decoration: underline; }
 
-    /* On smaller desktops, shrink nav gap before hamburger kicks in */
-    @media (max-width: 1050px) and (min-width: 881px){
-      .nav-list{ gap:10px; }
-      .page-link{ padding:4px 5px; }
-    }
-
     /* Theme toggle */
     .theme-toggle{
       background: transparent;
@@ -79,14 +73,15 @@
       background: var(--ring);
     }
     .theme-toggle svg{ width:20px; height:20px; }
+    .style-toggle{ font: 600 15px/1 Georgia, serif; }
     .theme-toggle .icon-sun,
     .theme-toggle .icon-moon{ display:none; }
     [data-theme="dark"] .theme-toggle .icon-sun{ display:block; }
     [data-theme="light"] .theme-toggle .icon-moon{ display:block; }
 
-    /* Hamburger button (mobile only) */
+    /* Hamburger button */
     .menu-btn{
-      display:none;
+      display:flex;
       background: transparent;
       border: 1px solid var(--bar-border);
       width: 44px; height: 44px; border-radius: 10px;
@@ -136,11 +131,8 @@
     }
     .nav-backdrop.open{ display: block; }
 
-    /* Mobile drawer */
-    @media (max-width: 880px){
-      .menu-btn{ display:flex; }
-
-      /* Hide desktop nav links — only show via .open */
+    /* Drawer menu (all screen sizes) */
+      /* Nav links hidden until the hamburger opens them */
       .nav-list{
         display: none !important;
         position: fixed;
@@ -176,7 +168,6 @@
         color: var(--brand) !important;
         text-decoration: none;
       }
-    }
 
     /* Hide Minima's default nav-trigger and menu-icon */
     .nav-trigger, .menu-icon, label[for="nav-trigger"] { display: none !important; }
@@ -189,6 +180,10 @@
     </a>
 
     <nav class="site-nav" role="navigation" aria-label="Primary">
+      {%- if site.style_switcher -%}
+      <!-- Style switcher: cycles through the presets in _sass/minima/style-presets.scss -->
+      <button class="theme-toggle style-toggle" id="style-toggle" aria-label="Change style" title="Change style">Aa</button>
+      {%- endif -%}
       <!-- Theme toggle -->
       <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
         <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -224,7 +219,6 @@
         <li><a class="page-link" href="{{ '/softwares.html' | relative_url }}">Softwares</a></li>
         <li><a class="page-link" href="{{ '/talks.html' | relative_url }}">Talks</a></li>
         <li><a class="page-link" href="{{ '/papers.html' | relative_url }}">Papers</a></li>
-        <li><a class="page-link" href="{{ '/this-and-that/' | relative_url }}">This and That</a></li>
         <li><a class="page-link" href="{{ '/blog.html' | relative_url }}">Blog</a></li>
         <li><a class="page-link" href="{{ '/travel.html' | relative_url }}">Through my lens</a></li>
       </ul>
@@ -277,5 +271,20 @@
       document.documentElement.setAttribute('data-theme', next);
       localStorage.setItem('theme', next);
     });
+
+    // Style switcher
+    var styleToggle = document.getElementById('style-toggle');
+    if (styleToggle) {
+      var styles = ['classic', 'paper', 'swiss', 'mono'];
+      var showStyle = function(){
+        styleToggle.title = 'Style: ' + document.documentElement.getAttribute('data-style');
+      };
+      showStyle();
+      styleToggle.addEventListener('click', function(){
+        var current = styles.indexOf(document.documentElement.getAttribute('data-style'));
+        applyStyle(styles[(current + 1) % styles.length]);
+        showStyle();
+      });
+    }
   })();
 </script>

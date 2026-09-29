@@ -326,7 +326,7 @@ permalink: /cv.html/
 
 
   <div class="cv-actions">
-    <a class="cv-download-btn" href="/assets/Curriculum_Vitae_Vilasini.pdf" target="_blank">
+    <a class="cv-download-btn" href="/assets/Vilasini_CV_recent.pdf" target="_blank">
       Download CV (PDF)
     </a>
   </div>

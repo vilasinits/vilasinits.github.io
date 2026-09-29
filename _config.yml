@@ -69,7 +69,7 @@ header_pages:
   - cv.markdown       # CV page
   - research.md # My Research page
   - thoughts.md # Blog page
-  - thisandthat.md # This and That page
+  # - thisandthat.md # This and That page (hidden for now)
   - travel_portfolio.md   # Travel page
   - softwares.md # Softwares page
   - talks.md # Talks page
@@ -126,3 +126,21 @@ markdown: kramdown
 kramdown:
   input: GFM
   math_engine: mathjax
+# Style presets (_sass/minima/style-presets.scss): classic, paper, swiss, mono.
+# default_style is what visitors see; style_switcher shows the "Aa" button in the header.
+default_style: classic
+style_switcher: true
+
+# Jekyll 3.9 replaces (not extends) its default exclude list, so the defaults are repeated here.
+exclude:
+  - CLAUDE.md
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

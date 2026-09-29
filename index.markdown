@@ -117,7 +117,10 @@ layout: home
     <main class="content">
       <h1>About Me</h1>
       <p>
-        I am a Research Engineer at the <strong>Institut d'Astrophysique Spatiale (IAS)</strong> in Orsay, France, where I work on CMB cross correlations within the <strong>Euclid</strong> collaboration.
+        I am a Research Engineer at the <strong>Institut d'Astrophysique Spatiale (IAS)</strong> in Orsay, France, where I work on cross correlations between the cosmic microwave background (CMB) and large scale structure within the <strong>Euclid</strong> collaboration.
+      </p>
+      <p>
+        My work sits between theory and data analysis. I build the modelling and likelihood tools that combine CMB experiments with Stage IV galaxy surveys, so that several probes of the same universe can be analysed together and give tighter, more reliable constraints on cosmology.
       </p>
       <p>
         I recently completed my doctorate in Astrophysics, where I studied how dark matter shapes the universe. My work sat at the meeting point of theory, large scale simulations, and weak lensing. I built simple and reliable tools designed to learn as much as possible from data before resorting to heavy computation.
@@ -126,7 +129,7 @@ layout: home
         My research focused on higher order statistics and wavelet methods, approaches that allowed me to perform parameter inference in a way that was light on simulations and heavy on understanding. In the later part of my PhD, I developed a theory driven framework for likelihood free inference so that results remained transparent and robust while storage and compute demands stayed reasonable.
       </p>
       <p>
-        I was part of the <strong>Euclid</strong> collaboration, where I worked on bridging careful theoretical modelling with practical application. At <strong>CosmoStat</strong>, I co-organised the Journal Club and thoroughly enjoyed the discussions, the questions, debates, and exchange of ideas that constantly pushed me to think deeper.
+        During my PhD I also contributed to the <strong>Euclid</strong> weak lensing higher order statistics (HOWLS) effort, where I worked on bridging careful theoretical modelling with practical application. At <strong>CosmoStat</strong>, I co-organised the Journal Club and thoroughly enjoyed the discussions, the questions, debates, and exchange of ideas that constantly pushed me to think deeper.
       </p>
       <p>
         Beyond research, I love spending time with my camera, reading, and planning my next trip. I travelled widely during my PhD, learning from new cultures, wandering through old ruins and museums, and collecting small stories along the way. You can find some of these experiences on my <a class="link" href="/blog.html">blog</a>.
@@ -140,6 +143,15 @@ layout: home
         <span class="chip">Simulations</span>
         <span class="chip">Euclid</span>
         <span class="chip">CMB cross correlations</span>
+        <span class="chip">Likelihood pipelines</span>
+        <span class="chip">Halo models</span>
+        <span class="chip">JAX</span>
+      </div>
+      <div class="section">
+        <h2>What I Work On Now</h2>
+        <ul class="bullets">
+          <li>Leading the development of a likelihood pipeline for joint analyses of galaxy clustering, CMB lensing, weak lensing and their cross spectra.</li>
+        </ul>
       </div>
       <div class="section">
         <h2>During My PhD, I Worked On</h2>

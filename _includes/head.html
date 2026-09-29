@@ -2,12 +2,32 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Theme init: runs before paint to prevent FOUC -->
+  <!-- Theme and style init: runs before paint to prevent FOUC -->
   <script>
     (function(){
       var t = localStorage.getItem('theme');
       if (!t) t = 'dark';
       document.documentElement.setAttribute('data-theme', t);
+
+      // Style preset: ?style=<name> in the URL, else the saved choice, else the site default.
+      var fonts = {
+        paper: 'Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400',
+        swiss: 'Inter:wght@400;500;600;700',
+        mono: 'IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600'
+      };
+      window.applyStyle = function(name){
+        document.documentElement.setAttribute('data-style', name);
+        localStorage.setItem('style', name);
+        if (fonts[name] && !document.getElementById('font-' + name)) {
+          var link = document.createElement('link');
+          link.id = 'font-' + name;
+          link.rel = 'stylesheet';
+          link.href = 'https://fonts.googleapis.com/css2?family=' + fonts[name] + '&display=swap';
+          document.head.appendChild(link);
+        }
+      };
+      var fromUrl = new URLSearchParams(location.search).get('style');
+      applyStyle(fromUrl || localStorage.getItem('style') || '{{ site.default_style | default: "classic" }}');
     })();
   </script>
   {%- seo -%}

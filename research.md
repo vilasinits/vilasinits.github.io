@@ -4,20 +4,7 @@ title: Research
 permalink: /research.html/
 ---
 
-<!-- MathJax (unchanged) -->
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script>
-  window.MathJax = {
-    tex: {
-      inlineMath: [['\\(', '\\)']],
-      displayMath: [['\\[', '\\]']],
-      packages: {'[+]': ['ams','boldsymbol','bm']}
-    },
-    loader: { load: ['[tex]/ams','[tex]/boldsymbol','[tex]/bm'] },
-    chtml: { font: 'TeX' }
-  };
-</script>
-<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<!-- MathJax is loaded and configured once in _layouts/base.html -->
 
 <style>
   /* Full width like home */
@@ -230,7 +217,7 @@ permalink: /research.html/
   <header class="rs-head">
     <div>
       <h1>Research</h1>
-      <div class="sub">Weak Lensing • Topological Defects • Large Deviation Theory</div>
+      <div class="sub">Weak Lensing • CMB Cross-Correlations • Topological Defects • Large Deviation Theory</div>
     </div>
   </header>
 
@@ -242,6 +229,7 @@ permalink: /research.html/
       <nav>
         <ul class="toc">
           <li><a href="#weak-lensing">Weak Lensing</a></li>
+          <li><a href="#cmb-cross-correlations">CMB Cross-Correlations</a></li>
           <li><a href="#topological-defects">Topological Defects</a></li>
           <li><a href="#large-deviation-theory">Large Deviation Theory</a></li>
         </ul>
@@ -278,6 +266,38 @@ permalink: /research.html/
             </p>
             <p>
               In practice: reconstruct \( \kappa \) from shear catalogs, choose the analysis scale or wavelet, measure \( L_1[b] \), build \( p(x) \) from Large Deviation Theory, and compare data to theory with an uncertainty model for noise and finite area. This keeps inference close to first principles and light on simulations.
+            </p>
+      </section>
+      <section id="cmb-cross-correlations" class="rs-card">
+        <h2>CMB Cross-Correlations</h2>
+            <p>
+              The cosmic microwave background is a backlight for the whole late universe. On its way to us it is deflected by the matter in between, which gives CMB lensing \( \kappa \), and it scatters off hot electrons in galaxy groups and clusters, which gives the thermal Sunyaev-Zel'dovich (tSZ) signal, the Compton-\( y \) parameter. Correlating these maps with galaxy surveys such as Euclid probes the same structures with independent data and independent systematics.
+            </p>
+            <p>
+              In the Limber approximation, the angular cross-spectrum of two projected fields \( A \) and \( B \) is
+            </p>
+            \[
+              C_\ell^{AB} \;=\; \int \mathrm{d}\chi\; \frac{W_A(\chi)\,W_B(\chi)}{\chi^2}\;
+              P_{AB}\!\left(k = \frac{\ell + 1/2}{\chi},\, z(\chi)\right),
+            \]
+            <p>
+              where \( W_A \) and \( W_B \) are the projection kernels and \( P_{AB} \) is the 3D cross power spectrum. CMB lensing has the kernel
+            </p>
+            \[
+              W_\kappa(\chi) \;=\; \frac{3}{2}\,\Omega_{\mathrm{m}} \frac{H_0^2}{c^2}\,
+              \frac{\chi}{a(\chi)}\,\frac{\chi_* - \chi}{\chi_*},
+            \]
+            <p>
+              with \( \chi_* \) the distance to the last-scattering surface. So it weights matter out to high redshift, beyond the reach of galaxy shapes. The tSZ signal is a line-of-sight integral of the electron pressure,
+            </p>
+            \[
+              y(\hat{n}) \;=\; \frac{\sigma_{\mathrm{T}}}{m_e c^2} \int \mathrm{d}l\; P_e(\hat{n}, l),
+            \]
+            <p>
+              which traces hot gas rather than total mass.
+            </p>
+            <p>
+              Galaxy clustering and lensing cross CMB lensing (\( g\kappa \)) test structure growth over a wide redshift range and calibrate galaxy bias and lensing systematics. Galaxies and lensing cross tSZ (\( gy \), \( \kappa y \)) measure how feedback from active galactic nuclei heats and pushes gas out of haloes. Baryonic feedback is one of the main small-scale systematics for weak lensing, so these cross-correlations do double duty: they are a signal in their own right, and they constrain the same baryonic physics that suppresses the matter power spectrum.
             </p>
       </section>
       <section id="topological-defects" class="rs-card">
