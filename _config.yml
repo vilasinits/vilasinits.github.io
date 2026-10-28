@@ -70,7 +70,7 @@ header_pages:
   - research.md # My Research page
   - thoughts.md # Blog page
   # - thisandthat.md # This and That page (hidden for now)
-  - travel_portfolio.md   # Travel page
+  # - travel_portfolio.md   # Travel page (hidden for now)
   - softwares.md # Softwares page
   - talks.md # Talks page
   - papers.md

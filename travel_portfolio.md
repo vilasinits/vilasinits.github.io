@@ -2,6 +2,7 @@
 layout: travel
 title: Through my lens
 permalink: /travel.html/
+published: false
 captions:
   - title: "Old city lanes"
     subtitle: "Morning light in a busy neighbourhood"
